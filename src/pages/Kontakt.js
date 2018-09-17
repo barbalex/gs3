@@ -1,8 +1,13 @@
 import React, { Component } from 'react'
+import styled from 'styled-components'
 
 import prepareGoogleMap from '../modules/prepareGoogleMap'
 import alexImg from '../images/alex.jpg'
 import Layout from '../components/layout'
+
+const StyledImg = styled.img`
+  margin-bottom: 10px;
+`
 
 class KontaktPage extends Component {
   componentDidMount() {
@@ -15,7 +20,7 @@ class KontaktPage extends Component {
         <div id="kontakt" className="page kontakt">
           <div className="row marketing">
             <div className="col-lg-3">
-              <img
+              <StyledImg
                 alt="Alexander Gabriel"
                 src={alexImg}
                 className="js-alexImage"

@@ -11,6 +11,10 @@ const style = {
 
 const StyledJumbotron = styled(Jumbotron)`
   background-color: #e0f6da !important;
+
+  li {
+    font-size: 21px;
+  }
 `
 
 const IndexPage = () => (
