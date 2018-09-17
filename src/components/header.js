@@ -9,12 +9,32 @@ import {
   NavLink,
 } from 'reactstrap'
 import { navigate } from 'gatsby'
+import compose from 'recompose/compose'
+import withState from 'recompose/withState'
+import withHandlers from 'recompose/withHandlers'
 
-const Header = ({ siteTitle }) => (
-  <Navbar color="light" light expand="md">
-    <NavbarBrand href="/">{siteTitle}</NavbarBrand>
-    <NavbarToggler onClick={() => console.log('TODO')} />
-    <Collapse isOpen={true} navbar>
+const enhance = compose(
+  withState('open', 'setOpen', false),
+  withHandlers({
+    toggleNavbar: ({ open, setOpen }) => () => {
+      setOpen(!open)
+    },
+  }),
+)
+
+const Header = ({ open, toggleNavbar, siteTitle }) => (
+  <Navbar color="dark" dark expand="lg" fixed="true">
+    <NavbarBrand
+      href="/"
+      onClick={event => {
+        event.preventDefault()
+        navigate('/')
+      }}
+    >
+      {siteTitle}
+    </NavbarBrand>
+    <NavbarToggler onClick={toggleNavbar} />
+    <Collapse isOpen={open} navbar>
       <Nav className="ml-auto" navbar>
         <NavItem>
           <NavLink
@@ -65,4 +85,4 @@ const Header = ({ siteTitle }) => (
   </Navbar>
 )
 
-export default Header
+export default enhance(Header)

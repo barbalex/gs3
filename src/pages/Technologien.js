@@ -250,8 +250,7 @@ const TechnologienPage = () => (
                 React
               </a>
               <p>
-                Die Benutzeroberfläche ist eine Funktion der Anwendungsdaten.
-                Revolutionär!
+                Die Benutzeroberfläche ist eine Funktion der Anwendungsdaten
               </p>
             </li>
             <li>
@@ -270,10 +269,7 @@ const TechnologienPage = () => (
               >
                 Apollo
               </a>
-              <p>
-                Die Anwendungsdaten sind eine Funktion der Abfrage.
-                Revolutionär!
-              </p>
+              <p>Die Anwendungsdaten sind eine Funktion der Abfrage</p>
             </li>
             <li>
               <a
@@ -319,7 +315,7 @@ const TechnologienPage = () => (
               >
                 styled-components
               </a>
-              <p>CSS für Komponenten. Genial!</p>
+              <p>CSS für Komponenten</p>
             </li>
             <li>
               <a
