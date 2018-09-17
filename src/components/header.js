@@ -19,64 +19,44 @@ const enhance = compose(
     toggleNavbar: ({ open, setOpen }) => () => {
       setOpen(!open)
     },
+    onClickNav: () => event => {
+      event.preventDefault()
+      const { name } = event.target
+      const to = name === 'Home' ? '/' : `/${name}/`
+      navigate(to)
+    },
   }),
 )
 
-const Header = ({ open, toggleNavbar, siteTitle }) => (
+const Header = ({ open, toggleNavbar, siteTitle, onClickNav }) => (
   <Navbar color="dark" dark expand="lg" fixed="true">
-    <NavbarBrand
-      href="/"
-      onClick={event => {
-        event.preventDefault()
-        navigate('/')
-      }}
-    >
+    <NavbarBrand href="/" name="Home" onClick={onClickNav}>
       {siteTitle}
     </NavbarBrand>
     <NavbarToggler onClick={toggleNavbar} />
     <Collapse isOpen={open} navbar>
       <Nav className="ml-auto" navbar>
         <NavItem>
-          <NavLink
-            href="/Leitbild/"
-            onClick={event => {
-              event.preventDefault()
-              navigate('/Leitbild/')
-            }}
-          >
+          <NavLink href="/Leitbild/" name="Leitbild" onClick={onClickNav}>
             Leitbild
           </NavLink>
         </NavItem>
         <NavItem>
-          <NavLink
-            href="/Projekte/"
-            onClick={event => {
-              event.preventDefault()
-              console.log('TODO')
-            }}
-          >
+          <NavLink href="/Projekte/" name="Projekte" onClick={onClickNav}>
             Projekte
           </NavLink>
         </NavItem>
         <NavItem>
           <NavLink
             href="/Technologien/"
-            onClick={event => {
-              event.preventDefault()
-              navigate('/Technologien/')
-            }}
+            name="Technologien"
+            onClick={onClickNav}
           >
             Technologien
           </NavLink>
         </NavItem>
         <NavItem>
-          <NavLink
-            href="/Kontakt/"
-            onClick={event => {
-              event.preventDefault()
-              navigate('/Kontakt/')
-            }}
-          >
+          <NavLink href="/Kontakt/" name="Kontakt" onClick={onClickNav}>
             Kontakt
           </NavLink>
         </NavItem>
