@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import { Jumbotron } from 'reactstrap'
 import { FaCloud, FaHdd, FaCommentAlt } from 'react-icons/fa'
 import 'bootstrap/dist/css/bootstrap.min.css'
