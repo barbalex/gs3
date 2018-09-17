@@ -16,6 +16,7 @@
 
 
 /* Titel stylen */
+/* solved in: Technologien */
 .marketing h4 {
   font-weight: bold;
 }
@@ -24,27 +25,6 @@
 /* verhindern, dass die Scrollbalken erscheinen, weil die Seite höher ist als nötig */
 .page .row {
   margin-bottom: 0px;
-}
-
-
-.technologien h4 {
-  margin-top: 5px;
-}
-
-
-/* Links in technologien gestalten */
-.technologien a {
-  color: #333;
-  border-bottom: 1px dashed #333;
-}
-
-.technologien li p {
-  margin-bottom: -2px;
-}
-
-.technologien a:hover {
-  border-bottom: 1px solid #428BCA;
-  text-decoration: none;
 }
 
 
