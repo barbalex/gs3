@@ -12,6 +12,18 @@ import { navigate } from 'gatsby'
 import compose from 'recompose/compose'
 import withState from 'recompose/withState'
 import withHandlers from 'recompose/withHandlers'
+import styled from 'styled-components'
+import { Location } from '@reach/router'
+
+const StyledNavbar = styled(Navbar)`
+  &.bg-dark {
+    background-color: #145f00 !important;
+  }
+`
+const StyledNavLink = styled(NavLink)`
+  border: ${props => (props.active ? '1px white' : 'unset')};
+  border-color: rgba(255, 255, 255, 0.5) !important;
+`
 
 const enhance = compose(
   withState('open', 'setOpen', false),
@@ -28,41 +40,63 @@ const enhance = compose(
   }),
 )
 
-const Header = ({ open, toggleNavbar, siteTitle, onClickNav }) => (
-  <Navbar color="dark" dark expand="lg" fixed="true">
-    <NavbarBrand href="/" name="Home" onClick={onClickNav}>
-      {siteTitle}
-    </NavbarBrand>
-    <NavbarToggler onClick={toggleNavbar} />
-    <Collapse isOpen={open} navbar>
-      <Nav className="ml-auto" navbar>
-        <NavItem>
-          <NavLink href="/Leitbild/" name="Leitbild" onClick={onClickNav}>
-            Leitbild
-          </NavLink>
-        </NavItem>
-        <NavItem>
-          <NavLink href="/Projekte/" name="Projekte" onClick={onClickNav}>
-            Projekte
-          </NavLink>
-        </NavItem>
-        <NavItem>
-          <NavLink
-            href="/Technologien/"
-            name="Technologien"
-            onClick={onClickNav}
-          >
-            Technologien
-          </NavLink>
-        </NavItem>
-        <NavItem>
-          <NavLink href="/Kontakt/" name="Kontakt" onClick={onClickNav}>
-            Kontakt
-          </NavLink>
-        </NavItem>
-      </Nav>
-    </Collapse>
-  </Navbar>
-)
+const Header = ({ open, toggleNavbar, siteTitle, onClickNav }) => {
+  return (
+    <Location>
+      {({ location }) => (
+        <StyledNavbar color="dark" dark expand="lg" fixed="true">
+          <NavbarBrand href="/" name="Home" onClick={onClickNav}>
+            {siteTitle}
+          </NavbarBrand>
+          <NavbarToggler onClick={toggleNavbar} />
+          <Collapse isOpen={open} navbar>
+            <Nav className="ml-auto" navbar>
+              <NavItem>
+                <StyledNavLink
+                  href="/Leitbild/"
+                  name="Leitbild"
+                  onClick={onClickNav}
+                  active={location.pathname === '/Leitbild/'}
+                >
+                  Leitbild
+                </StyledNavLink>
+              </NavItem>
+              <NavItem>
+                <StyledNavLink
+                  href="/Projekte/"
+                  name="Projekte"
+                  onClick={onClickNav}
+                  active={location.pathname === '/Projekte/'}
+                >
+                  Projekte
+                </StyledNavLink>
+              </NavItem>
+              <NavItem>
+                <StyledNavLink
+                  href="/Technologien/"
+                  name="Technologien"
+                  onClick={onClickNav}
+                  active={location.pathname === '/Technologien/'}
+                >
+                  Technologien
+                </StyledNavLink>
+              </NavItem>
+              <NavItem>
+                <StyledNavLink
+                  href="/Kontakt/"
+                  name="Kontakt"
+                  onClick={onClickNav}
+                  active={location.pathname === '/Kontakt/'}
+                >
+                  Kontakt
+                </StyledNavLink>
+              </NavItem>
+            </Nav>
+          </Collapse>
+        </StyledNavbar>
+      )}
+    </Location>
+  )
+}
 
 export default enhance(Header)

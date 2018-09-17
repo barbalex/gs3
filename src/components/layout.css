@@ -1,13 +1,3 @@
-/*
- * Bootstrap scrollt so, dass die Navbar den Inhalt verdeckt, wenn man zu einem Abschnitt verlinkt
- * muss also korrigiert werden
- * Quelle: http://stackoverflow.com/questions/20476045/page-scrolls-to-top-also-fixed-navbar-when-external-link-opens-tab/20477243#20477243
- */
-.anchor {
-  padding-top: 73px;
-  margin-top: -73px;
-}
-
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .navbar-header,
 .page>p,
