@@ -7,6 +7,10 @@ import Layout from '../components/layout'
 
 const StyledImg = styled.img`
   margin-bottom: 10px;
+  padding-right: 15px;
+`
+const Col = styled.div`
+  padding: 15px;
 `
 
 class KontaktPage extends Component {
@@ -19,7 +23,7 @@ class KontaktPage extends Component {
       <Layout>
         <div id="kontakt" className="page kontakt">
           <div className="row marketing">
-            <div className="col-lg-3">
+            <Col className="col-lg-3">
               <StyledImg
                 alt="Alexander Gabriel"
                 src={alexImg}
@@ -38,8 +42,8 @@ class KontaktPage extends Component {
                 <br />
                 <a href="mailto:#">alex@gabriel-software.ch</a>
               </address>
-            </div>
-            <div className="col-lg-9">
+            </Col>
+            <Col className="col-lg-9">
               <div
                 id="google_karte"
                 style={{
@@ -71,7 +75,7 @@ class KontaktPage extends Component {
                   </a>
                 </small>
               </div>
-            </div>
+            </Col>
           </div>
         </div>
       </Layout>
