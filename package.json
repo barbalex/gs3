@@ -13,8 +13,8 @@
     "gatsby-plugin-react-helmet": "3.0.0",
     "gatsby-plugin-styled-components": "3.0.0",
     "google-map-react": "1.0.6",
-    "react": "16.5.1",
-    "react-dom": "16.5.1",
+    "react": "16.5.2",
+    "react-dom": "16.5.2",
     "react-helmet": "5.2.0",
     "react-icons": "next",
     "reactstrap": "6.4.0",
@@ -28,7 +28,8 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
+    "deploy": "gatsby build && gh-pages -d public",
+    "deploy2": "gatsby build --prefix-paths && gh-pages -d public",
     "develop": "gatsby develop",
     "format": "prettier --write '**/*.js'",
     "test": "echo \"Error: no test specified\" && exit 1"
