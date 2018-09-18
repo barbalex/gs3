@@ -5,37 +5,13 @@ import { Location } from '@reach/router'
 
 import Layout from '../../components/layout'
 import apfImg from '../../images/apflora.png'
-import adbWeb01GruppeWaehlenImg from '../../images/artendb_web_01_gruppe_waehlen.png'
-import adbWeb02ArtSuchenImg from '../../images/artendb_web_02_art_suchen.png'
-import adbWeb03AnzeigenEigenschaftenImg from '../../images/artendb_web_03_anzeigen_eigenschaften.png'
-import adbWeb04AnzeigenTaxonomieImg from '../../images/artendb_web_04_anzeigen_taxonomie.png'
-import adbWeb05AnzeigenDatensammlungImg from '../../images/artendb_web_05_anzeigen_datensammlung.png'
-import adbWeb06AnzeigenBezsammlungImg from '../../images/artendb_web_06_anzeigen_beziehungssammlung.png'
-import adbWeb07ExportierenImg from '../../images/artendb_web_07_exportieren.png'
-import adbWeb08ExportSchrittweiseImg from '../../images/artendb_web_08_export_schrittweise.png'
-import adbWeb09ExportGruppeWaehlenImg from '../../images/artendb_web_09_export_gruppe_waehlen.png'
-import adbWeb10ExportEigenschWaehlenImg from '../../images/artendb_web_10_export_eigenschaften_waehlen.png'
-import adbWeb11ExportdateiHerunterlaImg from '../../images/artendb_web_11_exportdatei_herunterladen.png'
-import adbWeb12ImportierenImg from '../../images/artendb_web_12_importieren.png'
-import adbWeb13ImportierenSchrittwImg from '../../images/artendb_web_13_importieren_schrittweise.png'
-import adb01GruppeWaehlenImg from '../../images/artendb_access_01_gruppe_waehlen.png'
-import adb02ArtSuchenImg from '../../images/artendb_access_02_art_suchen.png'
-import adb03TaxonomieAnzeigenImg from '../../images/artendb_access_03_taxonomie_anzeigen.png'
-import adb04DatensammlungAnzeigenImg from '../../images/artendb_access_04_datensammlung_anzeigen.png'
-import adb05BeziehungenAnzeigenImg from '../../images/artendb_access_05_beziehungen_anzeigen.png'
-import adb06ExportierenImg from '../../images/artendb_access_06_exportieren.png'
-import adb07ExportdatenWaehlenImg from '../../images/artendb_access_07_exportdaten_waehlen.png'
+import aeImg from '../../images/ae.png'
 import bbImg from '../../images/bb.png'
-import bb1Img from '../../images/bb1.png'
-import bb2Img from '../../images/bb2.png'
-import bb3Img from '../../images/bb3.png'
 import zhLoeweImg from '../../images/zhLoewe.png'
-import gsListeImg from '../../images/gs_liste.png'
-import gsFilternImg from '../../images/gs_filtern.png'
-import gsBearbImg from '../../images/gs_bearb.png'
-import gsBerichteImg from '../../images/gs_berichte.png'
-import gsExportImg from '../../images/gs_export.png'
 import apfloraCarouselItems from './apfloraCarouselItems'
+import aeCarouselItems from './aeCarouselItems'
+import bbCarouselItems from './bbCarouselItems'
+import kaplaCarouseltems from './kaplaCarouseltems'
 
 const Page = styled.div`
   padding: 15px;
@@ -43,6 +19,19 @@ const Page = styled.div`
     display: grid;
     grid-template-columns: 180px 1fr;
     grid-column-gap: 30px;
+  }
+  .carousel-caption {
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+      1px 1px 0 #000;
+  }
+  .carousel-control-next-icon {
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE4LjEuMSwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgMjYuMDYyIDI2LjA2MiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMjYuMDYyIDI2LjA2MjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPGc+DQoJPHBhdGggc3R5bGU9ImZpbGw6IzAxMDAwMjsiIGQ9Ik0yMC43MDcsMTAuMDI4bC04LjgzNS04LjgzNUMxMS4xMDMsMC40MjQsMTAuMDc4LDAsOC45ODUsMEM3Ljg5MywwLDYuODY4LDAuNDI0LDYuMDk5LDEuMTkzDQoJCUw1LjM2MSwxLjkzMUM0LjU5MiwyLjY5OCw0LjE2OCwzLjcyNCw0LjE2OCw0LjgxNnMwLjQyNCwyLjExNywxLjE5MywyLjg4N2w1LjMyOCw1LjMyOGwtNS4zMjgsNS4zMjgNCgkJYy0wLjc2OSwwLjc3LTEuMTkzLDEuNzk0LTEuMTkzLDIuODg3czAuNDI0LDIuMTE4LDEuMTk0LDIuODg3bDAuNzM2LDAuNzM2YzAuNzcsMC43NzEsMS43OTQsMS4xOTMsMi44ODcsMS4xOTMNCgkJczIuMTE3LTAuNDI0LDIuODg3LTEuMTkzbDguODM1LTguODM2YzAuNzg3LTAuNzg1LDEuMjE2LTEuODc1LDEuMTg2LTMuMDAyQzIxLjkyMywxMS45MDUsMjEuNDk2LDEwLjgxNiwyMC43MDcsMTAuMDI4eg0KCQkgTTE5LjI5MywxNC42MTlsLTguODM1LDguODM2Yy0wLjQwMywwLjQwNC0wLjkzOCwwLjYwNy0xLjQ3MywwLjYwN3MtMS4wNjgtMC4yMDMtMS40NzQtMC42MDdsLTAuNzM2LTAuNzM3DQoJCWMtMC44MTEtMC44MDktMC44MTEtMi4xMzUsMC0yLjk0M2w2Ljc0Mi02Ljc0Mkw2Ljc3NSw2LjI4OWMtMC44MTEtMC44MS0wLjgxMS0yLjEzNiwwLTIuOTQzbDAuNzM2LTAuNzM3DQoJCUM3LjkxNywyLjIwMyw4LjQ1MSwyLDguOTg1LDJjMC41MzUsMCwxLjA2OSwwLjIwMywxLjQ3MywwLjYwN2w4LjgzNSw4LjgzNWMwLjQzNiwwLjQzNSwwLjYyOCwxLjAxOCwwLjU5OCwxLjU4OQ0KCQlDMTkuOTIxLDEzLjYwMiwxOS43MjgsMTQuMTg1LDE5LjI5MywxNC42MTl6Ii8+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8L3N2Zz4NCg==);
+  }
+  .carousel-control-prev-icon {
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE2LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgd2lkdGg9IjI2LjA2MnB4IiBoZWlnaHQ9IjI2LjA2MnB4IiB2aWV3Qm94PSIwIDAgMjYuMDYyIDI2LjA2MiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMjYuMDYyIDI2LjA2MjsiDQoJIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPGc+DQoJPHBhdGggZD0iTTE1LjM3MywxMy4wMzFsNS4zMjgtNS4zMjhjMC43NzEtMC43NywxLjE5My0xLjc5NCwxLjE5My0yLjg4N2MwLTEuMDkzLTAuNDI2LTIuMTE4LTEuMTk0LTIuODg3bC0wLjczNi0wLjczNg0KCQlDMTkuMTk0LDAuNDI0LDE4LjE3LDAsMTcuMDc3LDBTMTQuOTYsMC40MjQsMTQuMTksMS4xOTNsLTguODM1LDguODM1Yy0wLjc4OCwwLjc4OC0xLjIxNiwxLjg3Ny0xLjE4NiwzLjAwMw0KCQljLTAuMDMsMS4xMjcsMC4zOTcsMi4yMTcsMS4xODcsMy4wMDRsOC44MzQsOC44MzRjMC43NywwLjc3MSwxLjc5NCwxLjE5MywyLjg4NywxLjE5M3MyLjExNy0wLjQyNCwyLjg4Ny0xLjE5M2wwLjczNy0wLjczNw0KCQljMC43Ny0wLjc2OCwxLjE5My0xLjc5MywxLjE5My0yLjg4NmMwLTEuMDk0LTAuNDI2LTIuMTE3LTEuMTkzLTIuODg3TDE1LjM3MywxMy4wMzF6IE0xOS4yODcsMjIuNzE2bC0wLjczNywwLjczNw0KCQljLTAuNDAyLDAuNDA0LTAuOTM4LDAuNjA3LTEuNDczLDAuNjA3cy0xLjA2OC0wLjIwMy0xLjQ3My0wLjYwN0w2Ljc3LDE0LjYxN2MtMC40MzYtMC40MzQtMC42MjgtMS4wMTgtMC41OTgtMS41ODgNCgkJYy0wLjAzLTAuNTcxLDAuMTYyLTEuMTU0LDAuNTk4LTEuNTg5bDguODM1LTguODM1QzE2LjAwOSwyLjIwMywxNi41NDMsMiwxNy4wNzcsMnMxLjA2OCwwLjIwMywxLjQ3MywwLjYwN2wwLjczNywwLjczNg0KCQljMC44MTIsMC44MSwwLjgxMiwyLjEzNiwwLDIuOTQ0bC02Ljc0Miw2Ljc0M2w2Ljc0Miw2Ljc0MUMyMC4wOTgsMjAuNTgyLDIwLjA5OCwyMS45MDgsMTkuMjg3LDIyLjcxNnoiLz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjwvc3ZnPg0K);
+  }
+  .carousel-indicators > li {
+    border: 1px solid #80808073;
   }
 `
 const Column = styled.div``
@@ -73,9 +62,12 @@ const Affix = styled(Nav)`
 const StyledNavLink = styled(NavLink)`
   padding: 10px 15px !important;
   background-color: ${props => (props.active ? '#f5f5f5' : 'unset')};
+  &:hover {
+    background-color: #f5f5f5;
+  }
 `
 const Section = styled.section`
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 `
 
 const ProjektPage = () => (
@@ -101,15 +93,6 @@ const ProjektPage = () => (
                   active={location.hash === '#artendb_web'}
                 >
                   arteigenschaften.ch
-                </StyledNavLink>
-              </NavItem>
-              <NavItem>
-                <StyledNavLink
-                  href="#artendb_access"
-                  name="artendb_access"
-                  active={location.hash === '#artendb_access'}
-                >
-                  ArtenDb
                 </StyledNavLink>
               </NavItem>
               <NavItem>
@@ -160,10 +143,7 @@ const ProjektPage = () => (
               </p>
             </Section>
             <Section id="artendb_web" className="projekt sektion anchor">
-              <div
-                className="glyphicon glyphicon-info-sign"
-                style={{ fontSize: 40 }}
-              />
+              <img src={aeImg} alt="arteigenschaften.ch" height={51} />
               <H4>arteigenschaften.ch</H4>
               <h5>
                 Naturschutzrelevante Informationen über Arten aus den Gruppen
@@ -184,6 +164,7 @@ const ProjektPage = () => (
                 schon enthalten, rasch ergänzt und für Auswertungen kombiniert
                 werden.
               </p>
+              <UncontrolledCarousel items={aeCarouselItems} />
               <p>
                 Mehr Informationen&nbsp;
                 <a
@@ -193,30 +174,13 @@ const ProjektPage = () => (
                 >
                   auf GitHub
                 </a>
-              </p>
-            </Section>
-            <Section id="artendb_access" className="projekt sektion anchor">
-              <div
-                className="glyphicon glyphicon-info-sign"
-                style={{ fontSize: 40 }}
-              />
-              <H4>
-                ArtenDb <small>(Access-Anwendung)</small>
-              </H4>
-              <h5>Informationen über Arten und Lebensräume:</h5>
-              <Ul>
-                <li>nachschlagen</li>
-                <li>exportieren</li>
-                <li>in eigener Anwendung einbinden</li>
-              </Ul>
-              <p>
-                Mehr Informationen{' '}
+                {' und bei der '}
                 <a
-                  href="http://www.aln.zh.ch/internet/baudirektion/aln/de/naturschutz/naturschutzdaten/tools/arten_db.html#a-content"
+                  href="https://aln.zh.ch/internet/baudirektion/aln/de/naturschutz/naturschutzdaten/tools/arteigenschaften.html"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  auf der Webseite der Fachstelle Naturschutz des Kantons Zürich
+                  Fachstelle Naturschutz des Kantons Zürich
                 </a>
               </p>
             </Section>
@@ -231,6 +195,7 @@ const ProjektPage = () => (
                 Grösste Stärke: rasche Übersicht über Migrationsströme und
                 dazugehörige politische Ereignisse.
               </p>
+              <UncontrolledCarousel items={bbCarouselItems} />
               <p>
                 Schauen Sie selber:&nbsp;
                 <a
@@ -254,6 +219,7 @@ const ProjektPage = () => (
                 Grösste Stärken: Benutzerfreundlichkeit, geringer
                 Unterhaltsbedarf.
               </p>
+              <UncontrolledCarousel items={kaplaCarouseltems} />
               <p>
                 Mehr Informationen&nbsp;
                 <a

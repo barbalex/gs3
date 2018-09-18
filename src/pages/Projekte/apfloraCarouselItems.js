@@ -1,6 +1,3 @@
-import React from 'react'
-import { UncontrolledCarousel } from 'reactstrap'
-
 import apfAnmeldenImg from '../../images/apflora_anmelden.png'
 import apfTpopImg from '../../images/apflora_tpop.png'
 import apfFeldkontrImg from '../../images/apflora_feldkontr.png'

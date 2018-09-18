@@ -13,7 +13,9 @@ const Page = styled.div`
   padding: 15px;
 `
 const StyledJumbotron = styled(Jumbotron)`
-  padding-top: 15px;
+  margin-top: 15px !important;
+  padding-left: 60px !important;
+  padding-right: 60px !important;
   background-color: #e0f6da !important;
   li {
     font-size: 21px;
@@ -31,12 +33,15 @@ const H4 = styled.h4`
   margin-top: 5px;
   font-weight: bold;
 `
+const H1 = styled.h1`
+  font-size: 63px;
+`
 
 const IndexPage = () => (
   <Layout>
     <Page>
       <StyledJumbotron>
-        <h1>Gabriel Software</h1>
+        <H1>Gabriel Software</H1>
         <ul>
           <li>einfach</li>
           <li>individuell</li>
