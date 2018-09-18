@@ -44,7 +44,13 @@ const Header = ({ open, toggleNavbar, siteTitle, onClickNav }) => {
   return (
     <Location>
       {({ location }) => (
-        <StyledNavbar color="dark" dark expand="lg" fixed="true">
+        <StyledNavbar
+          color="dark"
+          dark
+          expand="lg"
+          sticky="top"
+          role="navigation"
+        >
           <NavbarBrand href="/" name="Home" onClick={onClickNav}>
             {siteTitle}
           </NavbarBrand>
