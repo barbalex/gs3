@@ -60,7 +60,7 @@ const Header = ({ open, toggleNavbar, siteTitle, onClickNav }) => {
           <StyledNavbarBrand href="/" name="Home" onClick={onClickNav}>
             {siteTitle}
           </StyledNavbarBrand>
-          <NavbarToggler name="navbarToggler" onClick={toggleNavbar} />
+          <NavbarToggler aria-label="toggle Navbar" onClick={toggleNavbar} />
           <Collapse isOpen={open} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
