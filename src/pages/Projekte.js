@@ -26,8 +26,7 @@ const H4 = styled.h4`
   font-weight: bold;
 `
 const StyledNavLink = styled(NavLink)`
-  border: ${props => (props.active ? '1px white' : 'unset')};
-  border-color: rgba(255, 255, 255, 0.5) !important;
+  padding: 10px 15px !important;
 `
 const Affix = styled(Nav)`
   position: static;
@@ -39,6 +38,7 @@ const Affix = styled(Nav)`
   .active {
     background-color: #f5f5f5;
   }
+  background-color: ${props => (props.active ? '#f5f5f5' : 'unset')};
   li a {
     display: block;
     color: #716b7a;
@@ -50,61 +50,67 @@ const Affix = styled(Nav)`
 const ProjektPage = () => (
   <Layout>
     <Location>
-      {({ location }) => (
-        <Page className="page projekte">
-          <Row className="row marketing">
-            <div className="col-lg-2">
-              <Affix vertical navbar className="affix">
-                <NavItem
-                  href="projekte#apflora"
-                  className={
-                    location.hash === '#apflora' ? 'nav-a active' : 'nav-a'
-                  }
-                >
-                  apflora.ch
-                </NavItem>
-                <NavItem
-                  href="projekte#artendb_web"
-                  className={
-                    location.hash === '#artendb_web' ? 'nav-a active' : 'nav-a'
-                  }
-                >
-                  arteigenschaften.ch
-                </NavItem>
-                <NavItem
-                  href="projekte#artendb_access"
-                  className={
-                    location.hash === '#artendb_access'
-                      ? 'nav-a active'
-                      : 'nav-a'
-                  }
-                >
-                  ArtenDb
-                </NavItem>
-                <NavItem
-                  href="projekte#blue-borders"
-                  className={
-                    location.hash === '#blue-borders' ? 'nav-a active' : 'nav-a'
-                  }
-                >
-                  mediterranean-
-                  <br />
-                  migration.com
-                </NavItem>
-                <NavItem
-                  href="projekte#kapla"
-                  className={
-                    location.hash === '#kapla' ? 'nav-a active' : 'nav-a'
-                  }
-                >
-                  Kapla
-                </NavItem>
-              </Affix>
-            </div>
-            <div className="col-lg-10 marketing">Inhalt</div>
-          </Row>
-        </Page>
-      )}
+      {({ location }) => {
+        console.log('hash:', location.hash)
+        return (
+          <Page className="page projekte">
+            <Row className="row marketing">
+              <div className="col-lg-2">
+                <Affix vertical navbar>
+                  <NavItem>
+                    <StyledNavLink
+                      href="#apflora"
+                      name="apflora"
+                      active={location.hash === '#apflora'}
+                    >
+                      apflora.ch
+                    </StyledNavLink>
+                  </NavItem>
+                  <NavItem>
+                    <StyledNavLink
+                      href="#artendb_web"
+                      name="artendb_web"
+                      active={location.hash === '#artendb_web'}
+                    >
+                      arteigenschaften.ch
+                    </StyledNavLink>
+                  </NavItem>
+                  <NavItem>
+                    <StyledNavLink
+                      href="#artendb_access"
+                      name="artendb_access"
+                      active={location.hash === '#artendb_access'}
+                    >
+                      ArtenDb
+                    </StyledNavLink>
+                  </NavItem>
+                  <NavItem>
+                    <StyledNavLink
+                      href="#blue-borders"
+                      name="blue-borders"
+                      active={location.hash === '#blue-borders'}
+                    >
+                      mediterranean-
+                      <br />
+                      migration.com
+                    </StyledNavLink>
+                  </NavItem>
+                  <NavItem>
+                    <StyledNavLink
+                      href="#kapla"
+                      name="kapla"
+                      active={location.hash === '#kapla'}
+                    >
+                      Kapla
+                    </StyledNavLink>
+                  </NavItem>
+                </Affix>
+              </div>
+              <div className="col-lg-10 marketing">Inhalt</div>
+            </Row>
+          </Page>
+        )
+      }}
     </Location>
   </Layout>
 )
