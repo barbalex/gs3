@@ -7,6 +7,7 @@ import {
   FaWindows,
 } from 'react-icons/fa'
 import styled from 'styled-components'
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 import Layout from '../components/layout'
 

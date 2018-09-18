@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import GoogleMapReact from 'google-map-react'
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 import alexImg from '../images/alex.jpg'
 import Layout from '../components/layout'

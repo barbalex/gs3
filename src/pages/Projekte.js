@@ -2,6 +2,7 @@ import React from 'react'
 import { Nav, NavItem, NavLink, UncontrolledCarousel } from 'reactstrap'
 import styled from 'styled-components'
 import { Location } from '@reach/router'
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 import Layout from '../components/layout'
 import apfImg from '../images/apflora.png'
