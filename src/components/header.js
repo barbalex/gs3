@@ -26,7 +26,9 @@ const StyledNavbarBrand = styled(NavbarBrand)`
 const StyledNavLink = styled(NavLink)`
   border: ${props => (props.active ? '1px white' : 'unset')};
   border-color: rgba(255, 255, 255, 0.5) !important;
-  font-weight: 600;
+  font-weight: ${props => (props.active ? '700' : '600')};
+  color: ${props =>
+    props.active ? 'white' : 'rgba(255, 255, 255, 0.7)'} !important;
 `
 
 const enhance = compose(
