@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import styled from 'styled-components'
 import GoogleMapReact from 'google-map-react'
 
@@ -63,70 +63,66 @@ function createMapOptions(maps) {
   }
 }
 
-class KontaktPage extends Component {
-  render() {
-    return (
-      <Layout>
-        <Page className="page kontakt">
-          <Row className="row marketing">
-            <Col className="col-lg-3">
-              <StyledImg
-                alt="Alexander Gabriel"
-                src={alexImg}
-                className="js-alexImage"
+const KontaktPage = () => (
+  <Layout>
+    <Page className="page kontakt">
+      <Row className="row marketing">
+        <Col className="col-lg-3">
+          <StyledImg
+            alt="Alexander Gabriel"
+            src={alexImg}
+            className="js-alexImage"
+          />
+          <address className="js-address">
+            <strong>Gabriel Software</strong>
+            <br />
+            Alexander Gabriel
+            <br />
+            Bönirainstrasse 14
+            <br />
+            8800 Thalwil
+            <br />
+            079 372 51 64
+            <br />
+            <a href="mailto:#">alex@gabriel-software.ch</a>
+          </address>
+        </Col>
+        <Col className="col-lg-9">
+          <div style={{ height: 400, width: '100%' }}>
+            <GoogleMapReact
+              bootstrapURLKeys={bootstrapURLKeys}
+              defaultCenter={mapCenter}
+              defaultZoom={19}
+              options={createMapOptions}
+            >
+              <div
+                lat={47.283746}
+                lng={8.56382}
+                text={'Gabriel Software'}
+                style={mapDivStyle}
               />
-              <address className="js-address">
-                <strong>Gabriel Software</strong>
-                <br />
-                Alexander Gabriel
-                <br />
-                Bönirainstrasse 14
-                <br />
-                8800 Thalwil
-                <br />
-                079 372 51 64
-                <br />
-                <a href="mailto:#">alex@gabriel-software.ch</a>
-              </address>
-            </Col>
-            <Col className="col-lg-9">
-              <div style={{ height: 400, width: '100%' }}>
-                <GoogleMapReact
-                  bootstrapURLKeys={bootstrapURLKeys}
-                  defaultCenter={mapCenter}
-                  defaultZoom={19}
-                  options={createMapOptions}
-                >
-                  <div
-                    lat={47.283746}
-                    lng={8.56382}
-                    text={'Gabriel Software'}
-                    style={mapDivStyle}
-                  />
-                </GoogleMapReact>
-              </div>
-              <div>
-                <small>
-                  <a
-                    href="https://www.google.ch/maps/place/47%C2%B017'01.9%22N+8%C2%B033'50.1%22E/@47.2838532,8.5632326,172m/data=!3m2!1e3!4b1!4m5!3m4!1s0x0:0x0!8m2!3d47.283852!4d8.56393"
-                    style={{
-                      color: '#0000FF',
-                      textAlign: 'left',
-                    }}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    in Google Maps öffnen
-                  </a>
-                </small>
-              </div>
-            </Col>
-          </Row>
-        </Page>
-      </Layout>
-    )
-  }
-}
+            </GoogleMapReact>
+          </div>
+          <div>
+            <small>
+              <a
+                href="https://www.google.ch/maps/place/47%C2%B017'01.9%22N+8%C2%B033'50.1%22E/@47.2838532,8.5632326,172m/data=!3m2!1e3!4b1!4m5!3m4!1s0x0:0x0!8m2!3d47.283852!4d8.56393"
+                style={{
+                  color: '#0000FF',
+                  textAlign: 'left',
+                }}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                in Google Maps öffnen
+              </a>
+            </small>
+          </div>
+        </Col>
+      </Row>
+    </Page>
+  </Layout>
+)
 
 KontaktPage.displayName = 'KontaktPage'
 
