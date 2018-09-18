@@ -1,20 +1,10 @@
 import React from 'react'
-import { Nav, NavItem, NavLink } from 'reactstrap'
+import { Nav, NavItem, NavLink, UncontrolledCarousel } from 'reactstrap'
 import styled from 'styled-components'
 import { Location } from '@reach/router'
 
 import Layout from '../../components/layout'
 import apfImg from '../../images/apflora.png'
-import apfAnmeldenImg from '../../images/apflora_anmelden.png'
-import apfTpopImg from '../../images/apflora_tpop.png'
-import apfFeldkontrImg from '../../images/apflora_feldkontr.png'
-import apfGoogleKartenImg from '../../images/apflora_google_karten.png'
-import apfChkartenImg from '../../images/apflora_chkarten.png'
-import apfUeberlagernImg from '../../images/apflora_ueberlagern.png'
-import apfRaeumlichAuswertenImg from '../../images/apflora_raeumlich_auswerten.png'
-import apfZuordnenKarteImg from '../../images/apflora_zuordnen_karte.png'
-import apfExportierenImg from '../../images/apflora_exportieren.png'
-import apfMenuImg from '../../images/apflora_menue.png'
 import adbWeb01GruppeWaehlenImg from '../../images/artendb_web_01_gruppe_waehlen.png'
 import adbWeb02ArtSuchenImg from '../../images/artendb_web_02_art_suchen.png'
 import adbWeb03AnzeigenEigenschaftenImg from '../../images/artendb_web_03_anzeigen_eigenschaften.png'
@@ -45,6 +35,7 @@ import gsFilternImg from '../../images/gs_filtern.png'
 import gsBearbImg from '../../images/gs_bearb.png'
 import gsBerichteImg from '../../images/gs_berichte.png'
 import gsExportImg from '../../images/gs_export.png'
+import apfloraCarouselItems from './apfloraCarouselItems'
 
 const Page = styled.div`
   padding: 15px;
@@ -156,6 +147,7 @@ const ProjektPage = () => (
                 <li>Komplexe Projektstruktur im Strukturbaum darstellen</li>
                 <li>Jahresberichte auf Knopfdruck produzieren</li>
               </Ul>
+              <UncontrolledCarousel items={apfloraCarouselItems} />
               <p>
                 Mehr Informationen&nbsp;
                 <a
