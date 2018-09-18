@@ -8,7 +8,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: 'Gabriel-Software',
-        short_name: 'Gabriel-Software',
+        short_name: 'Gabriel',
         start_url: '/',
         background_color: '#145f00',
         theme_color: '#145f00',
