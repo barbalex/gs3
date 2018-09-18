@@ -20,9 +20,13 @@ const StyledNavbar = styled(Navbar)`
     background-color: #145f00 !important;
   }
 `
+const StyledNavbarBrand = styled(NavbarBrand)`
+  font-weight: 600;
+`
 const StyledNavLink = styled(NavLink)`
   border: ${props => (props.active ? '1px white' : 'unset')};
   border-color: rgba(255, 255, 255, 0.5) !important;
+  font-weight: 600;
 `
 
 const enhance = compose(
@@ -51,9 +55,9 @@ const Header = ({ open, toggleNavbar, siteTitle, onClickNav }) => {
           sticky="top"
           role="navigation"
         >
-          <NavbarBrand href="/" name="Home" onClick={onClickNav}>
+          <StyledNavbarBrand href="/" name="Home" onClick={onClickNav}>
             {siteTitle}
-          </NavbarBrand>
+          </StyledNavbarBrand>
           <NavbarToggler onClick={toggleNavbar} />
           <Collapse isOpen={open} navbar>
             <Nav className="ml-auto" navbar>
