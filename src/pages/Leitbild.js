@@ -6,17 +6,39 @@ import {
   FaWrench,
   FaCrown,
 } from 'react-icons/fa'
+import styled from 'styled-components'
 
 import Layout from '../components/layout'
 
+const Page = styled.div`
+  padding: 15px;
+  > p {
+    /* side spacing for mobile first views */
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+`
+const Row = styled.div`
+  /* side spacing for mobile first views */
+  padding-left: 15px;
+  padding-right: 15px;
+`
+const Ul = styled.ul`
+  padding-left: 22px;
+`
+const H4 = styled.h4`
+  margin-top: 5px;
+  font-weight: bold;
+`
+
 const LeitbildPage = () => (
   <Layout>
-    <div id="leitbild" className="page leitbild">
+    <Page className="page leitbild">
       <p className="lead">Ich richte mich nach diesen Leitlinien:</p>
-      <div className="row marketing">
+      <Row className="row marketing">
         <div className="col-lg-4">
           <FaRegQuestionCircle style={{ fontSize: 40 }} />
-          <h4>Verstehen, wie Sie arbeiten</h4>
+          <H4>Verstehen, wie Sie arbeiten</H4>
           <p>
             Je mehr ich Ihre Arbeit verstehe,
             <br />
@@ -32,7 +54,7 @@ const LeitbildPage = () => (
         </div>
         <div className="col-lg-4">
           <FaRetweet style={{ fontSize: 40 }} />
-          <h4>Sinn suchen</h4>
+          <H4>Sinn suchen</H4>
           <p>
             Menschen gewöhnen sich erstaunlich gut an Inkonsistenzen. Oft leidet
             darunter die Produktivität.
@@ -41,11 +63,11 @@ const LeitbildPage = () => (
         </div>
         <div className="col-lg-4">
           <FaRegCheckCircle style={{ fontSize: 40 }} />
-          <h4>
+          <H4>
             So einfach wie möglich,
             <br />
             so vollständig wie nötig
-          </h4>
+          </H4>
           <p>
             Ist die Anwendung klar und übersichtlich, arbeiten Sie effizient.
           </p>
@@ -57,7 +79,7 @@ const LeitbildPage = () => (
         </div>
         <div className="col-lg-4">
           <FaWrench style={{ fontSize: 40 }} />
-          <h4>Geeignete Technologie wählen</h4>
+          <H4>Geeignete Technologie wählen</H4>
           <p>
             Wer einen Hammer hat, ist verleitet, in allem einen Nagel zu
             erkennen.
@@ -71,21 +93,21 @@ const LeitbildPage = () => (
         </div>
         <div className="col-lg-4">
           <FaCrown style={{ fontSize: 40 }} />
-          <h4 style={{ marginTop: 13 }}>Der Kunde ist König</h4>
+          <H4 style={{ marginTop: 13 }}>Der Kunde ist König</H4>
           <p>
             Damit Sie zufrieden sind, braucht es mehr als eine gute Anwendung.
             Ich bin bestrebt:
           </p>
-          <ul>
+          <Ul>
             <li>offen zu kommunizieren</li>
             <li>rechtzeitig zu agieren</li>
             <li>oder besser: einen Schritt voraus</li>
             <li>den Aufwand zu minimieren</li>
             <li>Vertrauen aufzubauen</li>
-          </ul>
+          </Ul>
         </div>
-      </div>
-    </div>
+      </Row>
+    </Page>
   </Layout>
 )
 

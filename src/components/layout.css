@@ -1,42 +1,13 @@
-/* Everything but the jumbotron gets side spacing for mobile first views */
-.navbar-header,
-.page>p,
-.page>address,
-.page>div,
-.page>.row {
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-
-/* Hinweise von Google ausblenden, überschneiden mit dem Ziehsymbol */
-.gm-style-cc {
-  display: none;
-}
-
-
-/* Titel stylen */
-/* solved in: Technologien */
-.marketing h4 {
-  font-weight: bold;
-}
-
-
-/* verhindern, dass die Scrollbalken erscheinen, weil die Seite höher ist als nötig */
-.page .row {
-  margin-bottom: 0px;
-}
-
-
 /* Projekte carousel stylen */
 .projekte .carousel {
-  border: 1px solid #D8D8D8;
+  border: 1px solid #d8d8d8;
   margin-bottom: 10px;
 }
 
 .projekte .carousel .carousel-caption {
   color: #000;
-  text-shadow: 0 0px 25px rgba(255, 255, 255, 1), 1px 1px 0px rgba(255, 255, 255, 1), 0px 0px 3px rgba(255, 255, 255, 1);
+  text-shadow: 0 0px 25px rgba(255, 255, 255, 1),
+    1px 1px 0px rgba(255, 255, 255, 1), 0px 0px 3px rgba(255, 255, 255, 1);
 }
 
 .projekte .carousel .carousel-caption h2 {
@@ -70,30 +41,10 @@
   opacity: 0.5;
 }
 
-/* Menü (sidenav) stylen */
-/* Affix muss manuel positioniert werden; */
-.projekte .affix {
-  position: static;
-  background-color: transparent;
-  border: 1px solid #D8D8D8;
-  margin-bottom: 15px;
-  padding-left: 0;
-  border-radius: 5px;
-}
-
-.projekte .affix li a {
-  display: block;
-  color: #716B7A;
-  font-weight: bold;
-  padding: 10px 15px;
-}
-
-
 /* marketing stylen */
 .projekte .projekt {
   margin-bottom: 40px;
 }
-
 
 @media (min-width: 1200px) {
 
@@ -102,22 +53,7 @@
     padding-bottom: 20px;
   }
 
-  .projekte .affix {
-    position: fixed;
-  }
-
   .leitbild .col-lg-4 {
     min-height: 254px;
   }
-}
-
-/* correct for double containers of react */
-.container .container {
-  padding-right: 0;
-  padding-left: 0;
-}
-
-
-.affix .active {
-  background-color: #f5f5f5;
 }

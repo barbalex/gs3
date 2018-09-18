@@ -5,12 +5,21 @@ import prepareGoogleMap from '../modules/prepareGoogleMap'
 import alexImg from '../images/alex.jpg'
 import Layout from '../components/layout'
 
+const Page = styled.div`
+  padding: 15px;
+  /* Hinweise von Google ausblenden, überschneiden mit dem Ziehsymbol */
+  .gm-style-cc {
+    display: none;
+  }
+`
+const Row = styled.div``
+const Col = styled.div`
+  /* side spacing for mobile first views */
+  padding: 15px;
+`
 const StyledImg = styled.img`
   margin-bottom: 10px;
   padding-right: 15px;
-`
-const Col = styled.div`
-  padding: 15px;
 `
 
 class KontaktPage extends Component {
@@ -21,8 +30,8 @@ class KontaktPage extends Component {
   render() {
     return (
       <Layout>
-        <div id="kontakt" className="page kontakt">
-          <div className="row marketing">
+        <Page className="page kontakt">
+          <Row className="row marketing">
             <Col className="col-lg-3">
               <StyledImg
                 alt="Alexander Gabriel"
@@ -76,8 +85,8 @@ class KontaktPage extends Component {
                 </small>
               </div>
             </Col>
-          </div>
-        </div>
+          </Row>
+        </Page>
       </Layout>
     )
   }

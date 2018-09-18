@@ -10,9 +10,25 @@ import styled from 'styled-components'
 
 import Layout from '../components/layout'
 
+const Page = styled.div`
+  padding: 15px;
+  > p {
+    /* side spacing for mobile first views */
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+`
+const Row = styled.div`
+  /* side spacing for mobile first views */
+  padding-left: 15px;
+  padding-right: 15px;
+`
+const Ul = styled.ul`
+  padding-left: 22px;
+`
 const H4 = styled.h4`
   margin-top: 5px;
-  font-weight: bold;
+  font-weight: 700;
 `
 const A = styled.a`
   color: #333;
@@ -28,15 +44,15 @@ const P = styled.p`
 
 const TechnologienPage = () => (
   <Layout>
-    <div id="technologien" className="page technologien">
+    <Page className="page technologien">
       <p className="lead">Mit diesen Technologien kenne ich mich aus:</p>
-      <div className="row marketing">
+      <Row className="row marketing">
         <div className="col-lg-4">
           <FaLinux style={{ fontSize: 30 }} alt="Linux" />
           <FaApple style={{ fontSize: 30 }} alt="MaxOs" />
           <FaWindows style={{ fontSize: 30 }} alt="Windows" />
           <H4>Betriebssysteme</H4>
-          <ul>
+          <Ul>
             <li>
               <A
                 href="http://de.wikipedia.org/wiki/Microsoft_Windows"
@@ -67,10 +83,10 @@ const TechnologienPage = () => (
               </A>
               <P>Entwickler fliegen drauf...</P>
             </li>
-          </ul>
+          </Ul>
           <FaDatabase style={{ fontSize: 30 }} />
           <H4 style={{ marginTop: 5 }}>Datenbanken</H4>
-          <ul>
+          <Ul>
             <li>
               <A
                 href="http://www.postgresql.org"
@@ -129,7 +145,7 @@ const TechnologienPage = () => (
                 Microsoft Access
               </A>
             </li>
-          </ul>
+          </Ul>
         </div>
         <div className="col-lg-4">
           <div
@@ -144,7 +160,7 @@ const TechnologienPage = () => (
             {'if ( ... ) then \u007B ... \u007D'}
           </div>
           <H4 style={{ marginTop: 3 }}>Programmiersprachen</H4>
-          <ul>
+          <Ul>
             <li>
               <A
                 href="http://en.wikipedia.org/wiki/JavaScript"
@@ -200,14 +216,14 @@ const TechnologienPage = () => (
                 manipulieren
               </P>
             </li>
-          </ul>
+          </Ul>
         </div>
         <div className="col-lg-4">
           <FaWrench style={{ fontSize: 30 }} />
           <H4 style={{ marginTop: 0 }}>
             Werkzeuge <small>(Auswahl)</small>
           </H4>
-          <ul>
+          <Ul>
             <li>
               <A
                 href="http://http://nodejs.org"
@@ -381,10 +397,10 @@ const TechnologienPage = () => (
               </A>
               <P>Karten einbinden</P>
             </li>
-          </ul>
+          </Ul>
         </div>
-      </div>
-    </div>
+      </Row>
+    </Page>
   </Layout>
 )
 
