@@ -8,7 +8,7 @@ import {
   NavItem,
   NavLink,
 } from 'reactstrap'
-import { navigate } from 'gatsby'
+import { Link } from 'gatsby'
 import compose from 'recompose/compose'
 import withState from 'recompose/withState'
 import withHandlers from 'recompose/withHandlers'
@@ -37,27 +37,21 @@ const enhance = compose(
     toggleNavbar: ({ open, setOpen }) => () => {
       setOpen(!open)
     },
-    onClickNav: () => event => {
-      event.preventDefault()
-      const { name } = event.target
-      const to = name === 'Home' ? '/' : `/${name}/`
-      navigate(to)
-    },
   }),
 )
 
-const Header = ({ open, toggleNavbar, siteTitle, onClickNav }) => {
+const Header = ({ open, toggleNavbar, siteTitle }) => {
   return (
     <Location>
       {({ location }) => (
         <StyledNavbar
           color="dark"
           dark
-          expand="lg"
+          expand="md"
           sticky="top"
           role="navigation"
         >
-          <StyledNavbarBrand href="/" name="Home" onClick={onClickNav}>
+          <StyledNavbarBrand tag={Link} to="/">
             {siteTitle}
           </StyledNavbarBrand>
           <NavbarToggler aria-label="toggle Navbar" onClick={toggleNavbar} />
@@ -65,9 +59,8 @@ const Header = ({ open, toggleNavbar, siteTitle, onClickNav }) => {
             <Nav className="ml-auto" navbar>
               <NavItem>
                 <StyledNavLink
-                  href="/Leitbild/"
-                  name="Leitbild"
-                  onClick={onClickNav}
+                  tag={Link}
+                  to="/Leitbild/"
                   active={location.pathname === '/Leitbild/'}
                 >
                   Leitbild
@@ -75,9 +68,8 @@ const Header = ({ open, toggleNavbar, siteTitle, onClickNav }) => {
               </NavItem>
               <NavItem>
                 <StyledNavLink
-                  href="/Projekte/"
-                  name="Projekte"
-                  onClick={onClickNav}
+                  tag={Link}
+                  to="/Projekte/"
                   active={location.pathname === '/Projekte/'}
                 >
                   Projekte
@@ -85,9 +77,8 @@ const Header = ({ open, toggleNavbar, siteTitle, onClickNav }) => {
               </NavItem>
               <NavItem>
                 <StyledNavLink
-                  href="/Technologien/"
-                  name="Technologien"
-                  onClick={onClickNav}
+                  tag={Link}
+                  to="/Technologien/"
                   active={location.pathname === '/Technologien/'}
                 >
                   Technologien
@@ -95,9 +86,8 @@ const Header = ({ open, toggleNavbar, siteTitle, onClickNav }) => {
               </NavItem>
               <NavItem>
                 <StyledNavLink
-                  href="/Kontakt/"
-                  name="Kontakt"
-                  onClick={onClickNav}
+                  tag={Link}
+                  to="/Kontakt/"
                   active={location.pathname === '/Kontakt/'}
                 >
                   Kontakt
