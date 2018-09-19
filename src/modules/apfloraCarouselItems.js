@@ -1,73 +1,87 @@
-import apfAnmeldenImg from '../images/apflora_anmelden.png'
-import apfTpopImg from '../images/apflora_tpop.png'
-import apfFeldkontrImg from '../images/apflora_feldkontr.png'
-import apfGoogleKartenImg from '../images/apflora_google_karten.png'
-import apfChkartenImg from '../images/apflora_chkarten.png'
-import apfUeberlagernImg from '../images/apflora_ueberlagern.png'
-import apfRaeumlichAuswertenImg from '../images/apflora_raeumlich_auswerten.png'
-import apfZuordnenKarteImg from '../images/apflora_zuordnen_karte.png'
-import apfExportierenImg from '../images/apflora_exportieren.png'
-import apfMenuImg from '../images/apflora_menue.png'
+import a01 from '../images/apf_01_tpop_beschreiben.png'
+import a02 from '../images/apf_02_feldkontr_beschreiben.png'
+import a03 from '../images/apf_03_ekf.png'
+import a04 from '../images/apf_04_karte.jpg'
+import a05 from '../images/apf_05_layer.jpg'
+import a06 from '../images/apf_06_zuordnen.jpg'
+import a07 from '../images/apf_07_bericht.png'
+import a08 from '../images/apf_08_form_filter.png'
+import a09 from '../images/apf_09_raum_filter.jpg'
+import a10 from '../images/apf_10_export.png'
+import a11 from '../images/apf_11_mehr.png'
+import a12 from '../images/apf_12_pb.png'
 
 export default [
   {
-    src: apfAnmeldenImg,
-    altText: 'anmelden',
-    caption: '',
-    header: 'anmelden',
-  },
-  {
-    src: apfTpopImg,
+    src: a01,
     altText: 'Teilpopulationen beschreiben',
     caption: '',
     header: 'Teilpopulationen beschreiben',
   },
   {
-    src: apfFeldkontrImg,
+    src: a02,
     altText: 'Feldkontrollen beschreiben',
     caption: '',
     header: 'Feldkontrollen beschreiben',
   },
   {
-    src: apfGoogleKartenImg,
-    altText: 'auf Google-Luftbildern darstellen',
+    src: a03,
+    altText: 'Freiwillige erfassen ihre Kontrollen selber',
     caption: '',
-    header: 'auf Google-Luftbildern darstellen',
+    header: 'Freiwillige erfassen ihre Kontrollen selber',
   },
   {
-    src: apfChkartenImg,
-    altText: 'auf Karten darstellen',
+    src: a04,
+    altText: 'Teilpopulationen auf Karte darstellen',
     caption: '',
-    header: 'auf Karten darstellen',
+    header: 'Teilpopulationen auf Karte darstellen',
   },
   {
-    src: apfUeberlagernImg,
+    src: a05,
     altText: 'Layer überlagern',
     caption: '',
     header: 'Layer überlagern',
   },
   {
-    src: apfRaeumlichAuswertenImg,
-    altText: 'räumlich auswerten',
+    src: a06,
+    altText: 'Beobachtungen direkt auf der Karte Teilpopulationen zuordnen',
     caption: '',
-    header: 'räumlich auswerten',
+    header: 'Beobachtungen direkt auf der Karte Teilpopulationen zuordnen',
   },
   {
-    src: apfZuordnenKarteImg,
-    altText: 'Beobachtungen zuordnen',
+    src: a07,
+    altText: 'Jahresbericht generieren',
     caption: '',
-    header: 'Beobachtungen zuordnen',
+    header: 'Jahresbericht generieren',
   },
   {
-    src: apfExportierenImg,
+    src: a08,
+    altText: 'nach allen Feldern filtern',
+    caption: '',
+    header: 'nach allen Feldern filtern',
+  },
+  {
+    src: a09,
+    altText: 'räumlich filtern',
+    caption: '',
+    header: 'räumlich filtern',
+  },
+  {
+    src: a10,
     altText: 'exportieren',
     caption: '',
     header: 'exportieren',
   },
   {
-    src: apfMenuImg,
+    src: a11,
     altText: '...und mehr',
     caption: '',
     header: '...und mehr',
+  },
+  {
+    src: a12,
+    altText: 'neue Features in der Projekt-Dokumentation lernen',
+    caption: '',
+    header: 'neue Features in der Projekt-Dokumentation lernen',
   },
 ]
