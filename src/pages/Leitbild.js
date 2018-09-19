@@ -94,7 +94,7 @@ const LeitbildPage = () => (
         </div>
         <div className="col-lg-4">
           <FaCrown style={{ fontSize: 40 }} />
-          <H4 style={{ marginTop: 13 }}>Der Kunde ist König</H4>
+          <H4>Der Kunde ist König</H4>
           <p>
             Damit Sie zufrieden sind, braucht es mehr als eine gute Anwendung.
             Ich bin bestrebt:
