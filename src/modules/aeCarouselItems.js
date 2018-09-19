@@ -1,94 +1,133 @@
-import adbWeb01GruppeWaehlenImg from '../images/artendb_web_01_gruppe_waehlen.png'
-import adbWeb02ArtSuchenImg from '../images/artendb_web_02_art_suchen.png'
-import adbWeb03AnzeigenEigenschaftenImg from '../images/artendb_web_03_anzeigen_eigenschaften.png'
-import adbWeb04AnzeigenTaxonomieImg from '../images/artendb_web_04_anzeigen_taxonomie.png'
-import adbWeb05AnzeigenDatensammlungImg from '../images/artendb_web_05_anzeigen_datensammlung.png'
-import adbWeb06AnzeigenBezsammlungImg from '../images/artendb_web_06_anzeigen_beziehungssammlung.png'
-import adbWeb07ExportierenImg from '../images/artendb_web_07_exportieren.png'
-import adbWeb08ExportSchrittweiseImg from '../images/artendb_web_08_export_schrittweise.png'
-import adbWeb09ExportGruppeWaehlenImg from '../images/artendb_web_09_export_gruppe_waehlen.png'
-import adbWeb10ExportEigenschWaehlenImg from '../images/artendb_web_10_export_eigenschaften_waehlen.png'
-import adbWeb11ExportdateiHerunterlaImg from '../images/artendb_web_11_exportdatei_herunterladen.png'
-import adbWeb12ImportierenImg from '../images/artendb_web_12_importieren.png'
-import adbWeb13ImportierenSchrittwImg from '../images/artendb_web_13_importieren_schrittweise.png'
+import a01 from '../images/01_strbaum.png'
+import a02 from '../images/02_strbaum_angemeldet.png'
+import a03 from '../images/03_suchen.png'
+import a04 from '../images/04_strbaum.png'
+import a05 from '../images/05_taxonomie.png'
+import a06 from '../images/06_synonyme.png'
+import a07 from '../images/07_tax_bearbeiten.png'
+import a08 from '../images/08_tax_links.png'
+import a09 from '../images/09_es_zeigen.png'
+import a10 from '../images/10_es_zeigen.png'
+import a11 from '../images/11_export.png'
+import a12 from '../images/12_export_filter.png'
+import a13 from '../images/13_export_felder.png'
+import a14 from '../images/14_export.png'
+import a15 from '../images/15_import.png'
+import a16 from '../images/16_organisationen.png'
+import a17 from '../images/17_organisationen.png'
+import a18 from '../images/18_benutzer.png'
 
 export default [
   {
-    src: adbWeb01GruppeWaehlenImg,
-    altText: 'Gruppe wählen',
+    src: a01,
+    altText: 'Strukturbaum erschliesst alle Datenstrukturen',
     caption: '',
-    header: 'Gruppe wählen',
+    header: 'Strukturbaum erschliesst alle Datenstrukturen',
   },
   {
-    src: adbWeb02ArtSuchenImg,
-    altText: 'Art suchen',
+    src: a02,
+    altText: 'angemeldete Benutzer mit entsprechenden Rechten sehen mehr',
     caption: '',
-    header: 'Art suchen',
+    header: 'angemeldete Benutzer mit entsprechenden Rechten sehen mehr',
   },
   {
-    src: adbWeb03AnzeigenEigenschaftenImg,
-    altText: 'Eigenschaften anzeigen',
+    src: a03,
+    altText: 'Art, Lebensraum oder Eigenschaften-Sammlung suchen',
     caption: '',
-    header: 'Eigenschaften anzeigen',
+    header: 'Art, Lebensraum oder Eigenschaften-Sammlung suchen',
   },
   {
-    src: adbWeb04AnzeigenTaxonomieImg,
-    altText: 'Taxonomie anzeigen',
+    src: a04,
+    altText: 'Der Strukturbaum baut die Taxonomien dynamisch aus den Daten auf',
     caption: '',
-    header: 'Taxonomie anzeigen',
+    header: 'Der Strukturbaum baut die Taxonomien dynamisch aus den Daten auf',
   },
   {
-    src: adbWeb05AnzeigenDatensammlungImg,
-    altText: 'Datensammlung anzeigen',
+    src: a05,
+    altText: 'Taxonomie anzeigen...',
     caption: '',
-    header: 'Datensammlung anzeigen',
+    header: 'Taxonomie anzeigen...',
   },
   {
-    src: adbWeb06AnzeigenBezsammlungImg,
-    altText: 'Beziehungssammlung anzeigen',
+    src: a06,
+    altText: '...inklusive Synonymen und ihren Eigenschaften',
     caption: '',
-    header: 'Beziehungssammlung anzeigen',
+    header: '...inklusive Synonymen und ihren Eigenschaften',
   },
   {
-    src: adbWeb07ExportierenImg,
-    altText: 'exportieren',
+    src: a07,
+    altText: 'Taxonomie bearbeiten',
     caption: '',
-    header: 'exportieren',
+    header: 'Taxonomie bearbeiten',
   },
   {
-    src: adbWeb08ExportSchrittweiseImg,
-    altText: '...Schritt für Schritt',
+    src: a08,
+    altText: 'Links zu externen Informationen',
     caption: '',
-    header: '...Schritt für Schritt',
+    header: 'Links zu externen Informationen',
   },
   {
-    src: adbWeb09ExportGruppeWaehlenImg,
-    altText: 'Gruppe wählen',
+    src: a09,
+    altText: 'Eigenschaften-Sammlung zeigen...',
     caption: '',
-    header: 'Gruppe wählen',
+    header: 'Eigenschaften-Sammlung zeigen...',
   },
   {
-    src: adbWeb10ExportEigenschWaehlenImg,
-    altText: 'Eigenschaften wählen',
+    src: a10,
+    altText: '...inklusive ihren Eigenschaften',
     caption: '',
-    header: 'Eigenschaften wählen',
+    header: '...inklusive ihren Eigenschaften',
   },
   {
-    src: adbWeb11ExportdateiHerunterlaImg,
-    altText: 'Datei herunterladen',
+    src: a11,
+    altText: 'Export: Taxonomie(n) wählen',
     caption: '',
-    header: 'Datei herunterladen',
+    header: 'Export: Taxonomie(n) wählen',
   },
   {
-    src: adbWeb12ImportierenImg,
-    altText: 'importieren',
+    src: a12,
+    altText: 'Export: Daten filtern',
     caption: '',
-    header: 'importieren',
+    header: 'Export: Daten filtern',
   },
   {
-    src: adbWeb13ImportierenSchrittwImg,
-    altText: '...Schritt für Schritt',
+    src: a13,
+    altText: 'Export: Felder wählen',
     caption: '',
-    header: '...Schritt für Schritt',
+    header: 'Export: Felder wählen',
+  },
+  {
+    src: a14,
+    altText: 'Export: Datei speichern',
+    caption: '',
+    header: 'Export: Datei speichern',
+  },
+  {
+    src: a15,
+    altText: 'Eigenschaften importieren',
+    caption: '',
+    header: 'Eigenschaften importieren',
+  },
+  {
+    src: a16,
+    altText: 'Organisationen geben Benutzern Rollen...',
+    caption: '',
+    header: 'Organisationen geben Benutzern Rollen...',
+  },
+  {
+    src: a17,
+    altText:
+      '...und sehen, für welche Taxonomien und Eigenschaften-Sammlungen sie zuständig sind',
+    caption: '',
+    header:
+      '...und sehen, für welche Taxonomien und Eigenschaften-Sammlungen sie zuständig sind',
+  },
+  {
+    src: a18,
+    altText:
+      'Benutzer mit Konto sehen, welche Eigenschaften-Sammlungen und Taxonomien sie importiert haben',
+    caption: '',
+    header:
+      'Benutzer mit Konto sehen, welche Eigenschaften-Sammlungen und Taxonomien sie importiert haben',
   },
 ]
