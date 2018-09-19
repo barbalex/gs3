@@ -8,12 +8,14 @@ import {
   NavItem,
   NavLink,
 } from 'reactstrap'
+import { FaShare } from 'react-icons/fa'
 import { Link } from 'gatsby'
 import compose from 'recompose/compose'
 import withState from 'recompose/withState'
 import withHandlers from 'recompose/withHandlers'
 import styled from 'styled-components'
 import { Location } from '@reach/router'
+import { window, exists } from 'browser-monads'
 
 const StyledNavbar = styled(Navbar)`
   &.bg-dark {
@@ -93,6 +95,23 @@ const Header = ({ open, toggleNavbar, siteTitle }) => {
                   Kontakt
                 </StyledNavLink>
               </NavItem>
+              {exists(window) &&
+                window.navigator &&
+                window.navigator.share && (
+                  <NavItem>
+                    <StyledNavLink
+                      href="#"
+                      onClick={() => {
+                        window.navigator.share({
+                          title: 'Gabriel Software',
+                          url: 'https://gabriel-software.ch',
+                        })
+                      }}
+                    >
+                      <FaShare /> Teilen
+                    </StyledNavLink>
+                  </NavItem>
+                )}
             </Nav>
           </Collapse>
         </StyledNavbar>
