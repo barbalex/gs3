@@ -40,7 +40,7 @@ const Page = styled.div`
 `
 const Column = styled.div``
 const MainColumn = styled.div`
-  scroll-snap-type: x mandatory;
+  scroll-snap-type: y mandatory;
 `
 const Ul = styled.ul`
   padding-left: 22px;
