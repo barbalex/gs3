@@ -41,6 +41,7 @@ const Page = styled.div`
 const Column = styled.div``
 const MainColumn = styled.div`
   scroll-snap-type: y mandatory;
+  scroll-padding: 56px;
 `
 const Ul = styled.ul`
   padding-left: 22px;
@@ -83,6 +84,12 @@ const Section = styled.section`
   margin-bottom: 60px;
   scroll-snap-align: start;
   scroll-snap-stop: always;
+  /**
+   * make klick on nav link scroll far enough
+   * that image is not hidden by navbar
+   */
+  margin-top: -60px;
+  padding-top: 60px;
 `
 const P = styled.p`
   margin-bottom: 0;
@@ -103,6 +110,7 @@ const ProjektPage = () => (
                 'awInd',
               ]}
               currentClassName="active"
+              offset={-50}
             >
               <li>
                 <A href="#apflora">apflora.ch</A>
