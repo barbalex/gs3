@@ -250,7 +250,7 @@ const ProjektPage = () => (
                 Zürich verwaltet mit dieser Access-Anwendung ihre Indikatoren.
               </p>
               <p>
-                Grösste Stärken: Massgeschneidert, geringer Unterhaltsbedarf.
+                Grösste Stärken: Massgeschneidert, bisher null Unterhaltsbedarf.
               </p>
               <UncontrolledCarousel items={aiCarouselitems} />
             </Section>
