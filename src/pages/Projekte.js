@@ -158,6 +158,7 @@ const ProjektPage = () => (
                 >
                   auf der Projekt-Webseite
                 </a>
+                .
               </p>
             </Section>
             <Section id="artendb_web" className="projekt sektion anchor">
@@ -201,6 +202,7 @@ const ProjektPage = () => (
                 >
                   Fachstelle Naturschutz des Kantons Zürich
                 </a>
+                .
               </p>
             </Section>
             <Section id="blue-borders" className="projekt sektion anchor">
@@ -231,6 +233,7 @@ const ProjektPage = () => (
                 >
                   mediterranean-migration.com
                 </a>
+                .
               </p>
             </Section>
             <Section id="kapla" className="projekt sektion anchor">
@@ -260,6 +263,7 @@ const ProjektPage = () => (
                 >
                   auf GitHub
                 </a>
+                .
               </p>
             </Section>
             <Section id="awInd" className="projekt sektion anchor">
