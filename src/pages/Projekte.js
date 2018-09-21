@@ -136,11 +136,13 @@ const ProjektPage = () => (
               <h5>
                 Aktionsplan Flora der Fachstelle Naturschutz des Kantons Zürich
               </h5>
-              <p style={{ marginBottom: 0 }}>Grösste Stärken:</p>
-              <Ul>
-                <li>Komplexe Projektstruktur im Strukturbaum darstellen</li>
-                <li>Jahresberichte auf Knopfdruck produzieren</li>
-              </Ul>
+              <div>
+                Grösste Stärken:
+                <Ul>
+                  <li>Komplexe Projektstruktur im Strukturbaum darstellen</li>
+                  <li>Aufwändige Jahresberichte auf Knopfdruck produzieren</li>
+                </Ul>
+              </div>
               <UncontrolledCarousel items={apfloraCarouselItems} />
               <p>
                 Mehr Informationen&nbsp;
@@ -202,10 +204,16 @@ const ProjektPage = () => (
                 Übersicht über die Migration durch das zentrale und östliche
                 Mittelmeer.
               </p>
-              <p>
-                Grösste Stärke: rasche Übersicht über Migrationsströme und
-                dazugehörige politische Ereignisse.
-              </p>
+              <div>
+                Grösste Stärken:
+                <Ul>
+                  <li>massgeschneidert für die Aufgabe</li>
+                  <li>
+                    rasche Übersicht über Migrationsströme und dazugehörige
+                    politische Ereignisse
+                  </li>
+                </Ul>
+              </div>
               <UncontrolledCarousel items={bbCarouselItems} />
               <p>
                 Schauen Sie selber:&nbsp;
@@ -226,10 +234,14 @@ const ProjektPage = () => (
                 Abfall, Wasser, Energie und Luft) des Kantons Zürich ihre
                 Geschäfte.
               </p>
-              <p>
-                Grösste Stärken: Benutzerfreundlichkeit, geringer
-                Unterhaltsbedarf.
-              </p>
+              <div>
+                Grösste Stärken:
+                <Ul>
+                  <li>massgeschneidert für die Aufgabe</li>
+                  <li>Benutzerfreundlichkeit</li>
+                  <li>null Unterhaltsbedarf</li>
+                </Ul>
+              </div>
               <UncontrolledCarousel items={kaplaCarouseltems} />
               <p>
                 Mehr Informationen&nbsp;
@@ -247,11 +259,15 @@ const ProjektPage = () => (
               <H4>AWEL-Indikatoren</H4>
               <p>
                 Das AWEL (Amt für Abfall, Wasser, Energie und Luft) des Kantons
-                Zürich verwaltet mit dieser Access-Anwendung ihre Indikatoren.
+                Zürich verwaltet mit dieser Access-Anwendung Indikatoren.
               </p>
-              <p>
-                Grösste Stärken: Massgeschneidert, bisher null Unterhaltsbedarf.
-              </p>
+              <div>
+                Grösste Stärken:
+                <Ul>
+                  <li>massgeschneidert für die Aufgabe</li>
+                  <li>seit der Implementation (2014) null Unterhaltsbedarf</li>
+                </Ul>
+              </div>
               <UncontrolledCarousel items={aiCarouselitems} />
             </Section>
           </Column>
