@@ -13,6 +13,7 @@ import apfloraCarouselItems from '../modules/apfloraCarouselItems'
 import aeCarouselItems from '../modules/aeCarouselItems'
 import bbCarouselItems from '../modules/bbCarouselItems'
 import kaplaCarouseltems from '../modules/kaplaCarouseltems'
+import aiCarouselitems from '../modules/aiCarouselitems'
 
 const Page = styled.div`
   padding: 15px;
@@ -114,6 +115,15 @@ const ProjektPage = () => (
                   active={location.hash === '#kapla'}
                 >
                   Kapla
+                </StyledNavLink>
+              </NavItem>
+              <NavItem>
+                <StyledNavLink
+                  href="#awInd"
+                  name="awInd"
+                  active={location.hash === '#awInd'}
+                >
+                  AWEL-Indikatoren
                 </StyledNavLink>
               </NavItem>
             </Affix>
@@ -231,6 +241,18 @@ const ProjektPage = () => (
                   auf GitHub
                 </a>
               </p>
+            </Section>
+            <Section id="awInd" className="projekt sektion anchor">
+              <img src={zhLoeweImg} alt="AWEL-Indikatoren" height={51} />
+              <H4>AWEL-Indikatoren</H4>
+              <p>
+                Das AWEL (Amt für Abfall, Wasser, Energie und Luft) des Kantons
+                Zürich verwaltet mit dieser Access-Anwendung ihre Indikatoren.
+              </p>
+              <p>
+                Grösste Stärken: Massgeschneidert, geringer Unterhaltsbedarf.
+              </p>
+              <UncontrolledCarousel items={aiCarouselitems} />
             </Section>
           </Column>
         </Page>
