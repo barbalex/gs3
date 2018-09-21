@@ -30,7 +30,7 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
-    "postbuild": "rename public docs",
+    "postbuild": "if exist docs rmdir docs /q /s && rename public docs",
     "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "dev": "gatsby develop",
     "format": "prettier --write '**/*.js'",
