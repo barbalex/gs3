@@ -9,6 +9,7 @@ import apfImg from '../images/apflora.png'
 import aeImg from '../images/ae.png'
 import bbImg from '../images/bb.png'
 import zhLoeweImg from '../images/zhLoewe.png'
+import kaplaImg from '../images/kapla.png'
 import apfloraCarouselItems from '../modules/apfloraCarouselItems'
 import aeCarouselItems from '../modules/aeCarouselItems'
 import bbCarouselItems from '../modules/bbCarouselItems'
@@ -70,6 +71,9 @@ const StyledNavLink = styled(NavLink)`
 `
 const Section = styled.section`
   margin-bottom: 60px;
+`
+const P = styled.p`
+  margin-bottom: 0;
 `
 
 const ProjektPage = () => (
@@ -144,6 +148,7 @@ const ProjektPage = () => (
                 </Ul>
               </div>
               <UncontrolledCarousel items={apfloraCarouselItems} />
+              <P>Im produktiven Einsatz seit 2013.</P>
               <p>
                 Mehr Informationen&nbsp;
                 <a
@@ -166,8 +171,8 @@ const ProjektPage = () => (
                 <li>anzeigen</li>
                 <li>importieren</li>
                 <li>kombinieren</li>
-                <li>exportieren</li>
                 <li>Informationen von Synonymen verbinden</li>
+                <li>exportieren</li>
                 <li>über Artengruppen hinweg zusammenfassen</li>
                 <li>in eigener Anwendung einbinden</li>
               </Ul>
@@ -178,6 +183,7 @@ const ProjektPage = () => (
                 werden.
               </p>
               <UncontrolledCarousel items={aeCarouselItems} />
+              <P>Im produktiven Einsatz seit 2013.</P>
               <p>
                 Mehr Informationen&nbsp;
                 <a
@@ -207,14 +213,15 @@ const ProjektPage = () => (
               <div>
                 Grösste Stärken:
                 <Ul>
-                  <li>massgeschneidert für die Aufgabe</li>
+                  <li>Massgeschneidert für die Aufgabe</li>
                   <li>
-                    rasche Übersicht über Migrationsströme und dazugehörige
+                    Rasche Übersicht über Migrationsströme und dazugehörige
                     politische Ereignisse
                   </li>
                 </Ul>
               </div>
               <UncontrolledCarousel items={bbCarouselItems} />
+              <P>Im produktiven Einsatz seit 2015.</P>
               <p>
                 Schauen Sie selber:&nbsp;
                 <a
@@ -227,7 +234,7 @@ const ProjektPage = () => (
               </p>
             </Section>
             <Section id="kapla" className="projekt sektion anchor">
-              <img src={zhLoeweImg} alt="Kapla" height={51} />
+              <img src={kaplaImg} alt="Kapla" height={51} />
               <H4>Kapla</H4>
               <p>
                 Mit Kapla verwaltet die Abteilung Recht des AWEL (Amt für
@@ -237,12 +244,13 @@ const ProjektPage = () => (
               <div>
                 Grösste Stärken:
                 <Ul>
-                  <li>massgeschneidert für die Aufgabe</li>
+                  <li>Massgeschneidert für die Aufgabe</li>
                   <li>Benutzerfreundlichkeit</li>
-                  <li>null Unterhaltsbedarf</li>
+                  <li>Null Unterhaltsbedarf</li>
                 </Ul>
               </div>
               <UncontrolledCarousel items={kaplaCarouseltems} />
+              <P>Im produktiven Einsatz seit 2016.</P>
               <p>
                 Mehr Informationen&nbsp;
                 <a
@@ -264,11 +272,12 @@ const ProjektPage = () => (
               <div>
                 Grösste Stärken:
                 <Ul>
-                  <li>massgeschneidert für die Aufgabe</li>
-                  <li>seit der Implementation (2014) null Unterhaltsbedarf</li>
+                  <li>Massgeschneidert für die Aufgabe</li>
+                  <li>Bisher null Unterhaltsbedarf</li>
                 </Ul>
               </div>
               <UncontrolledCarousel items={aiCarouselitems} />
+              <P>Im produktiven Einsatz seit 2014.</P>
             </Section>
           </Column>
         </Page>
