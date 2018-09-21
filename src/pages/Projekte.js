@@ -1,7 +1,8 @@
 import React from 'react'
-import { Nav, NavItem, NavLink, UncontrolledCarousel } from 'reactstrap'
+import { UncontrolledCarousel } from 'reactstrap'
 import styled from 'styled-components'
 import { Location } from '@reach/router'
+import Scrollspy from 'react-scrollspy'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 import Layout from '../components/layout'
@@ -38,6 +39,9 @@ const Page = styled.div`
   }
 `
 const Column = styled.div``
+const MainColumn = styled.div`
+  scroll-snap-type: x mandatory;
+`
 const Ul = styled.ul`
   padding-left: 22px;
 `
@@ -45,12 +49,13 @@ const H4 = styled.h4`
   margin-top: 5px;
   font-weight: bold;
 `
-const Affix = styled(Nav)`
+const StyledScrollspy = styled(Scrollspy)`
   background-color: transparent;
   border: 1px solid #d8d8d8;
   margin-bottom: 15px !important;
   padding-left: 0;
   border-radius: 5px;
+  list-style: none;
   @media (min-width: 800px) {
     position: fixed;
     margin-bottom: unset;
@@ -61,16 +66,23 @@ const Affix = styled(Nav)`
     font-weight: bold;
     padding: 10px 15px;
   }
+  li a:hover {
+    text-decoration: none !important;
+  }
+  .active {
+    background-color: #f5f5f5;
+  }
 `
-const StyledNavLink = styled(NavLink)`
+const A = styled.a`
   padding: 10px 15px !important;
-  background-color: ${props => (props.active ? '#f5f5f5' : 'unset')};
   &:hover {
     background-color: #f5f5f5;
   }
 `
 const Section = styled.section`
   margin-bottom: 60px;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
 `
 const P = styled.p`
   margin-bottom: 0;
@@ -82,59 +94,40 @@ const ProjektPage = () => (
       {({ location }) => (
         <Page>
           <Column>
-            <Affix vertical navbar>
-              <NavItem>
-                <StyledNavLink
-                  href="#apflora"
-                  name="apflora"
-                  active={location.hash === '#apflora'}
-                >
-                  apflora.ch
-                </StyledNavLink>
-              </NavItem>
-              <NavItem>
-                <StyledNavLink
-                  href="#artendb_web"
-                  name="artendb_web"
-                  active={location.hash === '#artendb_web'}
-                >
-                  arteigenschaften.ch
-                </StyledNavLink>
-              </NavItem>
-              <NavItem>
-                <StyledNavLink
-                  href="#blue-borders"
-                  name="blue-borders"
-                  active={location.hash === '#blue-borders'}
-                >
+            <StyledScrollspy
+              items={[
+                'apflora',
+                'artendb_web',
+                'blue-borders',
+                'kapla',
+                'awInd',
+              ]}
+              currentClassName="active"
+            >
+              <li>
+                <A href="#apflora">apflora.ch</A>
+              </li>
+              <li>
+                <A href="#artendb_web">arteigenschaften.ch</A>
+              </li>
+              <li>
+                <A href="#blue-borders">
                   mediterranean-
                   <br />
                   migration.com
-                </StyledNavLink>
-              </NavItem>
-              <NavItem>
-                <StyledNavLink
-                  href="#kapla"
-                  name="kapla"
-                  active={location.hash === '#kapla'}
-                >
-                  Kapla
-                </StyledNavLink>
-              </NavItem>
-              <NavItem>
-                <StyledNavLink
-                  href="#awInd"
-                  name="awInd"
-                  active={location.hash === '#awInd'}
-                >
-                  AWEL-Indikatoren
-                </StyledNavLink>
-              </NavItem>
-            </Affix>
+                </A>
+              </li>
+              <li>
+                <A href="#kapla">Kapla</A>
+              </li>
+              <li>
+                <A href="#awInd">AWEL-Indikatoren</A>
+              </li>
+            </StyledScrollspy>
           </Column>
-          <Column>
+          <MainColumn>
             <p className="lead">Eine Auswahl von Projekten:</p>
-            <Section id="apflora" className="projekt sektion anchor">
+            <Section id="apflora">
               <img src={apfImg} alt="apflora" height={51} />
               <H4>apflora.ch</H4>
               <h5>
@@ -161,7 +154,7 @@ const ProjektPage = () => (
                 .
               </p>
             </Section>
-            <Section id="artendb_web" className="projekt sektion anchor">
+            <Section id="artendb_web">
               <img src={aeImg} alt="arteigenschaften.ch" height={51} />
               <H4>arteigenschaften.ch</H4>
               <h5>
@@ -205,7 +198,7 @@ const ProjektPage = () => (
                 .
               </p>
             </Section>
-            <Section id="blue-borders" className="projekt sektion anchor">
+            <Section id="blue-borders">
               <img src={bbImg} alt="blue borders" height={51} />
               <H4>mediterranean-migration.com</H4>
               <p>
@@ -236,7 +229,7 @@ const ProjektPage = () => (
                 .
               </p>
             </Section>
-            <Section id="kapla" className="projekt sektion anchor">
+            <Section id="kapla">
               <img src={kaplaImg} alt="Kapla" height={51} />
               <H4>Kapla</H4>
               <p>
@@ -266,7 +259,7 @@ const ProjektPage = () => (
                 .
               </p>
             </Section>
-            <Section id="awInd" className="projekt sektion anchor">
+            <Section id="awInd">
               <img src={zhLoeweImg} alt="AWEL-Indikatoren" height={51} />
               <H4>AWEL-Indikatoren</H4>
               <p>
@@ -283,7 +276,7 @@ const ProjektPage = () => (
               <UncontrolledCarousel items={aiCarouselitems} />
               <P>Im produktiven Einsatz seit 2014.</P>
             </Section>
-          </Column>
+          </MainColumn>
         </Page>
       )}
     </Location>
