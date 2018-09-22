@@ -131,6 +131,13 @@ const ProjektPage = () => (
                   migration.com
                 </A>
               </li>
+              <li>
+                <A href="#brexit-chronology">
+                  brexit-
+                  <br />
+                  chronology.ch
+                </A>
+              </li>
             </StyledScrollspy>
           </Column>
           <MainColumn>
@@ -290,6 +297,41 @@ const ProjektPage = () => (
                   rel="noopener noreferrer"
                 >
                   mediterranean-migration.com
+                </a>
+                .
+              </p>
+            </Section>
+            <Section id="brexit-chronology">
+              <img src={bbImg} alt="brexit-chronology" height={51} />
+              <H4>brexit-chronology.ch</H4>
+              <p>Chronologie des Brexit aus Sicht Grossbritanniens und EU.</p>
+              <div>
+                Grösste Stärken:
+                <Ul>
+                  <li>Rasche Übersicht über relevante politische Ereignisse</li>
+                  <li>
+                    Der Autor kann Ereignisse und Artikel direkt bearbeiten -
+                    wie bei einem{' '}
+                    <a
+                      href="https://de.wikipedia.org/wiki/Content-Management-System"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      CMS
+                    </a>
+                  </li>
+                </Ul>
+              </div>
+              <UncontrolledCarousel items={bbCarouselItems} />
+              <P>Im produktiven Einsatz seit 2017.</P>
+              <p>
+                Schauen Sie selber:&nbsp;
+                <a
+                  href="https://brexit-chronology.ch"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  brexit-chronology.ch
                 </a>
                 .
               </p>
