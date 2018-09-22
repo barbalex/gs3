@@ -4,11 +4,11 @@
   "version": "1.0.0",
   "author": "Alexander Gabriel",
   "dependencies": {
-    "@reach/router": "1.1.1",
+    "@reach/router": "1.2.0",
     "babel-plugin-styled-components": "1.7.1",
     "bootstrap": "4.1.3",
     "browser-monads": "1.0.0",
-    "gatsby": "2.0.6",
+    "gatsby": "2.0.7",
     "gatsby-plugin-manifest": "2.0.2",
     "gatsby-plugin-offline": "2.0.5",
     "gatsby-plugin-react-helmet": "3.0.0",
@@ -40,9 +40,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "copyfiles": "^2.1.0",
+    "copyfiles": "2.1.0",
     "gatsby-cli": "2.4.1",
-    "gh-pages": "2.0.0",
     "prettier": "1.14.3"
   },
   "repository": {
