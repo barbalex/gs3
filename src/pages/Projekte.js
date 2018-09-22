@@ -105,9 +105,9 @@ const ProjektPage = () => (
               items={[
                 'apflora',
                 'artendb_web',
-                'blue-borders',
                 'kapla',
                 'awInd',
+                'blue-borders',
               ]}
               currentClassName="active"
               offset={-50}
@@ -119,17 +119,17 @@ const ProjektPage = () => (
                 <A href="#artendb_web">arteigenschaften.ch</A>
               </li>
               <li>
+                <A href="#kapla">Kapla</A>
+              </li>
+              <li>
+                <A href="#awInd">AWEL-Indikatoren</A>
+              </li>
+              <li>
                 <A href="#blue-borders">
                   mediterranean-
                   <br />
                   migration.com
                 </A>
-              </li>
-              <li>
-                <A href="#kapla">Kapla</A>
-              </li>
-              <li>
-                <A href="#awInd">AWEL-Indikatoren</A>
               </li>
             </StyledScrollspy>
           </Column>
@@ -206,47 +206,6 @@ const ProjektPage = () => (
                 .
               </p>
             </Section>
-            <Section id="blue-borders">
-              <img src={bbImg} alt="blue borders" height={51} />
-              <H4>mediterranean-migration.com</H4>
-              <p>
-                Übersicht über die Migration durch das zentrale und östliche
-                Mittelmeer.
-              </p>
-              <div>
-                Grösste Stärken:
-                <Ul>
-                  <li>
-                    Rasche Übersicht über Migrationsströme und dazugehörige
-                    politische Ereignisse
-                  </li>
-                  <li>
-                    Der Autor kann Ereignisse und Artikel direkt bearbeiten -
-                    wie bei einem{' '}
-                    <a
-                      href="https://de.wikipedia.org/wiki/Content-Management-System"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      CMS
-                    </a>
-                  </li>
-                </Ul>
-              </div>
-              <UncontrolledCarousel items={bbCarouselItems} />
-              <P>Im produktiven Einsatz seit 2015.</P>
-              <p>
-                Schauen Sie selber:&nbsp;
-                <a
-                  href="https://mediterranean-migration.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  mediterranean-migration.com
-                </a>
-                .
-              </p>
-            </Section>
             <Section id="kapla">
               <img src={kaplaImg} alt="Kapla" height={51} />
               <H4>Kapla</H4>
@@ -293,6 +252,47 @@ const ProjektPage = () => (
               </div>
               <UncontrolledCarousel items={aiCarouselitems} />
               <P>Im produktiven Einsatz seit 2014.</P>
+            </Section>
+            <Section id="blue-borders">
+              <img src={bbImg} alt="blue borders" height={51} />
+              <H4>mediterranean-migration.com</H4>
+              <p>
+                Übersicht über die Migration durch das zentrale und östliche
+                Mittelmeer.
+              </p>
+              <div>
+                Grösste Stärken:
+                <Ul>
+                  <li>
+                    Rasche Übersicht über Migrationsströme und dazugehörige
+                    politische Ereignisse
+                  </li>
+                  <li>
+                    Der Autor kann Ereignisse und Artikel direkt bearbeiten -
+                    wie bei einem{' '}
+                    <a
+                      href="https://de.wikipedia.org/wiki/Content-Management-System"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      CMS
+                    </a>
+                  </li>
+                </Ul>
+              </div>
+              <UncontrolledCarousel items={bbCarouselItems} />
+              <P>Im produktiven Einsatz seit 2015.</P>
+              <p>
+                Schauen Sie selber:&nbsp;
+                <a
+                  href="https://mediterranean-migration.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  mediterranean-migration.com
+                </a>
+                .
+              </p>
             </Section>
           </MainColumn>
         </Page>
