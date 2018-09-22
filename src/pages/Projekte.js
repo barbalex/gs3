@@ -9,13 +9,14 @@ import Layout from '../components/layout'
 import apfImg from '../images/apflora.png'
 import aeImg from '../images/ae.png'
 import bbImg from '../images/bb.png'
+import bcImg from '../images/bc.png'
 import zhLoeweImg from '../images/zhLoewe.png'
 import kaplaImg from '../images/kapla.png'
 import apfloraCarouselItems from '../modules/apfloraCarouselItems'
 import aeCarouselItems from '../modules/aeCarouselItems'
 import bbCarouselItems from '../modules/bbCarouselItems'
-import bcCarouselItems from '../modules/bcCarouselItems'
-import kaplaCarouseltems from '../modules/kaplaCarouseltems'
+import bcCarouselItems from '../modules/bcCarouselitems'
+import kaplaCarouselitems from '../modules/kaplaCarouselitems'
 import aiCarouselitems from '../modules/aiCarouselitems'
 
 const Page = styled.div`
@@ -105,10 +106,11 @@ const ProjektPage = () => (
             <StyledScrollspy
               items={[
                 'apflora',
-                'artendb_web',
+                'arteigenschaften',
                 'kapla',
-                'awInd',
-                'blue-borders',
+                'awel-indikatoren',
+                'mediterranean-migration',
+                'brexit-chronology',
               ]}
               currentClassName="active"
               offset={-50}
@@ -117,23 +119,23 @@ const ProjektPage = () => (
                 <A href="#apflora">apflora.ch</A>
               </li>
               <li>
-                <A href="#artendb_web">arteigenschaften.ch</A>
+                <A href="#arteigenschaften">arteigenschaften.ch</A>
               </li>
               <li>
                 <A href="#kapla">Kapla</A>
               </li>
               <li>
-                <A href="#awInd">AWEL-Indikatoren</A>
+                <A href="#awel-indikatoren">AWEL-Indikatoren</A>
               </li>
               <li>
-                <A href="#blue-borders">
+                <A href="#brexit-chronology">brexit-chronology.ch</A>
+              </li>
+              <li>
+                <A href="#mediterranean-migration">
                   mediterranean-
                   <br />
                   migration.com
                 </A>
-              </li>
-              <li>
-                <A href="#brexit-chronology">brexit-chronology.ch</A>
               </li>
             </StyledScrollspy>
           </Column>
@@ -152,7 +154,11 @@ const ProjektPage = () => (
                   <li>Aufwändige Jahresberichte auf Knopfdruck produzieren</li>
                 </Ul>
               </div>
-              <UncontrolledCarousel items={apfloraCarouselItems} />
+              <UncontrolledCarousel
+                items={apfloraCarouselItems}
+                autoPlay={false}
+                interval={false}
+              />
               <P>Im produktiven Einsatz seit 2013.</P>
               <p>
                 Mehr Informationen&nbsp;
@@ -166,7 +172,7 @@ const ProjektPage = () => (
                 .
               </p>
             </Section>
-            <Section id="artendb_web">
+            <Section id="arteigenschaften">
               <img src={aeImg} alt="arteigenschaften.ch" height={51} />
               <H4>arteigenschaften.ch</H4>
               <h5>
@@ -188,7 +194,11 @@ const ProjektPage = () => (
                 schon enthalten, rasch ergänzt und für Auswertungen kombiniert
                 werden.
               </p>
-              <UncontrolledCarousel items={aeCarouselItems} />
+              <UncontrolledCarousel
+                items={aeCarouselItems}
+                autoPlay={false}
+                interval={false}
+              />
               <P>Im produktiven Einsatz seit 2013.</P>
               <p>
                 Mehr Informationen&nbsp;
@@ -226,7 +236,11 @@ const ProjektPage = () => (
                   <li>Null Unterhaltsbedarf</li>
                 </Ul>
               </div>
-              <UncontrolledCarousel items={kaplaCarouseltems} />
+              <UncontrolledCarousel
+                items={kaplaCarouselitems}
+                autoPlay={false}
+                interval={false}
+              />
               <P>Im produktiven Einsatz seit 2016.</P>
               <p>
                 Mehr Informationen&nbsp;
@@ -240,7 +254,7 @@ const ProjektPage = () => (
                 .
               </p>
             </Section>
-            <Section id="awInd">
+            <Section id="awel-indikatoren">
               <img src={zhLoeweImg} alt="AWEL-Indikatoren" height={51} />
               <H4>AWEL-Indikatoren</H4>
               <p>
@@ -254,11 +268,56 @@ const ProjektPage = () => (
                   <li>Bisher null Unterhaltsbedarf</li>
                 </Ul>
               </div>
-              <UncontrolledCarousel items={aiCarouselitems} />
+              <UncontrolledCarousel
+                items={aiCarouselitems}
+                autoPlay={false}
+                interval={false}
+              />
               <P>Im produktiven Einsatz seit 2014.</P>
             </Section>
-            <Section id="blue-borders">
-              <img src={bbImg} alt="blue borders" height={51} />
+            <Section id="brexit-chronology">
+              <img src={bcImg} alt="brexit-chronology" height={51} />
+              <H4>brexit-chronology.ch</H4>
+              <p>
+                Chronologie des Brexit aus Sicht Grossbritanniens und der EU.
+              </p>
+              <div>
+                Grösste Stärken:
+                <Ul>
+                  <li>Rasche Übersicht über relevante politische Ereignisse</li>
+                  <li>
+                    Der Autor kann Ereignisse und Artikel direkt bearbeiten -
+                    wie bei einem{' '}
+                    <a
+                      href="https://de.wikipedia.org/wiki/Content-Management-System"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      CMS
+                    </a>
+                  </li>
+                </Ul>
+              </div>
+              <UncontrolledCarousel
+                items={bcCarouselItems}
+                autoPlay={false}
+                interval={false}
+              />
+              <P>Im produktiven Einsatz seit 2017.</P>
+              <p>
+                Schauen Sie selber:&nbsp;
+                <a
+                  href="https://brexit-chronology.ch"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  brexit-chronology.ch
+                </a>
+                .
+              </p>
+            </Section>
+            <Section id="mediterranean-migration">
+              <img src={bbImg} alt="mediterranean-migration" height={51} />
               <H4>mediterranean-migration.com</H4>
               <p>
                 Übersicht über die Migration durch das zentrale und östliche
@@ -284,7 +343,11 @@ const ProjektPage = () => (
                   </li>
                 </Ul>
               </div>
-              <UncontrolledCarousel items={bbCarouselItems} />
+              <UncontrolledCarousel
+                items={bbCarouselItems}
+                autoPlay={false}
+                interval={false}
+              />
               <P>Im produktiven Einsatz seit 2015.</P>
               <p>
                 Schauen Sie selber:&nbsp;
@@ -294,43 +357,6 @@ const ProjektPage = () => (
                   rel="noopener noreferrer"
                 >
                   mediterranean-migration.com
-                </a>
-                .
-              </p>
-            </Section>
-            <Section id="brexit-chronology">
-              <img src={bbImg} alt="brexit-chronology" height={51} />
-              <H4>brexit-chronology.ch</H4>
-              <p>
-                Chronologie des Brexit aus Sicht Grossbritanniens und der EU.
-              </p>
-              <div>
-                Grösste Stärken:
-                <Ul>
-                  <li>Rasche Übersicht über relevante politische Ereignisse</li>
-                  <li>
-                    Der Autor kann Ereignisse und Artikel direkt bearbeiten -
-                    wie bei einem{' '}
-                    <a
-                      href="https://de.wikipedia.org/wiki/Content-Management-System"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      CMS
-                    </a>
-                  </li>
-                </Ul>
-              </div>
-              <UncontrolledCarousel items={bcCarouselItems} />
-              <P>Im produktiven Einsatz seit 2017.</P>
-              <p>
-                Schauen Sie selber:&nbsp;
-                <a
-                  href="https://brexit-chronology.ch"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  brexit-chronology.ch
                 </a>
                 .
               </p>
