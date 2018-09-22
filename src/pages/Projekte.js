@@ -216,10 +216,20 @@ const ProjektPage = () => (
               <div>
                 Grösste Stärken:
                 <Ul>
-                  <li>Massgeschneidert für die Aufgabe</li>
                   <li>
                     Rasche Übersicht über Migrationsströme und dazugehörige
                     politische Ereignisse
+                  </li>
+                  <li>
+                    Der Autor kann Ereignisse und Artikel direkt bearbeiten -
+                    wie bei einem{' '}
+                    <a
+                      href="https://de.wikipedia.org/wiki/Content-Management-System"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      CMS
+                    </a>
                   </li>
                 </Ul>
               </div>
