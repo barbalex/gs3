@@ -14,6 +14,7 @@ import kaplaImg from '../images/kapla.png'
 import apfloraCarouselItems from '../modules/apfloraCarouselItems'
 import aeCarouselItems from '../modules/aeCarouselItems'
 import bbCarouselItems from '../modules/bbCarouselItems'
+import bcCarouselItems from '../modules/bcCarouselItems'
 import kaplaCarouseltems from '../modules/kaplaCarouseltems'
 import aiCarouselitems from '../modules/aiCarouselitems'
 
@@ -132,11 +133,7 @@ const ProjektPage = () => (
                 </A>
               </li>
               <li>
-                <A href="#brexit-chronology">
-                  brexit-
-                  <br />
-                  chronology.ch
-                </A>
+                <A href="#brexit-chronology">brexit-chronology.ch</A>
               </li>
             </StyledScrollspy>
           </Column>
@@ -304,7 +301,9 @@ const ProjektPage = () => (
             <Section id="brexit-chronology">
               <img src={bbImg} alt="brexit-chronology" height={51} />
               <H4>brexit-chronology.ch</H4>
-              <p>Chronologie des Brexit aus Sicht Grossbritanniens und EU.</p>
+              <p>
+                Chronologie des Brexit aus Sicht Grossbritanniens und der EU.
+              </p>
               <div>
                 Grösste Stärken:
                 <Ul>
@@ -322,7 +321,7 @@ const ProjektPage = () => (
                   </li>
                 </Ul>
               </div>
-              <UncontrolledCarousel items={bbCarouselItems} />
+              <UncontrolledCarousel items={bcCarouselItems} />
               <P>Im produktiven Einsatz seit 2017.</P>
               <p>
                 Schauen Sie selber:&nbsp;
