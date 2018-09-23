@@ -109,8 +109,8 @@ const ProjektPage = () => (
                 'arteigenschaften',
                 'kapla',
                 'awel-indikatoren',
-                'mediterranean-migration',
                 'brexit-chronology',
+                'mediterranean-migration',
               ]}
               currentClassName="active"
               offset={-50}
