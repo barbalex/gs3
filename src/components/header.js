@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import {
   Collapse,
   Navbar,
@@ -10,12 +10,12 @@ import {
 } from 'reactstrap'
 import { FaShare } from 'react-icons/fa'
 import { Link } from 'gatsby'
-import compose from 'recompose/compose'
-import withState from 'recompose/withState'
-import withHandlers from 'recompose/withHandlers'
 import styled from 'styled-components'
 import { Location } from '@reach/router'
 import { window, exists } from 'browser-monads'
+import { setConfig } from 'react-hot-loader'
+
+setConfig({ pureSFC: true })
 
 const StyledNavbar = styled(Navbar)`
   &.bg-dark {
@@ -33,16 +33,8 @@ const StyledNavLink = styled(NavLink)`
     props.active ? 'white' : 'rgba(255, 255, 255, 0.7)'} !important;
 `
 
-const enhance = compose(
-  withState('open', 'setOpen', false),
-  withHandlers({
-    toggleNavbar: ({ open, setOpen }) => () => {
-      setOpen(!open)
-    },
-  }),
-)
-
-const Header = ({ open, toggleNavbar, siteTitle }) => {
+const Header = ({ siteTitle }) => {
+  const [open, setOpen] = useState(false)
   return (
     <Location>
       {({ location }) => (
@@ -56,7 +48,10 @@ const Header = ({ open, toggleNavbar, siteTitle }) => {
           <StyledNavbarBrand tag={Link} to="/">
             {siteTitle}
           </StyledNavbarBrand>
-          <NavbarToggler aria-label="toggle Navbar" onClick={toggleNavbar} />
+          <NavbarToggler
+            aria-label="toggle Navbar"
+            onClick={() => setOpen(!open)}
+          />
           <Collapse isOpen={open} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
@@ -120,4 +115,4 @@ const Header = ({ open, toggleNavbar, siteTitle }) => {
   )
 }
 
-export default enhance(Header)
+export default Header
