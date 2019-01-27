@@ -25,6 +25,9 @@ const StyledNavbar = styled(Navbar)`
 const StyledNavbarBrand = styled(NavbarBrand)`
   font-weight: 600;
 `
+const StyledNavItem = styled(NavItem)`
+  margin-bottom: 0 !important;
+`
 const StyledNavLink = styled(NavLink)`
   border: ${props => (props.active ? '1px white' : 'unset')};
   border-color: rgba(255, 255, 255, 0.5) !important;
@@ -54,7 +57,7 @@ const Header = ({ siteTitle }) => {
           />
           <Collapse isOpen={open} navbar>
             <Nav className="ml-auto" navbar>
-              <NavItem>
+              <StyledNavItem>
                 <StyledNavLink
                   tag={Link}
                   to="/Leitbild/"
@@ -62,8 +65,8 @@ const Header = ({ siteTitle }) => {
                 >
                   Leitbild
                 </StyledNavLink>
-              </NavItem>
-              <NavItem>
+              </StyledNavItem>
+              <StyledNavItem>
                 <StyledNavLink
                   tag={Link}
                   to="/Projekte/"
@@ -71,8 +74,8 @@ const Header = ({ siteTitle }) => {
                 >
                   Projekte
                 </StyledNavLink>
-              </NavItem>
-              <NavItem>
+              </StyledNavItem>
+              <StyledNavItem>
                 <StyledNavLink
                   tag={Link}
                   to="/Technologien/"
@@ -80,8 +83,8 @@ const Header = ({ siteTitle }) => {
                 >
                   Technologien
                 </StyledNavLink>
-              </NavItem>
-              <NavItem>
+              </StyledNavItem>
+              <StyledNavItem>
                 <StyledNavLink
                   tag={Link}
                   to="/Kontakt/"
@@ -89,11 +92,11 @@ const Header = ({ siteTitle }) => {
                 >
                   Kontakt
                 </StyledNavLink>
-              </NavItem>
+              </StyledNavItem>
               {exists(window) &&
                 window.navigator &&
                 window.navigator.share && (
-                  <NavItem>
+                  <StyledNavItem>
                     <StyledNavLink
                       href="#"
                       onClick={() => {
@@ -105,7 +108,7 @@ const Header = ({ siteTitle }) => {
                     >
                       <FaShare /> Teilen
                     </StyledNavLink>
-                  </NavItem>
+                  </StyledNavItem>
                 )}
             </Nav>
           </Collapse>

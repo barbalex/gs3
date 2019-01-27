@@ -16,11 +16,10 @@ const Page = styled.div`
 const Row = styled.div``
 const Col = styled.div`
   /* side spacing for mobile first views */
-  padding: 15px;
+  padding: 10px !important;
 `
 const StyledImg = styled.img`
   margin-bottom: 10px;
-  padding-right: 15px;
 `
 
 const mapCenter = {

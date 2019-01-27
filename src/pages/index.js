@@ -27,14 +27,20 @@ const Row = styled.div`
   padding-right: 15px;
 `
 const Ul = styled.ul`
-  padding-left: 22px;
+  /*padding-left: 22px;*/
 `
 const H4 = styled.h4`
-  margin-top: 5px;
+  margin-top: 5px !important;
+  margin-bottom: 8px !important;
   font-weight: bold;
+  font-size: 24px;
 `
 const H1 = styled.h1`
   font-size: 63px;
+  margin-bottom: 0.5rem;
+`
+const Li = styled.li`
+  margin-bottom: 0;
 `
 
 const IndexPage = () => (
@@ -43,9 +49,9 @@ const IndexPage = () => (
       <StyledJumbotron>
         <H1>Gabriel Software</H1>
         <ul>
-          <li>einfach</li>
-          <li>individuell</li>
-          <li>zuverlässig</li>
+          <Li>einfach</Li>
+          <Li>individuell</Li>
+          <Li>zuverlässig</Li>
         </ul>
         <p className="lead" style={{ fontWeight: 400 }}>
           ...damit Sie sich auf Ihre Arbeit konzen­trieren können
@@ -57,32 +63,32 @@ const IndexPage = () => (
           <FaCloud style={style} />
           <H4 style={{ marginTop: 0 }}>Web-Anwendungen</H4>
           <Ul>
-            <li>mit Datenbank- und Anwendungs-Server</li>
-            <li>im Intranet oder Internet</li>
-            <li>nach Wunsch mobile- und offline-first</li>
-            <li>ideal für Geräte- oder Firmen-übergreifende Zusammenarbeit</li>
+            <Li>mit Datenbank- und Anwendungs-Server</Li>
+            <Li>im Intranet oder Internet</Li>
+            <Li>nach Wunsch mobile- und offline-first</Li>
+            <Li>ideal für Geräte- oder Firmen-übergreifende Zusammenarbeit</Li>
           </Ul>
         </div>
         <div className="col-lg-4 col-md-6">
           <FaHdd style={style} />
           <H4>Desktop-Anwendungen</H4>
           <Ul>
-            <li>lokal installiert</li>
-            <li>auf Windows, Mac und Linux</li>
-            <li>besonders leistungsfähig oder</li>
-            <li>beinahe Null-Unterhalt</li>
+            <Li>lokal installiert</Li>
+            <Li>auf Windows, Mac und Linux</Li>
+            <Li>besonders leistungsfähig oder</Li>
+            <Li>beinahe Null-Unterhalt</Li>
           </Ul>
         </div>
         <div className="col-lg-4 col-md-12">
           <FaCommentAlt style={style} />
           <H4>Beratung</H4>
           <Ul>
-            <li>Bedürfnisse abklären...</li>
-            <li>
+            <Li>Bedürfnisse abklären...</Li>
+            <Li>
               ...und in den "Fachjargon" von Software­ingenieuren übersetzen
-            </li>
-            <li>Risiken minimieren</li>
-            <li>unabhängige Meinung</li>
+            </Li>
+            <Li>Risiken minimieren</Li>
+            <Li>unabhängige Meinung</Li>
           </Ul>
         </div>
       </Row>

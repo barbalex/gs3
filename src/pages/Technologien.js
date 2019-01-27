@@ -25,10 +25,13 @@ const Row = styled.div`
   padding-right: 15px;
 `
 const Ul = styled.ul`
-  padding-left: 22px;
+  /*padding-left: 22px;*/
 `
 const H4 = styled.h4`
-  margin-top: 5px;
+  margin-top: 5px !important;
+  margin-bottom: 8px !important;
+  font-weight: bold;
+  font-size: 24px;
   font-weight: 700;
 `
 const A = styled.a`
@@ -42,11 +45,17 @@ const A = styled.a`
 const P = styled.p`
   margin-bottom: -2px;
 `
+const Li = styled.li`
+  margin-bottom: 0;
+`
+const Lead = styled.p`
+  margin-bottom: 16px;
+`
 
 const TechnologienPage = () => (
   <Layout>
     <Page className="page technologien">
-      <p className="lead">Mit diesen Technologien kenne ich mich aus:</p>
+      <Lead className="lead">Mit diesen Technologien kenne ich mich aus:</Lead>
       <Row className="row marketing">
         <div className="col-lg-4">
           <FaLinux style={{ fontSize: 30 }} alt="Linux" />
@@ -54,7 +63,7 @@ const TechnologienPage = () => (
           <FaWindows style={{ fontSize: 30 }} alt="Windows" />
           <H4>Betriebssysteme</H4>
           <Ul>
-            <li>
+            <Li>
               <A
                 href="http://de.wikipedia.org/wiki/Microsoft_Windows"
                 target="_blank"
@@ -63,8 +72,8 @@ const TechnologienPage = () => (
                 Windows
               </A>
               <P>Der Benutzerfreundliche</P>
-            </li>
-            <li>
+            </Li>
+            <Li>
               <A
                 href="http://de.wikipedia.org/wiki/Ubuntu"
                 target="_blank"
@@ -73,8 +82,8 @@ const TechnologienPage = () => (
                 Ubuntu Linux
               </A>
               <P>Der Server-Meister</P>
-            </li>
-            <li>
+            </Li>
+            <Li>
               <A
                 href="http://de.wikipedia.org/wiki/Mac_OS_X"
                 target="_blank"
@@ -83,12 +92,12 @@ const TechnologienPage = () => (
                 macOS
               </A>
               <P>Entwickler fliegen drauf...</P>
-            </li>
+            </Li>
           </Ul>
           <FaDatabase style={{ fontSize: 30 }} />
           <H4 style={{ marginTop: 5 }}>Datenbanken</H4>
           <Ul>
-            <li>
+            <Li>
               <A
                 href="http://www.postgresql.org"
                 target="_blank"
@@ -97,8 +106,8 @@ const TechnologienPage = () => (
                 PostgreSQL
               </A>
               <P>Der Klassenprimus</P>
-            </li>
-            <li>
+            </Li>
+            <Li>
               <A
                 href="http://couchdb.apache.org"
                 target="_blank"
@@ -107,8 +116,8 @@ const TechnologienPage = () => (
                 CouchDB
               </A>
               <P>Der Synchronisations-Meister</P>
-            </li>
-            <li>
+            </Li>
+            <Li>
               <A
                 href="https://pouchdb.com"
                 target="_blank"
@@ -117,8 +126,8 @@ const TechnologienPage = () => (
                 PouchDB
               </A>
               <P>CouchDB im Browser</P>
-            </li>
-            <li>
+            </Li>
+            <Li>
               <A
                 href="http://www.sqlite.org"
                 target="_blank"
@@ -127,8 +136,8 @@ const TechnologienPage = () => (
                 SQLite
               </A>
               <P>{`Simpler geht's nimmer`}</P>
-            </li>
-            <li>
+            </Li>
+            <Li>
               <A
                 href="http://www.mysql.de"
                 target="_blank"
@@ -136,8 +145,8 @@ const TechnologienPage = () => (
               >
                 MySQL
               </A>
-            </li>
-            <li>
+            </Li>
+            <Li>
               <A
                 href="http://de.wikipedia.org/wiki/Microsoft_Access"
                 target="_blank"
@@ -145,7 +154,7 @@ const TechnologienPage = () => (
               >
                 Microsoft Access
               </A>
-            </li>
+            </Li>
           </Ul>
         </div>
         <div className="col-lg-4">
@@ -162,7 +171,7 @@ const TechnologienPage = () => (
           </div>
           <H4 style={{ marginTop: 3 }}>Programmiersprachen</H4>
           <Ul>
-            <li>
+            <Li>
               <A
                 href="http://en.wikipedia.org/wiki/JavaScript"
                 target="_blank"
@@ -174,8 +183,8 @@ const TechnologienPage = () => (
                 Die verbreitetste Programmiersprache. Vermutlich auch die
                 vielfältigste und sich am schnellsten weiter entwickelnde
               </P>
-            </li>
-            <li>
+            </Li>
+            <Li>
               <A
                 href="http://de.wikipedia.org/wiki/JavaScript_Object_Notation"
                 target="_blank"
@@ -184,8 +193,8 @@ const TechnologienPage = () => (
                 JSON
               </A>
               <P>Hierarchische Datenstrukturen</P>
-            </li>
-            <li>
+            </Li>
+            <Li>
               <A
                 href="http://de.wikipedia.org/wiki/Cascading_Style_Sheets"
                 target="_blank"
@@ -194,8 +203,8 @@ const TechnologienPage = () => (
                 CSS
               </A>
               <P>Layouten</P>
-            </li>
-            <li>
+            </Li>
+            <Li>
               <A
                 href="http://de.wikipedia.org/wiki/Hypertext_Markup_Language"
                 target="_blank"
@@ -203,8 +212,8 @@ const TechnologienPage = () => (
               >
                 HTML
               </A>
-            </li>
-            <li>
+            </Li>
+            <Li>
               <A
                 href="http://de.wikipedia.org/wiki/SQL"
                 target="_blank"
@@ -216,7 +225,7 @@ const TechnologienPage = () => (
                 Nach wie vor der Standard, um Daten abzufragen und zu
                 manipulieren
               </P>
-            </li>
+            </Li>
           </Ul>
         </div>
         <div className="col-lg-4">
@@ -225,7 +234,7 @@ const TechnologienPage = () => (
             Werkzeuge <small>(Auswahl)</small>
           </H4>
           <Ul>
-            <li>
+            <Li>
               <A
                 href="http://http://nodejs.org"
                 target="_blank"
@@ -234,8 +243,8 @@ const TechnologienPage = () => (
                 node.js
               </A>
               <P>JavaScript auf PC und Server</P>
-            </li>
-            <li>
+            </Li>
+            <Li>
               <A
                 href="http://electron.atom.io"
                 target="_blank"
@@ -244,8 +253,8 @@ const TechnologienPage = () => (
                 electron
               </A>
               <P>JavaScript-Anwendungen lokal installieren</P>
-            </li>
-            <li>
+            </Li>
+            <Li>
               <A
                 href="https://flow.org"
                 target="_blank"
@@ -254,8 +263,8 @@ const TechnologienPage = () => (
                 flow
               </A>
               <P>Findet Fehler, bevor der Code ausgeführt wird</P>
-            </li>
-            <li>
+            </Li>
+            <Li>
               <A
                 href="http://hapijs.com"
                 target="_blank"
@@ -264,8 +273,8 @@ const TechnologienPage = () => (
                 hapi
               </A>
               <P>Meister Server</P>
-            </li>
-            <li>
+            </Li>
+            <Li>
               <A
                 href="http://webpack.github.io"
                 target="_blank"
@@ -274,8 +283,8 @@ const TechnologienPage = () => (
                 webpack
               </A>
               <P>Entwicklungsumgebung konfigurieren</P>
-            </li>
-            <li>
+            </Li>
+            <Li>
               <A
                 href="https://facebook.github.io/react"
                 target="_blank"
@@ -286,8 +295,8 @@ const TechnologienPage = () => (
               <P>
                 Die Benutzeroberfläche ist eine Funktion der Anwendungsdaten
               </P>
-            </li>
-            <li>
+            </Li>
+            <Li>
               <A
                 href="//graphql.org/"
                 target="_blank"
@@ -304,8 +313,8 @@ const TechnologienPage = () => (
                 Apollo
               </A>
               <P>Die Anwendungsdaten sind eine Funktion der Abfrage</P>
-            </li>
-            <li>
+            </Li>
+            <Li>
               <A
                 href="https://mobx.js.org"
                 target="_blank"
@@ -322,8 +331,8 @@ const TechnologienPage = () => (
                 MobX-State-Tree
               </A>
               <P>Meister im Manipulieren von Anwendungsdaten</P>
-            </li>
-            <li>
+            </Li>
+            <Li>
               <A
                 href="http://getbootstrap.com/"
                 target="_blank"
@@ -340,8 +349,8 @@ const TechnologienPage = () => (
                 Material UI
               </A>
               <P>Layouten nach Google und Microsoft</P>
-            </li>
-            <li>
+            </Li>
+            <Li>
               <A
                 href="https://github.com/styled-components/styled-components"
                 target="_blank"
@@ -350,8 +359,8 @@ const TechnologienPage = () => (
                 styled-components
               </A>
               <P>CSS für Komponenten</P>
-            </li>
-            <li>
+            </Li>
+            <Li>
               <A
                 href="http://docs.couchdb.org/en/2.0.0/couchapp"
                 target="_blank"
@@ -363,8 +372,8 @@ const TechnologienPage = () => (
                 CouchDB-Datenbank, Server und Anwendung in Einem! Läuft und
                 läuft und läuft...
               </P>
-            </li>
-            <li>
+            </Li>
+            <Li>
               <A
                 href="http://openlayers.org/"
                 target="_blank"
@@ -397,7 +406,7 @@ const TechnologienPage = () => (
                 Google Maps API
               </A>
               <P>Karten einbinden</P>
-            </li>
+            </Li>
           </Ul>
         </div>
       </Row>

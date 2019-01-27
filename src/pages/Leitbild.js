@@ -25,42 +25,53 @@ const Row = styled.div`
   padding-right: 15px;
 `
 const Ul = styled.ul`
-  padding-left: 22px;
+  /*padding-left: 22px;*/
 `
 const H4 = styled.h4`
-  margin-top: 5px;
+  margin-top: 5px !important;
+  margin-bottom: 8px !important;
   font-weight: bold;
+  font-size: 24px;
+`
+const Li = styled.li`
+  margin-bottom: 0;
+`
+const P = styled.p`
+  margin-bottom: 16px;
+`
+const Lead = styled.p`
+  margin-bottom: 16px;
 `
 
 const LeitbildPage = () => (
   <Layout>
     <Page className="page leitbild">
-      <p className="lead">Ich richte mich nach diesen Leitlinien:</p>
+      <Lead className="lead">Ich richte mich nach diesen Leitlinien:</Lead>
       <Row className="row marketing">
         <div className="col-lg-4">
           <FaRegQuestionCircle style={{ fontSize: 40 }} />
           <H4>Verstehen, wie Sie arbeiten</H4>
-          <p>
+          <P>
             Je mehr ich Ihre Arbeit verstehe,
             <br />
             je genauer die Anwendung Ihre Arbeit abbildet,
             <br />
             desto besser "passt" sie.
-          </p>
-          <p>Und desto kleiner ist das Risiko bei der Einführung.</p>
-          <p>
+          </P>
+          <P>Und desto kleiner ist das Risiko bei der Einführung.</P>
+          <P>
             Wenn Menschen vom selben sprechen, verstehen nicht immer alle
             dasselbe. Klappt etwas nicht? Oft liegt der Hund hier begraben.
-          </p>
+          </P>
         </div>
         <div className="col-lg-4">
           <FaRetweet style={{ fontSize: 40 }} />
           <H4>Sinn suchen</H4>
-          <p>
+          <P>
             Menschen gewöhnen sich erstaunlich gut an Inkonsistenzen. Oft leidet
             darunter die Produktivität.
-          </p>
-          <p>Software versteht nur Logik.</p>
+          </P>
+          <P>Software versteht nur Logik.</P>
         </div>
         <div className="col-lg-4">
           <FaRegCheckCircle style={{ fontSize: 40 }} />
@@ -69,42 +80,42 @@ const LeitbildPage = () => (
             <br />
             so vollständig wie nötig
           </H4>
-          <p>
+          <P>
             Ist die Anwendung klar und übersichtlich, arbeiten Sie effizient.
-          </p>
-          <p>Beansprucht sie zu viel Aufmerksamkeit, passieren Fehler.</p>
-          <p>
+          </P>
+          <P>Beansprucht sie zu viel Aufmerksamkeit, passieren Fehler.</P>
+          <P>
             Eine elegante Architektur beschleunigt die Entwicklung und reduziert
             den Unterhalt.
-          </p>
+          </P>
         </div>
         <div className="col-lg-4">
           <FaWrench style={{ fontSize: 40 }} />
           <H4>Geeignete Technologie wählen</H4>
-          <p>
+          <P>
             Wer einen Hammer hat, ist verleitet, in allem einen Nagel zu
             erkennen.
-          </p>
-          <p>Sie kommen mit einer Schraube zu mir?</p>
-          <p>Ich leite Sie zur Kollegin mit dem Schraubenzieher weiter.</p>
-          <p>
+          </P>
+          <P>Sie kommen mit einer Schraube zu mir?</P>
+          <P>Ich leite Sie zur Kollegin mit dem Schraubenzieher weiter.</P>
+          <P>
             Oder lerne zu schrauben. Und freue mich über die angewandte
             Weiterbildung. Natürlich auf meine Kosten.
-          </p>
+          </P>
         </div>
         <div className="col-lg-4">
           <FaCrown style={{ fontSize: 40 }} />
           <H4>Der Kunde ist König</H4>
-          <p>
+          <P>
             Damit Sie zufrieden sind, braucht es mehr als eine gute Anwendung.
             Ich bin bestrebt:
-          </p>
+          </P>
           <Ul>
-            <li>offen zu kommunizieren</li>
-            <li>rechtzeitig zu agieren</li>
-            <li>oder besser: einen Schritt voraus</li>
-            <li>den Aufwand zu minimieren</li>
-            <li>Vertrauen aufzubauen</li>
+            <Li>offen zu kommunizieren</Li>
+            <Li>rechtzeitig zu agieren</Li>
+            <Li>oder besser: einen Schritt voraus</Li>
+            <Li>den Aufwand zu minimieren</Li>
+            <Li>Vertrauen aufzubauen</Li>
           </Ul>
         </div>
       </Row>
