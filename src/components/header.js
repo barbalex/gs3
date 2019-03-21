@@ -13,9 +13,6 @@ import { Link } from 'gatsby'
 import styled from 'styled-components'
 import { Location } from '@reach/router'
 import { window, exists } from 'browser-monads'
-import { setConfig } from 'react-hot-loader'
-
-setConfig({ pureSFC: true })
 
 const StyledNavbar = styled(Navbar)`
   &.bg-dark {
@@ -93,23 +90,21 @@ const Header = ({ siteTitle }) => {
                   Kontakt
                 </StyledNavLink>
               </StyledNavItem>
-              {exists(window) &&
-                window.navigator &&
-                window.navigator.share && (
-                  <StyledNavItem>
-                    <StyledNavLink
-                      href="#"
-                      onClick={() => {
-                        window.navigator.share({
-                          title: 'Gabriel Software',
-                          url: 'https://gabriel-software.ch',
-                        })
-                      }}
-                    >
-                      <FaShare /> Teilen
-                    </StyledNavLink>
-                  </StyledNavItem>
-                )}
+              {exists(window) && window.navigator && window.navigator.share && (
+                <StyledNavItem>
+                  <StyledNavLink
+                    href="#"
+                    onClick={() => {
+                      window.navigator.share({
+                        title: 'Gabriel Software',
+                        url: 'https://gabriel-software.ch',
+                      })
+                    }}
+                  >
+                    <FaShare /> Teilen
+                  </StyledNavLink>
+                </StyledNavItem>
+              )}
             </Nav>
           </Collapse>
         </StyledNavbar>
