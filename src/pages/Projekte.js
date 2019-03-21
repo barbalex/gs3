@@ -1,7 +1,6 @@
 import React from 'react'
 import { UncontrolledCarousel } from 'reactstrap'
 import styled from 'styled-components'
-import { Location } from '@reach/router'
 import Scrollspy from 'react-scrollspy'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
@@ -116,272 +115,264 @@ const Img = styled.img`
 
 const ProjektPage = () => (
   <Layout>
-    <Location>
-      {({ location }) => (
-        <Page>
-          <Column>
-            <StyledScrollspy
-              items={[
-                'apflora',
-                'arteigenschaften',
-                'kapla',
-                'awel-indikatoren',
-                'brexit-chronology',
-                'mediterranean-migration',
-              ]}
-              currentClassName="active"
-              offset={-50}
+    <Page>
+      <Column>
+        <StyledScrollspy
+          items={[
+            'apflora',
+            'arteigenschaften',
+            'kapla',
+            'awel-indikatoren',
+            'brexit-chronology',
+            'mediterranean-migration',
+          ]}
+          currentClassName="active"
+          offset={-50}
+        >
+          <Li>
+            <A href="#apflora">apflora.ch</A>
+          </Li>
+          <Li>
+            <A href="#arteigenschaften">arteigenschaften.ch</A>
+          </Li>
+          <Li>
+            <A href="#kapla">Kapla</A>
+          </Li>
+          <Li>
+            <A href="#awel-indikatoren">AWEL-Indikatoren</A>
+          </Li>
+          <Li>
+            <A href="#brexit-chronology">brexit-chronology.ch</A>
+          </Li>
+          <Li>
+            <A href="#mediterranean-migration">
+              mediterranean-
+              <br />
+              migration.com
+            </A>
+          </Li>
+        </StyledScrollspy>
+      </Column>
+      <MainColumn>
+        <Lead className="lead">Eine Auswahl von Projekten:</Lead>
+        <Section id="apflora">
+          <Img src={apfImg} alt="apflora" height={51} />
+          <H4>apflora.ch</H4>
+          <H5>
+            Aktionsplan Flora der Fachstelle Naturschutz des Kantons Zürich
+          </H5>
+          <div>
+            Grösste Stärken:
+            <Ul>
+              <Li>Komplexe Projektstruktur im Strukturbaum darstellen</Li>
+              <Li>Aufwändige Jahresberichte auf Knopfdruck produzieren</Li>
+            </Ul>
+          </div>
+          <UncontrolledCarousel
+            items={apfloraCarouselItems}
+            autoPlay={false}
+            interval={false}
+          />
+          <P>Im produktiven Einsatz seit 2013.</P>
+          <P>
+            Mehr Informationen&nbsp;
+            <a
+              href="https://barbalex.github.io/apf2"
+              target="_blank"
+              rel="noopener noreferrer"
             >
+              auf der Projekt-Webseite
+            </a>
+            .
+          </P>
+        </Section>
+        <Section id="arteigenschaften">
+          <Img src={aeImg} alt="arteigenschaften.ch" height={51} />
+          <H4>arteigenschaften.ch</H4>
+          <H5>
+            Naturschutzrelevante Informationen über Arten aus den Gruppen Fauna,
+            Flora, Moose, Pilze und von Lebensräumen:
+          </H5>
+          <Ul>
+            <Li>anzeigen</Li>
+            <Li>importieren</Li>
+            <Li>kombinieren</Li>
+            <Li>Informationen von Synonymen verbinden</Li>
+            <Li>exportieren</Li>
+            <Li>über Artengruppen hinweg zusammenfassen</Li>
+            <Li>in eigener Anwendung einbinden</Li>
+          </Ul>
+          <P>
+            Grösste Stärke ist der einfache Import und Export von Daten. Die
+            Absicht dahinter: Alle benötigten Daten können, sofern nicht schon
+            enthalten, rasch ergänzt und für Auswertungen kombiniert werden.
+          </P>
+          <UncontrolledCarousel
+            items={aeCarouselItems}
+            autoPlay={false}
+            interval={false}
+          />
+          <P>Im produktiven Einsatz seit 2013.</P>
+          <P>
+            Mehr Informationen&nbsp;
+            <a
+              href="https://github.com/FNSKtZH/artendb"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              auf GitHub
+            </a>
+            {' und bei der '}
+            <a
+              href="https://aln.zh.ch/internet/baudirektion/aln/de/naturschutz/naturschutzdaten/tools/arteigenschaften.html"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Fachstelle Naturschutz des Kantons Zürich
+            </a>
+            .
+          </P>
+        </Section>
+        <Section id="kapla">
+          <Img src={kaplaImg} alt="Kapla" height={51} />
+          <H4>Kapla</H4>
+          <P>
+            Mit Kapla verwaltet die Abteilung Recht des AWEL (Amt für Abfall,
+            Wasser, Energie und Luft) des Kantons Zürich ihre Geschäfte.
+          </P>
+          <div>
+            Grösste Stärken:
+            <Ul>
+              <Li>Massgeschneidert für die Aufgabe</Li>
+              <Li>Benutzerfreundlichkeit</Li>
+              <Li>Null Unterhaltsbedarf</Li>
+            </Ul>
+          </div>
+          <UncontrolledCarousel
+            items={kaplaCarouselitems}
+            autoPlay={false}
+            interval={false}
+          />
+          <P>Im produktiven Einsatz seit 2016.</P>
+          <P>
+            Mehr Informationen&nbsp;
+            <a
+              href="https://github.com/barbalex/kapla3"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              auf GitHub
+            </a>
+            .
+          </P>
+        </Section>
+        <Section id="awel-indikatoren">
+          <Img src={zhLoeweImg} alt="AWEL-Indikatoren" height={51} />
+          <H4>AWEL-Indikatoren</H4>
+          <P>
+            Das AWEL (Amt für Abfall, Wasser, Energie und Luft) des Kantons
+            Zürich verwaltet mit dieser Access-Anwendung Indikatoren.
+          </P>
+          <div>
+            Grösste Stärken:
+            <Ul>
+              <Li>Massgeschneidert für die Aufgabe</Li>
+              <Li>Bisher null Unterhaltsbedarf</Li>
+            </Ul>
+          </div>
+          <UncontrolledCarousel
+            items={aiCarouselitems}
+            autoPlay={false}
+            interval={false}
+          />
+          <P>Im produktiven Einsatz seit 2014.</P>
+        </Section>
+        <Section id="brexit-chronology">
+          <Img src={bcImg} alt="brexit-chronology" height={51} />
+          <H4>brexit-chronology.ch</H4>
+          <P>Chronologie des Brexit aus Sicht Grossbritanniens und der EU.</P>
+          <div>
+            Grösste Stärken:
+            <Ul>
+              <Li>Rasche Übersicht über relevante politische Ereignisse</Li>
               <Li>
-                <A href="#apflora">apflora.ch</A>
-              </Li>
-              <Li>
-                <A href="#arteigenschaften">arteigenschaften.ch</A>
-              </Li>
-              <Li>
-                <A href="#kapla">Kapla</A>
-              </Li>
-              <Li>
-                <A href="#awel-indikatoren">AWEL-Indikatoren</A>
-              </Li>
-              <Li>
-                <A href="#brexit-chronology">brexit-chronology.ch</A>
-              </Li>
-              <Li>
-                <A href="#mediterranean-migration">
-                  mediterranean-
-                  <br />
-                  migration.com
-                </A>
-              </Li>
-            </StyledScrollspy>
-          </Column>
-          <MainColumn>
-            <Lead className="lead">Eine Auswahl von Projekten:</Lead>
-            <Section id="apflora">
-              <Img src={apfImg} alt="apflora" height={51} />
-              <H4>apflora.ch</H4>
-              <H5>
-                Aktionsplan Flora der Fachstelle Naturschutz des Kantons Zürich
-              </H5>
-              <div>
-                Grösste Stärken:
-                <Ul>
-                  <Li>Komplexe Projektstruktur im Strukturbaum darstellen</Li>
-                  <Li>Aufwändige Jahresberichte auf Knopfdruck produzieren</Li>
-                </Ul>
-              </div>
-              <UncontrolledCarousel
-                items={apfloraCarouselItems}
-                autoPlay={false}
-                interval={false}
-              />
-              <P>Im produktiven Einsatz seit 2013.</P>
-              <P>
-                Mehr Informationen&nbsp;
+                Der Autor kann Ereignisse und Artikel direkt bearbeiten - wie
+                bei einem{' '}
                 <a
-                  href="https://barbalex.github.io/apf2"
+                  href="https://de.wikipedia.org/wiki/Content-Management-System"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  auf der Projekt-Webseite
+                  CMS
                 </a>
-                .
-              </P>
-            </Section>
-            <Section id="arteigenschaften">
-              <Img src={aeImg} alt="arteigenschaften.ch" height={51} />
-              <H4>arteigenschaften.ch</H4>
-              <H5>
-                Naturschutzrelevante Informationen über Arten aus den Gruppen
-                Fauna, Flora, Moose, Pilze und von Lebensräumen:
-              </H5>
-              <Ul>
-                <Li>anzeigen</Li>
-                <Li>importieren</Li>
-                <Li>kombinieren</Li>
-                <Li>Informationen von Synonymen verbinden</Li>
-                <Li>exportieren</Li>
-                <Li>über Artengruppen hinweg zusammenfassen</Li>
-                <Li>in eigener Anwendung einbinden</Li>
-              </Ul>
-              <P>
-                Grösste Stärke ist der einfache Import und Export von Daten. Die
-                Absicht dahinter: Alle benötigten Daten können, sofern nicht
-                schon enthalten, rasch ergänzt und für Auswertungen kombiniert
-                werden.
-              </P>
-              <UncontrolledCarousel
-                items={aeCarouselItems}
-                autoPlay={false}
-                interval={false}
-              />
-              <P>Im produktiven Einsatz seit 2013.</P>
-              <P>
-                Mehr Informationen&nbsp;
+              </Li>
+            </Ul>
+          </div>
+          <UncontrolledCarousel
+            items={bcCarouselItems}
+            autoPlay={false}
+            interval={false}
+          />
+          <P>Im produktiven Einsatz seit 2017.</P>
+          <P>
+            Schauen Sie selber:&nbsp;
+            <a
+              href="https://brexit-chronology.ch"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              brexit-chronology.ch
+            </a>
+            .
+          </P>
+        </Section>
+        <Section id="mediterranean-migration">
+          <Img src={bbImg} alt="mediterranean-migration" height={51} />
+          <H4>mediterranean-migration.com</H4>
+          <P>
+            Übersicht über die Migration durch das zentrale und östliche
+            Mittelmeer.
+          </P>
+          <div>
+            Grösste Stärken:
+            <Ul>
+              <Li>
+                Rasche Übersicht über Migrationsströme und dazugehörige
+                politische Ereignisse
+              </Li>
+              <Li>
+                Der Autor kann Ereignisse und Artikel direkt bearbeiten - wie
+                bei einem{' '}
                 <a
-                  href="https://github.com/FNSKtZH/artendb"
+                  href="https://de.wikipedia.org/wiki/Content-Management-System"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  auf GitHub
+                  CMS
                 </a>
-                {' und bei der '}
-                <a
-                  href="https://aln.zh.ch/internet/baudirektion/aln/de/naturschutz/naturschutzdaten/tools/arteigenschaften.html"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Fachstelle Naturschutz des Kantons Zürich
-                </a>
-                .
-              </P>
-            </Section>
-            <Section id="kapla">
-              <Img src={kaplaImg} alt="Kapla" height={51} />
-              <H4>Kapla</H4>
-              <P>
-                Mit Kapla verwaltet die Abteilung Recht des AWEL (Amt für
-                Abfall, Wasser, Energie und Luft) des Kantons Zürich ihre
-                Geschäfte.
-              </P>
-              <div>
-                Grösste Stärken:
-                <Ul>
-                  <Li>Massgeschneidert für die Aufgabe</Li>
-                  <Li>Benutzerfreundlichkeit</Li>
-                  <Li>Null Unterhaltsbedarf</Li>
-                </Ul>
-              </div>
-              <UncontrolledCarousel
-                items={kaplaCarouselitems}
-                autoPlay={false}
-                interval={false}
-              />
-              <P>Im produktiven Einsatz seit 2016.</P>
-              <P>
-                Mehr Informationen&nbsp;
-                <a
-                  href="https://github.com/barbalex/kapla3"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  auf GitHub
-                </a>
-                .
-              </P>
-            </Section>
-            <Section id="awel-indikatoren">
-              <Img src={zhLoeweImg} alt="AWEL-Indikatoren" height={51} />
-              <H4>AWEL-Indikatoren</H4>
-              <P>
-                Das AWEL (Amt für Abfall, Wasser, Energie und Luft) des Kantons
-                Zürich verwaltet mit dieser Access-Anwendung Indikatoren.
-              </P>
-              <div>
-                Grösste Stärken:
-                <Ul>
-                  <Li>Massgeschneidert für die Aufgabe</Li>
-                  <Li>Bisher null Unterhaltsbedarf</Li>
-                </Ul>
-              </div>
-              <UncontrolledCarousel
-                items={aiCarouselitems}
-                autoPlay={false}
-                interval={false}
-              />
-              <P>Im produktiven Einsatz seit 2014.</P>
-            </Section>
-            <Section id="brexit-chronology">
-              <Img src={bcImg} alt="brexit-chronology" height={51} />
-              <H4>brexit-chronology.ch</H4>
-              <P>
-                Chronologie des Brexit aus Sicht Grossbritanniens und der EU.
-              </P>
-              <div>
-                Grösste Stärken:
-                <Ul>
-                  <Li>Rasche Übersicht über relevante politische Ereignisse</Li>
-                  <Li>
-                    Der Autor kann Ereignisse und Artikel direkt bearbeiten -
-                    wie bei einem{' '}
-                    <a
-                      href="https://de.wikipedia.org/wiki/Content-Management-System"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      CMS
-                    </a>
-                  </Li>
-                </Ul>
-              </div>
-              <UncontrolledCarousel
-                items={bcCarouselItems}
-                autoPlay={false}
-                interval={false}
-              />
-              <P>Im produktiven Einsatz seit 2017.</P>
-              <P>
-                Schauen Sie selber:&nbsp;
-                <a
-                  href="https://brexit-chronology.ch"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  brexit-chronology.ch
-                </a>
-                .
-              </P>
-            </Section>
-            <Section id="mediterranean-migration">
-              <Img src={bbImg} alt="mediterranean-migration" height={51} />
-              <H4>mediterranean-migration.com</H4>
-              <P>
-                Übersicht über die Migration durch das zentrale und östliche
-                Mittelmeer.
-              </P>
-              <div>
-                Grösste Stärken:
-                <Ul>
-                  <Li>
-                    Rasche Übersicht über Migrationsströme und dazugehörige
-                    politische Ereignisse
-                  </Li>
-                  <Li>
-                    Der Autor kann Ereignisse und Artikel direkt bearbeiten -
-                    wie bei einem{' '}
-                    <a
-                      href="https://de.wikipedia.org/wiki/Content-Management-System"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      CMS
-                    </a>
-                  </Li>
-                </Ul>
-              </div>
-              <UncontrolledCarousel
-                items={bbCarouselItems}
-                autoPlay={false}
-                interval={false}
-              />
-              <P>Im produktiven Einsatz seit 2015.</P>
-              <P>
-                Schauen Sie selber:&nbsp;
-                <a
-                  href="https://mediterranean-migration.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  mediterranean-migration.com
-                </a>
-                .
-              </P>
-            </Section>
-          </MainColumn>
-        </Page>
-      )}
-    </Location>
+              </Li>
+            </Ul>
+          </div>
+          <UncontrolledCarousel
+            items={bbCarouselItems}
+            autoPlay={false}
+            interval={false}
+          />
+          <P>Im produktiven Einsatz seit 2015.</P>
+          <P>
+            Schauen Sie selber:&nbsp;
+            <a
+              href="https://mediterranean-migration.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              mediterranean-migration.com
+            </a>
+            .
+          </P>
+        </Section>
+      </MainColumn>
+    </Page>
   </Layout>
 )
 

@@ -85,7 +85,7 @@ const IndexPage = () => (
           <Ul>
             <Li>Bedürfnisse abklären...</Li>
             <Li>
-              ...und in den "Fachjargon" von Software­ingenieuren übersetzen
+              {'...und in den "Fachjargon" von Software­ingenieuren übersetzen'}
             </Li>
             <Li>Risiken minimieren</Li>
             <Li>unabhängige Meinung</Li>
