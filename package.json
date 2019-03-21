@@ -37,7 +37,7 @@
     "build_comment_3": "copy CNAME file or custom domain will be lost",
     "prebuild": "del-cli -f docs",
     "build": "gatsby build",
-    "postbuild": "ncp public docs && copyfiles CNAME docs",
+    "postbuild": "ncp public docs && copyfiles CNAME docs && copyfiles now.json public",
     "dev": "gatsby develop",
     "format": "prettier --write '**/*.js'",
     "test": "echo \"Error: no test specified\" && exit 1"
