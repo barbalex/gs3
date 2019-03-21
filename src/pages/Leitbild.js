@@ -56,7 +56,7 @@ const LeitbildPage = () => (
             <br />
             je genauer die Anwendung Ihre Arbeit abbildet,
             <br />
-            desto besser "passt" sie.
+            {'desto besser "passt" sie.'}
           </P>
           <P>Und desto kleiner ist das Risiko bei der Einführung.</P>
           <P>
