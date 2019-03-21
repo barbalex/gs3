@@ -1,11 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
-import GoogleMapReact from 'google-map-react'
+import { Map, ScaleControl, TileLayer, Marker } from 'react-leaflet'
 import 'bootstrap/dist/css/bootstrap.min.css'
+import 'leaflet/dist/leaflet.css'
+import 'leaflet'
 
 import alexImg from '../images/alex.jpg'
 import Layout from '../components/layout'
-import secrets from '../../secrets.json'
+import iconsvg from '../utils/icon.svg'
 
 const Page = styled.div`
   padding: 15px;
@@ -22,43 +24,21 @@ const Col = styled.div`
 const StyledImg = styled.img`
   margin-bottom: 10px;
 `
+const StyledMap = styled(Map)`
+  width: 100%;
+  height: 400px;
+`
+
+const icon = new window.L.Icon({
+  iconUrl: iconsvg,
+  iconRetinaUrl: iconsvg,
+  iconAnchor: [10, 10],
+  iconSize: [100, 100],
+})
 
 const mapCenter = {
   lat: 47.283746,
   lng: 8.56382,
-}
-const mapDivStyle = {
-  // initially any map object has left top corner at lat lng coordinates
-  // it's on you to set object origin to 0,0 coordinates
-  position: 'absolute',
-  width: 40,
-  height: 40,
-  left: -40 / 2,
-  top: -40 / 2,
-  border: '5px solid red',
-  borderRadius: 40,
-  backgroundColor: 'rgba(0,0,0,0)',
-  padding: 4,
-}
-
-function createMapOptions(maps) {
-  return {
-    zoomControlOptions: {
-      position: maps.ControlPosition.LEFT_BOTTOM,
-      style: maps.ZoomControlStyle.SMALL,
-    },
-    mapTypeControl: true,
-    mapTypeId: maps.MapTypeId.ROADMAP,
-    mapTypeControlOptions: {
-      style: maps.MapTypeControlStyle.HORIZONTAL_BAR,
-      position: maps.ControlPosition.TOP_LEFT,
-      mapTypeIds: [
-        maps.MapTypeId.ROADMAP,
-        maps.MapTypeId.SATELLITE,
-        maps.MapTypeId.HYBRID,
-      ],
-    },
-  }
 }
 
 const KontaktPage = () => {
@@ -87,36 +67,14 @@ const KontaktPage = () => {
             </address>
           </Col>
           <Col className="col-lg-9">
-            <div style={{ height: 400, width: '100%' }}>
-              <GoogleMapReact
-                bootstrapURLKeys={secrets.gmkey}
-                defaultCenter={mapCenter}
-                defaultZoom={10}
-                options={createMapOptions}
-              >
-                <div
-                  lat={47.283746}
-                  lng={8.56382}
-                  text={'Gabriel Software'}
-                  style={mapDivStyle}
-                />
-              </GoogleMapReact>
-            </div>
-            <div>
-              <small>
-                <a
-                  href="https://www.google.ch/maps/place/47%C2%B017'01.9%22N+8%C2%B033'50.1%22E/@47.2838532,8.5632326,172m/data=!3m2!1e3!4b1!4m5!3m4!1s0x0:0x0!8m2!3d47.283852!4d8.56393"
-                  style={{
-                    color: '#0000FF',
-                    textAlign: 'left',
-                  }}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  in Google Maps öffnen
-                </a>
-              </small>
-            </div>
+            <StyledMap center={mapCenter} zoom={10}>
+              <ScaleControl imperial={false} />
+              <TileLayer
+                attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+              />
+              <Marker position={mapCenter} icon={icon} />
+            </StyledMap>
           </Col>
         </Row>
       </Page>
