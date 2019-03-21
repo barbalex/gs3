@@ -2,8 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { Map, ScaleControl, TileLayer, Marker } from 'react-leaflet'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import 'leaflet/dist/leaflet.css'
-import 'leaflet'
+import { window, exists } from 'browser-monads'
 
 import alexImg from '../images/alex.jpg'
 import Layout from '../components/layout'
@@ -11,10 +10,6 @@ import iconsvg from '../utils/icon.svg'
 
 const Page = styled.div`
   padding: 15px;
-  /* Hinweise von Google ausblenden, überschneiden mit dem Ziehsymbol */
-  .gm-style-cc {
-    display: none;
-  }
 `
 const Row = styled.div``
 const Col = styled.div`
@@ -24,22 +19,21 @@ const Col = styled.div`
 const StyledImg = styled.img`
   margin-bottom: 10px;
 `
-const StyledMap = styled(Map)`
-  width: 100%;
-  height: 400px;
-`
-
-const icon = new window.L.Icon({
-  iconUrl: iconsvg,
-  iconRetinaUrl: iconsvg,
-  iconAnchor: [10, 10],
-  iconSize: [100, 100],
-})
+let icon = null
+if (exists(window)) {
+  icon = new window.L.Icon({
+    iconUrl: iconsvg,
+    iconRetinaUrl: iconsvg,
+    iconAnchor: [10, 10],
+    iconSize: [100, 100],
+  })
+}
 
 const mapCenter = {
   lat: 47.283746,
   lng: 8.56382,
 }
+const mapStyle = { height: 400, width: '100%' }
 
 const KontaktPage = () => {
   return (
@@ -67,14 +61,16 @@ const KontaktPage = () => {
             </address>
           </Col>
           <Col className="col-lg-9">
-            <StyledMap center={mapCenter} zoom={10}>
-              <ScaleControl imperial={false} />
-              <TileLayer
-                attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-              />
-              <Marker position={mapCenter} icon={icon} />
-            </StyledMap>
+            {exists(window) && (
+              <Map center={mapCenter} zoom={10} style={mapStyle}>
+                <ScaleControl imperial={false} />
+                <TileLayer
+                  attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+                  url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                />
+                <Marker position={mapCenter} icon={icon} />
+              </Map>
+            )}
           </Col>
         </Row>
       </Page>
