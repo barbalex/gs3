@@ -186,6 +186,16 @@ const TechnologienPage = () => (
             </Li>
             <Li>
               <A
+                href="http://http://nodejs.org"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                node.js
+              </A>
+              <P>JavaScript auf PC und Server</P>
+            </Li>
+            <Li>
+              <A
                 href="http://de.wikipedia.org/wiki/JavaScript_Object_Notation"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -236,16 +246,6 @@ const TechnologienPage = () => (
           <Ul>
             <Li>
               <A
-                href="http://http://nodejs.org"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                node.js
-              </A>
-              <P>JavaScript auf PC und Server</P>
-            </Li>
-            <Li>
-              <A
                 href="http://electron.atom.io"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -261,8 +261,16 @@ const TechnologienPage = () => (
                 rel="noopener noreferrer"
               >
                 flow
+              </A>{' '}
+              und{' '}
+              <A
+                href="https://www.typescriptlang.org"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                typescript
               </A>
-              <P>Findet Fehler, bevor der Code ausgeführt wird</P>
+              <P>Fehler finden, bevor der Code ausgeführt wird</P>
             </Li>
             <Li>
               <A
@@ -276,13 +284,15 @@ const TechnologienPage = () => (
             </Li>
             <Li>
               <A
-                href="http://webpack.github.io"
+                href="https://www.gatsbyjs.org/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                webpack
+                Gatsby
               </A>
-              <P>Entwicklungsumgebung konfigurieren</P>
+              <P>
+                Web-App-Entwicklungswerkzeug. Ermöglicht sehr kurze Ladezeiten
+              </P>
             </Li>
             <Li>
               <A
@@ -362,19 +372,6 @@ const TechnologienPage = () => (
             </Li>
             <Li>
               <A
-                href="http://docs.couchdb.org/en/2.0.0/couchapp"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                CouchApp
-              </A>
-              <P>
-                CouchDB-Datenbank, Server und Anwendung in Einem! Läuft und
-                läuft und läuft...
-              </P>
-            </Li>
-            <Li>
-              <A
                 href="http://openlayers.org/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -406,6 +403,16 @@ const TechnologienPage = () => (
                 Google Maps API
               </A>
               <P>Karten einbinden</P>
+            </Li>
+            <Li>
+              <A
+                href="https://www.cypress.io/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                cypress
+              </A>
+              <P>Testen geht über Probieren...</P>
             </Li>
           </Ul>
         </div>
