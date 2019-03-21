@@ -3,6 +3,17 @@ module.exports = {
     title: 'Gabriel Software',
   },
   plugins: [
+    {
+      resolve: 'gatsby-plugin-eslint',
+      options: {
+        test: /\.js$|\.jsx$/,
+        exclude: /(node_modules|cache|public|docs)/,
+        options: {
+          emitWarning: true,
+          failOnError: false,
+        },
+      },
+    },
     'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-plugin-manifest`,
@@ -12,8 +23,9 @@ module.exports = {
         start_url: '/',
         background_color: '#145f00',
         theme_color: '#145f00',
-        display: 'minimal-ui',
-        icon: 'src/images/favicon.png', // This path is relative to the root of the site.
+        display: 'standalone',
+        icon: 'src/images/favicon.png',
+        include_favicon: true,
       },
     },
     {
@@ -22,12 +34,7 @@ module.exports = {
         pathToConfigModule: './src/utils/typography.js',
       },
     },
-    {
-      resolve: `gatsby-plugin-styled-components`,
-      options: {
-        // Add any options here
-      },
-    },
+    'gatsby-plugin-styled-components',
     'gatsby-plugin-offline',
   ],
 }
