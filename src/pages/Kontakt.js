@@ -71,6 +71,21 @@ const KontaktPage = () => {
                 <Marker position={mapCenter} icon={icon} />
               </Map>
             )}
+            <div>
+              <small>
+                <a
+                  href="https://www.google.ch/maps/place/47%C2%B017'01.9%22N+8%C2%B033'50.1%22E/@47.27081,8.5309685,11.83z/data=!4m5!3m4!1s0x0:0x0!8m2!3d47.2838611!4d8.5639167"
+                  style={{
+                    color: '#0000FF',
+                    textAlign: 'left',
+                  }}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  in Google Maps öffnen
+                </a>
+              </small>
+            </div>
           </Col>
         </Row>
       </Page>
