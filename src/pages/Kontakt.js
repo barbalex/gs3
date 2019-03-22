@@ -19,6 +19,7 @@ const Col = styled.div`
 const StyledImg = styled.img`
   margin-bottom: 10px;
 `
+
 let icon = null
 if (exists(window)) {
   icon = new window.L.Icon({
@@ -28,7 +29,6 @@ if (exists(window)) {
     iconSize: [100, 100],
   })
 }
-
 const mapCenter = {
   lat: 47.283746,
   lng: 8.56382,
