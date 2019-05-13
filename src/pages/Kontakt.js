@@ -1,8 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Map, ScaleControl, TileLayer, Marker } from 'react-leaflet'
+import { Map, ScaleControl, /*TileLayer, */ Marker } from 'react-leaflet'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { window, exists } from 'browser-monads'
+import ReactLeafletGoogleLayer from 'react-leaflet-google-layer'
 
 import alexImg from '../images/alex.jpg'
 import Layout from '../components/layout'
@@ -64,9 +65,15 @@ const KontaktPage = () => {
             {exists(window) && (
               <Map center={mapCenter} zoom={10} style={mapStyle}>
                 <ScaleControl imperial={false} />
-                <TileLayer
+                {/*<TileLayer
                   attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
                   url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                />*/}
+                <ReactLeafletGoogleLayer
+                  googleMapsLoaderConf={{
+                    KEY: 'AIzaSyCVlzSnDesv4Cw1m6Sd3hsVxmAjPfuhqnI',
+                  }}
+                  type={'roadmap'}
                 />
                 <Marker position={mapCenter} icon={icon} />
               </Map>
