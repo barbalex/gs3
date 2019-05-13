@@ -71,7 +71,7 @@ const KontaktPage = () => {
                 />*/}
                 <ReactLeafletGoogleLayer
                   googleMapsLoaderConf={{
-                    KEY: 'AIzaSyCVlzSnDesv4Cw1m6Sd3hsVxmAjPfuhqnI',
+                    KEY: process.env.GM_KEY,
                   }}
                   type={'roadmap'}
                 />

@@ -7,3 +7,6 @@ yarn-error.log
 /public
 .DS_Store
 secrets.json
+
+# dotenv environment variables file
+.env*
