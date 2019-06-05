@@ -91,7 +91,7 @@ const TechnologienPage = () => (
               >
                 macOS
               </A>
-              <P>Entwickler fliegen drauf...</P>
+              <P>Entwickler fliegen drauf</P>
             </Li>
           </Ul>
           <FaDatabase style={{ fontSize: 30 }} />
@@ -106,6 +106,16 @@ const TechnologienPage = () => (
                 PostgreSQL
               </A>
               <P>Der Klassenprimus</P>
+            </Li>
+            <Li>
+              <A
+                href="https://de.wikipedia.org/wiki/PostGIS"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                PostGIS
+              </A>
+              <P>Erweitert PostgreSQL zur mächtigen Geo-Datenbank</P>
             </Li>
             <Li>
               <A
@@ -232,9 +242,19 @@ const TechnologienPage = () => (
                 SQL
               </A>
               <P>
-                Nach wie vor der Standard, um Daten abzufragen und zu
-                manipulieren
+                Nach wie vor der Standard, um Daten in der Datenbank abzufragen
+                und zu manipulieren
               </P>
+            </Li>
+            <Li>
+              <A
+                href="//graphql.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GraphQL
+              </A>
+              <P>Der neue Standard, um Daten von der API abzufragen</P>
             </Li>
           </Ul>
         </div>
@@ -270,7 +290,7 @@ const TechnologienPage = () => (
               >
                 typescript
               </A>
-              <P>Fehler finden, bevor der Code ausgeführt wird</P>
+              <P>Type-Checker für JavaScript</P>
             </Li>
             <Li>
               <A
@@ -282,6 +302,25 @@ const TechnologienPage = () => (
               </A>
               <P>Meister Server</P>
             </Li>
+            <Li>
+              <A
+                href="https://www.graphile.org/postgraphile"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                PostGraphile
+              </A>{' '}
+              und{' '}
+              <A
+                href="https://hasura.io/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Hasura
+              </A>
+              <P>{`GraphQL-API's (Schnittstellen) für PostgreSQL`}</P>
+            </Li>
+
             <Li>
               <A
                 href="https://www.gatsbyjs.org/"
@@ -307,14 +346,6 @@ const TechnologienPage = () => (
               </P>
             </Li>
             <Li>
-              <A
-                href="//graphql.org/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                GraphQL
-              </A>
-              &nbsp;und&nbsp;
               <A
                 href="https://www.apollographql.com/"
                 target="_blank"
