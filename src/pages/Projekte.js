@@ -177,11 +177,19 @@ const ProjektPage = () => (
           <P>
             Mehr Informationen&nbsp;
             <a
-              href="https://barbalex.github.io/apf2"
+              href="https://apflora.ch"
               target="_blank"
               rel="noopener noreferrer"
             >
-              auf der Projekt-Webseite
+              auf der Projekt-Startseite
+            </a>
+            &nbsp;und&nbsp;
+            <a
+              href="https://apflora.ch/Dokumentation/Benutzer/Was-kann-man-mit-apflora-machen"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              in der Dokumentation
             </a>
             .
           </P>
@@ -216,11 +224,11 @@ const ProjektPage = () => (
           <P>
             Mehr Informationen&nbsp;
             <a
-              href="https://github.com/FNSKtZH/artendb"
+              href="https://docs.arteigenschaften.ch"
               target="_blank"
               rel="noopener noreferrer"
             >
-              auf GitHub
+              in der Dokumentation
             </a>
             {' und bei der '}
             <a
