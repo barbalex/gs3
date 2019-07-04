@@ -32,7 +32,7 @@ if (exists(window)) {
 }
 const mapCenter = {
   lat: 47.289563,
-  lng: 8.566441,
+  lng: 8.56644,
 }
 const mapStyle = { height: 400, width: '100%' }
 
@@ -81,7 +81,7 @@ const KontaktPage = () => {
             <div>
               <small>
                 <a
-                  href="https://www.google.ch/maps/place/47%C2%B017'01.9%22N+8%C2%B033'50.1%22E/@47.289563,8.566441,11.83z/data=!4m5!3m4!1s0x0:0x0!8m2!3d47.2838611!4d8.5639167"
+                  href="https://www.google.ch/maps/place/47.289563,8.56644"
                   style={{
                     color: '#0000FF',
                     textAlign: 'left',
