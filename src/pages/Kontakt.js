@@ -31,8 +31,8 @@ if (exists(window)) {
   })
 }
 const mapCenter = {
-  lat: 47.283746,
-  lng: 8.56382,
+  lat: 47.289563,
+  lng: 8.566441,
 }
 const mapStyle = { height: 400, width: '100%' }
 
@@ -52,7 +52,7 @@ const KontaktPage = () => {
               <br />
               Alexander Gabriel
               <br />
-              Bönirainstrasse 14
+              Wiesenstrasse 22
               <br />
               8800 Thalwil
               <br />
@@ -81,7 +81,7 @@ const KontaktPage = () => {
             <div>
               <small>
                 <a
-                  href="https://www.google.ch/maps/place/47%C2%B017'01.9%22N+8%C2%B033'50.1%22E/@47.27081,8.5309685,11.83z/data=!4m5!3m4!1s0x0:0x0!8m2!3d47.2838611!4d8.5639167"
+                  href="https://www.google.ch/maps/place/47%C2%B017'01.9%22N+8%C2%B033'50.1%22E/@47.289563,8.566441,11.83z/data=!4m5!3m4!1s0x0:0x0!8m2!3d47.2838611!4d8.5639167"
                   style={{
                     color: '#0000FF',
                     textAlign: 'left',
