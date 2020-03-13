@@ -1,9 +1,8 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
 import { Map, ScaleControl, /*TileLayer, */ Marker } from 'react-leaflet'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { window, exists } from 'browser-monads'
-import ReactLeafletGoogleLayer from 'react-leaflet-google-layer'
 
 import alexImg from '../images/alex.jpg'
 import Layout from '../components/layout'
@@ -37,6 +36,15 @@ const mapCenter = {
 const mapStyle = { height: 400, width: '100%' }
 
 const KontaktPage = () => {
+  const [ReactLeafletGoogleLayer, setReactLeafletGoogleLayer] = useState(null)
+  useEffect(() => {
+    if (exists(window)) {
+      import('react-leaflet-google-layer').then(module => {
+        setReactLeafletGoogleLayer(module.default)
+      })
+    }
+  }, [])
+
   return (
     <Layout>
       <Page className="page kontakt">
@@ -62,22 +70,22 @@ const KontaktPage = () => {
             </address>
           </Col>
           <Col className="col-lg-9">
-            {exists(window) && (
-              <Map center={mapCenter} zoom={10} style={mapStyle}>
-                <ScaleControl imperial={false} />
-                {/*<TileLayer
+            <Map center={mapCenter} zoom={10} style={mapStyle}>
+              <ScaleControl imperial={false} />
+              {/*<TileLayer
                   attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
                   url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                 />*/}
+              {!!ReactLeafletGoogleLayer && (
                 <ReactLeafletGoogleLayer
                   googleMapsLoaderConf={{
-                    KEY: process.env.GM_KEY,
+                    KEY: process.env.GATSBY_GM_KEY,
                   }}
                   type={'roadmap'}
                 />
-                <Marker position={mapCenter} icon={icon} />
-              </Map>
-            )}
+              )}
+              <Marker position={mapCenter} icon={icon} />
+            </Map>
             <div>
               <small>
                 <a
