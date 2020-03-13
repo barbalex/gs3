@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: 'Gabriel Software',
+    siteUrl: `https://gabriel-software.ch`,
   },
   plugins: [
     {
@@ -46,5 +47,6 @@ module.exports = {
     'gatsby-plugin-styled-components',
     'gatsby-plugin-offline',
     'gatsby-plugin-react-leaflet',
+    'gatsby-plugin-sitemap',
   ],
 }
