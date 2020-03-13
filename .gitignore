@@ -10,3 +10,4 @@ secrets.json
 
 # dotenv environment variables file
 .env*
+.now
