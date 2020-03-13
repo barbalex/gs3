@@ -45,10 +45,9 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby clean && gatsby build",
-    "postbuild": "copyfiles now.json public",
+    "postbuild": "copyfiles .now/* public",
     "dev": "gatsby develop",
-    "format": "prettier --write '**/*.js'",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "format": "prettier --write '**/*.js'"
   },
   "repository": {
     "type": "git",
