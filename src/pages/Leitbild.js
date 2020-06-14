@@ -6,6 +6,7 @@ import {
   FaWrench,
   FaCrown,
 } from 'react-icons/fa'
+import { MdGpsFixed } from 'react-icons/md'
 import styled from 'styled-components'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
@@ -65,7 +66,7 @@ const LeitbildPage = () => (
           </P>
         </div>
         <div className="col-lg-4">
-          <FaRetweet style={{ fontSize: 40 }} />
+          <MdGpsFixed style={{ fontSize: 40 }} />
           <H4>Sinn suchen</H4>
           <P>
             Menschen gewöhnen sich erstaunlich gut an Inkonsistenzen. Oft leidet
@@ -117,6 +118,26 @@ const LeitbildPage = () => (
             <Li>den Aufwand zu minimieren</Li>
             <Li>Vertrauen aufzubauen</Li>
           </Ul>
+        </div>
+        <div className="col-lg-4">
+          <FaRetweet style={{ fontSize: 40 }} />
+          <H4>Ich bin austauschbar</H4>
+          <P>
+            Ich arbeite 100% open source mit der freizügigsten Lizenz (MIT).
+          </P>
+          <P>
+            Code und Konzepte werden in der App selbst dokumentiert und sind auf
+            GitHub frei verfügbar.
+          </P>
+          <P>
+            Ich verwende modernste Methoden. Aber nichts Exotisches: jede
+            kompetente JavaScript-Entwicklerin kann das Projekt nach kurzer
+            Einarbeit übernehmen.
+          </P>
+          <P>
+            Technologien und Methoden werden laufend aktuell gehalten. Es gibt
+            keinen "technical debt".
+          </P>
         </div>
       </Row>
     </Page>

@@ -39,7 +39,7 @@ const KontaktPage = () => {
   const [ReactLeafletGoogleLayer, setReactLeafletGoogleLayer] = useState(null)
   useEffect(() => {
     if (exists(window)) {
-      import('react-leaflet-google-layer').then(module => {
+      import('react-leaflet-google-layer').then((module) => {
         setReactLeafletGoogleLayer(module.default)
       })
     }
@@ -59,6 +59,8 @@ const KontaktPage = () => {
               <strong>Gabriel Software</strong>
               <br />
               Alexander Gabriel
+              <br />
+              Dipl. Umwelt-Naturwissenschafter ETH
               <br />
               Wiesenstrasse 22
               <br />

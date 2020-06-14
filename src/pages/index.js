@@ -59,36 +59,34 @@ const IndexPage = () => (
       </StyledJumbotron>
 
       <Row className="row marketing">
-        <div className="col-lg-4 col-md-6">
+        <div className="col-md-7">
           <FaCloud style={style} />
-          <H4 style={{ marginTop: 0 }}>Web-Anwendungen</H4>
+          <H4 style={{ marginTop: 0 }}>Web-App</H4>
           <Ul>
-            <Li>mit Datenbank- und Anwendungs-Server</Li>
-            <Li>im Intranet oder Internet</Li>
-            <Li>nach Wunsch mobile- und offline-first</Li>
-            <Li>ideal für Geräte- oder Firmen-übergreifende Zusammenarbeit</Li>
-          </Ul>
-        </div>
-        <div className="col-lg-4 col-md-6">
-          <FaHdd style={style} />
-          <H4>Desktop-Anwendungen</H4>
-          <Ul>
-            <Li>lokal installiert</Li>
-            <Li>auf Windows, Mac und Linux</Li>
-            <Li>besonders leistungsfähig oder</Li>
-            <Li>beinahe Null-Unterhalt</Li>
-          </Ul>
-        </div>
-        <div className="col-lg-4 col-md-12">
-          <FaCommentAlt style={style} />
-          <H4>Beratung</H4>
-          <Ul>
-            <Li>Bedürfnisse abklären...</Li>
             <Li>
-              {'...und in den "Fachjargon" von Software­ingenieuren übersetzen'}
+              Mit App-Server, Datenbank-Server und Daten-Schnittstelle:
+              ermöglicht App-übergreifende Zusammenarbeit
             </Li>
-            <Li>Risiken minimieren</Li>
-            <Li>unabhängige Meinung</Li>
+            <Li>Im Intranet oder Internet</Li>
+            <Li>
+              Mobile-first, offline-first mit leistungsfähiger Konflikt-Lösung,
+              live aktualisiert
+            </Li>
+            <Li>
+              Progressive Web App, daher nicht von "normalen" Apps
+              unterscheidbar
+            </Li>
+            <Li>Ideal für Geräte- oder Firmen-übergreifende Zusammenarbeit</Li>
+          </Ul>
+        </div>
+        <div className="col-md">
+          <FaHdd style={style} />
+          <H4>Desktop-App</H4>
+          <Ul>
+            <Li>Lokal installiert</Li>
+            <Li>Auf Windows, Mac und Linux</Li>
+            <Li>Besonders leistungsfähig oder</Li>
+            <Li>Beinahe Null-Unterhalt</Li>
           </Ul>
         </div>
       </Row>

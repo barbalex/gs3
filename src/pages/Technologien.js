@@ -89,7 +89,7 @@ const TechnologienPage = () => (
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                macOS
+                MacOS
               </A>
               <P>Entwickler fliegen drauf</P>
             </Li>
@@ -146,24 +146,6 @@ const TechnologienPage = () => (
                 SQLite
               </A>
               <P>{`Simpler geht's nimmer`}</P>
-            </Li>
-            <Li>
-              <A
-                href="http://www.mysql.de"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                MySQL
-              </A>
-            </Li>
-            <Li>
-              <A
-                href="http://de.wikipedia.org/wiki/Microsoft_Access"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Microsoft Access
-              </A>
             </Li>
           </Ul>
         </div>
@@ -276,24 +258,6 @@ const TechnologienPage = () => (
             </Li>
             <Li>
               <A
-                href="https://flow.org"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                flow
-              </A>{' '}
-              und{' '}
-              <A
-                href="https://www.typescriptlang.org"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                typescript
-              </A>
-              <P>Type-Checker für JavaScript</P>
-            </Li>
-            <Li>
-              <A
                 href="http://hapijs.com"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -318,7 +282,7 @@ const TechnologienPage = () => (
               >
                 Hasura
               </A>
-              <P>{`GraphQL-API's (Schnittstellen) für PostgreSQL`}</P>
+              <P>{`GraphQL-Schnittstellen für PostgreSQL`}</P>
             </Li>
 
             <Li>
@@ -341,29 +305,7 @@ const TechnologienPage = () => (
               >
                 React
               </A>
-              <P>
-                Die Benutzeroberfläche ist eine Funktion der Anwendungsdaten
-              </P>
-            </Li>
-            <Li>
-              <A
-                href="https://www.apollographql.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Apollo
-              </A>
-              <P>Die Anwendungsdaten sind eine Funktion der Abfrage</P>
-            </Li>
-            <Li>
-              <A
-                href="https://mobx.js.org"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                MobX
-              </A>
-              ,{' '}
+              {' und '}
               <A
                 href="https://github.com/mobxjs/mobx-state-tree"
                 target="_blank"
@@ -371,7 +313,10 @@ const TechnologienPage = () => (
               >
                 MobX-State-Tree
               </A>
-              <P>Meister im Manipulieren von Anwendungsdaten</P>
+              <P>
+                Die Benutzeroberfläche ist eine Funktion von Anwendungsdaten und
+                Benutzereingaben
+              </P>
             </Li>
             <Li>
               <A
@@ -434,16 +379,6 @@ const TechnologienPage = () => (
                 Google Maps API
               </A>
               <P>Karten einbinden</P>
-            </Li>
-            <Li>
-              <A
-                href="https://www.cypress.io/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                cypress
-              </A>
-              <P>Testen geht über Probieren...</P>
             </Li>
           </Ul>
         </div>
