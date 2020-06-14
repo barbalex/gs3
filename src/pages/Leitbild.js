@@ -43,6 +43,14 @@ const P = styled.p`
 const Lead = styled.p`
   margin-bottom: 16px;
 `
+const A = styled.a`
+  color: #333;
+  border-bottom: 1px dashed #333;
+  &:hover {
+    border-bottom: 1px solid #428bca;
+    text-decoration: none;
+  }
+`
 
 const LeitbildPage = () => (
   <Layout>
@@ -123,11 +131,34 @@ const LeitbildPage = () => (
           <FaRetweet style={{ fontSize: 40 }} />
           <H4>Ich bin austauschbar</H4>
           <P>
-            Ich arbeite 100% open source mit der freizügigsten Lizenz (MIT).
+            {`Ich arbeite 100% `}
+            <A
+              href="https://opensource.com/resources/what-open-source"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              open source
+            </A>
+            {` unter der `}
+            <A
+              href="https://choosealicense.com/licenses/mit/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              freizügigsten Lizenz
+            </A>
+            .
           </P>
           <P>
-            Code und Konzepte werden in der App selbst dokumentiert und sind auf
-            GitHub frei verfügbar.
+            {`Code und Konzepte werden in der App selbst dokumentiert und sind auf `}
+            <A
+              href="https://github.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub
+            </A>
+            {` frei verfügbar.`}
           </P>
           <P>
             Ich verwende modernste Methoden. Aber nichts Exotisches: jede
@@ -136,7 +167,14 @@ const LeitbildPage = () => (
           </P>
           <P>
             Technologien und Methoden werden laufend aktuell gehalten. Es gibt
-            keinen "technical debt".
+            keinen{' '}
+            <A
+              href="https://martinfowler.com/bliki/TechnicalDebt.html"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              technical debt.
+            </A>
           </P>
         </div>
       </Row>

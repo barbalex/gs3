@@ -1,6 +1,6 @@
 import React from 'react'
 import { Jumbotron } from 'reactstrap'
-import { FaCloud, FaHdd, FaCommentAlt } from 'react-icons/fa'
+import { FaCloud, FaHdd } from 'react-icons/fa'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import styled from 'styled-components'
 
@@ -73,8 +73,8 @@ const IndexPage = () => (
               live aktualisiert
             </Li>
             <Li>
-              Progressive Web App, daher nicht von "normalen" Apps
-              unterscheidbar
+              {`Progressive Web App, daher nicht von "normalen" Apps
+              unterscheidbar`}
             </Li>
             <Li>Ideal für Geräte- oder Firmen-übergreifende Zusammenarbeit</Li>
           </Ul>
