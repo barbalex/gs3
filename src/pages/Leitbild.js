@@ -141,7 +141,7 @@ const LeitbildPage = () => (
             </A>
             {` unter der `}
             <A
-              href="https://choosealicense.com/licenses/mit/"
+              href="https://choosealicense.com/licenses/isc/"
               target="_blank"
               rel="noopener noreferrer"
             >
