@@ -9,10 +9,12 @@ import apfImg from '../images/apflora.png'
 import aeImg from '../images/ae.png'
 import bbImg from '../images/bb.png'
 import bcImg from '../images/bc.png'
+import vmImg from '../images/seedling.svg'
 import zhLoeweImg from '../images/zhLoewe.png'
 import kaplaImg from '../images/kapla.png'
 import apfloraCarouselItems from '../modules/apfloraCarouselItems'
 import aeCarouselItems from '../modules/aeCarouselItems'
+import vmCarouselItems from '../modules/vmCarouselItems'
 import bbCarouselItems from '../modules/bbCarouselItems'
 import bcCarouselItems from '../modules/bcCarouselitems'
 import kaplaCarouselitems from '../modules/kaplaCarouselitems'
@@ -121,6 +123,7 @@ const ProjektPage = () => (
           items={[
             'apflora',
             'arteigenschaften',
+            'vermehrung',
             'kapla',
             'awel-indikatoren',
             'brexit-chronology',
@@ -134,6 +137,9 @@ const ProjektPage = () => (
           </Li>
           <Li>
             <A href="#arteigenschaften">arteigenschaften.ch</A>
+          </Li>
+          <Li>
+            <A href="#vermehrung">vermehrung.ch</A>
           </Li>
           <Li>
             <A href="#kapla">Kapla</A>
@@ -181,7 +187,7 @@ const ProjektPage = () => (
               target="_blank"
               rel="noopener noreferrer"
             >
-              auf der Projekt-Startseite
+              auf der Startseite
             </a>
             &nbsp;und&nbsp;
             <a
@@ -224,19 +230,51 @@ const ProjektPage = () => (
           <P>
             Mehr Informationen&nbsp;
             <a
-              href="https://docs.arteigenschaften.ch"
+              href="https://artdaten.ch/Dokumentation/Projektbeschreibung"
               target="_blank"
               rel="noopener noreferrer"
             >
               in der Dokumentation
             </a>
-            {' und bei der '}
+            .
+          </P>
+        </Section>
+        <Section id="vermehrung">
+          <Img src={vmImg} alt="vermehrung.ch" height={51} />
+          <H4>vermehrung.ch</H4>
+          <H5>Bedrohte Pflanzen vermehren</H5>
+          <Ul>
+            <Li>mobile first</Li>
+            <Li>offline first</Li>
+            <Li>live updates</Li>
+            <Li>differenzierte Benutzerrechte</Li>
+          </Ul>
+          <P>
+            Grösste Stärke ist die Fähigkeit, ohne Internet-Anschluss und mit
+            dedem beliebigen Gerät arbeiten zu können.
+          </P>
+          <UncontrolledCarousel
+            items={vmCarouselItems}
+            autoPlay={false}
+            interval={false}
+          />
+          <P>Im produktiven Einsatz ab Sommer 2020.</P>
+          <P>
+            Mehr Informationen&nbsp;
             <a
-              href="https://aln.zh.ch/internet/baudirektion/aln/de/naturschutz/naturschutzdaten/tools/arteigenschaften.html"
+              href="https://vermehrung.ch"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Fachstelle Naturschutz des Kantons Zürich
+              auf der Startseite
+            </a>
+            {' und '}
+            <a
+              href="https://vermehrung.ch/Dokumentation/Ziele"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              in der Dokumentation
             </a>
             .
           </P>
