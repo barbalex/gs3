@@ -10,6 +10,7 @@ import a09 from '../images/apf_09_raum_filter.jpg'
 import a10 from '../images/apf_10_export.png'
 import a11 from '../images/apf_11_mehr.png'
 import a12 from '../images/apf_12_pb.png'
+import a13 from '../images/apf_13.png'
 
 export default [
   {
@@ -77,6 +78,12 @@ export default [
     altText: '...und mehr',
     caption: '',
     header: '...und mehr',
+  },
+  {
+    src: a13,
+    altText: 'Kontrollen planen',
+    caption: '',
+    header: 'Kontrollen planen',
   },
   {
     src: a12,
