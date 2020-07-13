@@ -12,12 +12,14 @@ import bcImg from '../images/bc.png'
 import vmImg from '../images/seedling.svg'
 import zhLoeweImg from '../images/zhLoewe.png'
 import kaplaImg from '../images/kapla.png'
+import apImg from '../images/ap.png'
 import apfloraCarouselItems from '../modules/apfloraCarouselItems'
 import aeCarouselItems from '../modules/aeCarouselItems'
 import vmCarouselItems from '../modules/vmCarouselItems'
 import bbCarouselItems from '../modules/bbCarouselItems'
 import bcCarouselItems from '../modules/bcCarouselitems'
 import kaplaCarouselitems from '../modules/kaplaCarouselitems'
+import apCarouselitems from '../modules/apCarouselitems'
 import aiCarouselitems from '../modules/aiCarouselitems'
 
 const Page = styled.div`
@@ -125,6 +127,7 @@ const ProjektPage = () => (
             'arteigenschaften',
             'vermehrung',
             'kapla',
+            'awel-personal',
             'awel-indikatoren',
             'brexit-chronology',
             'mediterranean-migration',
@@ -143,6 +146,9 @@ const ProjektPage = () => (
           </Li>
           <Li>
             <A href="#kapla">Kapla</A>
+          </Li>
+          <Li>
+            <A href="#awel-personal">AWEL-Personal</A>
           </Li>
           <Li>
             <A href="#awel-indikatoren">AWEL-Indikatoren</A>
@@ -313,6 +319,37 @@ const ProjektPage = () => (
             Mehr Informationen&nbsp;
             <a
               href="https://github.com/barbalex/kapla3"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              auf GitHub
+            </a>
+            .
+          </P>
+        </Section>
+        <Section id="awel-personal">
+          <Img src={apImg} alt="AWEL-Personal" height={51} />
+          <H4>AWEL-Personal</H4>
+          <P>
+            Damit verwaltet das AWEL (Amt für Abfall, Wasser, Energie und Luft)
+            des Kantons Zürich Personal-Daten.
+          </P>
+          <br />
+          <div>
+            Grösste Stärken:
+            <Ul>
+              <Li>Massgeschneidert für die Aufgabe</Li>
+              <Li>Benutzerfreundlichkeit</Li>
+              <Li>Null Unterhaltsbedarf</Li>
+            </Ul>
+          </div>
+          <P>Sorry, keine Bilder: Personaldaten sind sensibel...</P>
+          <br />
+          <P>Im produktiven Einsatz seit 2019.</P>
+          <P>
+            Mehr Informationen&nbsp;
+            <a
+              href="https://github.com/barbalex/awel-personal"
               target="_blank"
               rel="noopener noreferrer"
             >
