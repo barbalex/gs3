@@ -172,6 +172,15 @@ const ProjektPage = () => (
             <Ul>
               <Li>Komplexe Projektstruktur im Strukturbaum darstellen</Li>
               <Li>Aufwändige Jahresberichte auf Knopfdruck produzieren</Li>
+              <Li>
+                Erfolgskontrollen werden in einem leistungsfähigen Formular
+                Excel-ähnlich geplant
+              </Li>
+              <Li>Differenzierte Benutzerrechte</Li>
+              <Li>
+                Profis und Freiwillige erfassen ihre Daten selber, mit Hilfe von
+                massgeschneiderten Zugängen
+              </Li>
             </Ul>
           </div>
           <UncontrolledCarousel
