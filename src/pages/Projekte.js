@@ -301,6 +301,7 @@ const ProjektPage = () => (
             Mit Kapla verwaltet die Abteilung Recht des AWEL (Amt für Abfall,
             Wasser, Energie und Luft) des Kantons Zürich ihre Geschäfte.
           </P>
+          <br />
           <div>
             Grösste Stärken:
             <Ul>
