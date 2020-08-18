@@ -19,7 +19,6 @@ import vmCarouselItems from '../modules/vmCarouselItems'
 import bbCarouselItems from '../modules/bbCarouselItems'
 import bcCarouselItems from '../modules/bcCarouselitems'
 import kaplaCarouselitems from '../modules/kaplaCarouselitems'
-import apCarouselitems from '../modules/apCarouselitems'
 import aiCarouselitems from '../modules/aiCarouselitems'
 
 const Page = styled.div`
