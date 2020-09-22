@@ -7,8 +7,8 @@ import {
   FaCrown,
 } from 'react-icons/fa'
 import { MdGpsFixed } from 'react-icons/md'
-import styled from 'styled-components'
 import 'bootstrap/dist/css/bootstrap.min.css'
+import styled from 'styled-components'
 
 import Layout from '../components/layout'
 
