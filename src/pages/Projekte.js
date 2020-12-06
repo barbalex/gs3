@@ -265,14 +265,14 @@ const ProjektPage = () => (
           </Ul>
           <P>
             Grösste Stärke ist die Fähigkeit, ohne Internet-Anschluss und mit
-            dedem beliebigen Gerät arbeiten zu können.
+            jedem beliebigen Gerät arbeiten zu können (ausser iOS).
           </P>
           <UncontrolledCarousel
             items={vmCarouselItems}
             autoPlay={false}
             interval={false}
           />
-          <P>Im produktiven Einsatz ab Sommer 2020.</P>
+          <P>Im produktiven Einsatz seit Sommer 2020.</P>
           <P>
             Mehr Informationen&nbsp;
             <a
