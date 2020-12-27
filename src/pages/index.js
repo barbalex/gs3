@@ -85,8 +85,7 @@ const IndexPage = () => (
           <Ul>
             <Li>Lokal installiert</Li>
             <Li>Auf Windows, Mac und Linux</Li>
-            <Li>Besonders leistungsfähig oder</Li>
-            <Li>Beinahe Null-Unterhalt</Li>
+            <Li>Lösungen mit beinahe Null Unterhalt möglich</Li>
           </Ul>
         </div>
       </Row>
