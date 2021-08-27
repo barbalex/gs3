@@ -63,11 +63,11 @@ const LeitbildPage = () => (
           <P>
             Je mehr ich Ihre Arbeit verstehe,
             <br />
-            je genauer die Anwendung Ihre Arbeit abbildet,
+            je genauer die App Ihre Arbeit abbildet,
             <br />
             {'desto besser "passt" sie.'}
           </P>
-          <P>Und desto kleiner ist das Risiko bei der Einführung.</P>
+          <P>Und umso kleiner ist das Risiko bei der Einführung.</P>
           <P>
             Wenn Menschen vom selben sprechen, verstehen nicht immer alle
             dasselbe. Klappt etwas nicht? Oft liegt der Hund hier begraben.
@@ -162,8 +162,8 @@ const LeitbildPage = () => (
           </P>
           <P>
             Ich verwende modernste Methoden. Aber nichts Exotisches: jede
-            kompetente JavaScript-Entwicklerin kann das Projekt nach kurzer
-            Einarbeit übernehmen.
+            kompetente Entwicklerin kann das Projekt nach kurzer Einarbeit
+            übernehmen.
           </P>
           <P>
             Technologien und Methoden werden laufend aktuell gehalten. Es gibt

@@ -129,16 +129,6 @@ const TechnologienPage = () => (
             </Li>
             <Li>
               <A
-                href="https://pouchdb.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                PouchDB
-              </A>
-              <P>CouchDB im Browser</P>
-            </Li>
-            <Li>
-              <A
                 href="http://www.sqlite.org"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -178,17 +168,27 @@ const TechnologienPage = () => (
             </Li>
             <Li>
               <A
-                href="http://http://nodejs.org"
+                href="https://nodejs.org"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                node.js
+                Node.js
               </A>
               <P>JavaScript auf PC und Server</P>
             </Li>
             <Li>
               <A
-                href="http://de.wikipedia.org/wiki/JavaScript_Object_Notation"
+                href="https://dart.dev"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Dart
+              </A>
+              <P>Die Sprache hinter Flutter</P>
+            </Li>
+            <Li>
+              <A
+                href="https://de.wikipedia.org/wiki/JavaScript_Object_Notation"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -198,7 +198,7 @@ const TechnologienPage = () => (
             </Li>
             <Li>
               <A
-                href="http://de.wikipedia.org/wiki/Cascading_Style_Sheets"
+                href="https://de.wikipedia.org/wiki/Cascading_Style_Sheets"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -208,7 +208,7 @@ const TechnologienPage = () => (
             </Li>
             <Li>
               <A
-                href="http://de.wikipedia.org/wiki/Hypertext_Markup_Language"
+                href="https://de.wikipedia.org/wiki/Hypertext_Markup_Language"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -217,7 +217,7 @@ const TechnologienPage = () => (
             </Li>
             <Li>
               <A
-                href="http://de.wikipedia.org/wiki/SQL"
+                href="https://de.wikipedia.org/wiki/SQL"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -248,13 +248,23 @@ const TechnologienPage = () => (
           <Ul>
             <Li>
               <A
-                href="http://electron.atom.io"
+                href="https://flutter.dev/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Flutter
+              </A>
+              <P>Apps für mobile und desktop mit nativer Leistung</P>
+            </Li>
+            <Li>
+              <A
+                href="https://www.electronjs.org/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 electron
               </A>
-              <P>JavaScript-Anwendungen lokal installieren</P>
+              <P>JavaScript-Apps lokal installieren</P>
             </Li>
             <Li>
               <A
@@ -282,7 +292,7 @@ const TechnologienPage = () => (
               >
                 Hasura
               </A>
-              <P>{`GraphQL-Schnittstellen für PostgreSQL`}</P>
+              <P>{`GraphQL-Schnittstellen für Apps`}</P>
             </Li>
 
             <Li>
@@ -293,9 +303,7 @@ const TechnologienPage = () => (
               >
                 Gatsby
               </A>
-              <P>
-                Web-App-Entwicklungswerkzeug. Ermöglicht sehr kurze Ladezeiten
-              </P>
+              <P>Web-App-Entwicklungswerkzeug</P>
             </Li>
             <Li>
               <A
@@ -335,16 +343,6 @@ const TechnologienPage = () => (
                 Material UI
               </A>
               <P>Layouten nach Google und Microsoft</P>
-            </Li>
-            <Li>
-              <A
-                href="https://github.com/styled-components/styled-components"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                styled-components
-              </A>
-              <P>CSS für Komponenten</P>
             </Li>
             <Li>
               <A

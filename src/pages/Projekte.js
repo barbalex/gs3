@@ -8,7 +8,6 @@ import Layout from '../components/layout'
 import apfImg from '../images/apflora.png'
 import aeImg from '../images/ae.png'
 import bbImg from '../images/bb.png'
-import bcImg from '../images/bc.png'
 import vmImg from '../images/seedling.svg'
 import zhLoeweImg from '../images/zhLoewe.png'
 import kaplaImg from '../images/kapla.png'
@@ -17,7 +16,6 @@ import apfloraCarouselItems from '../modules/apfloraCarouselItems'
 import aeCarouselItems from '../modules/aeCarouselItems'
 import vmCarouselItems from '../modules/vmCarouselItems'
 import bbCarouselItems from '../modules/bbCarouselItems'
-import bcCarouselItems from '../modules/bcCarouselitems'
 import kaplaCarouselitems from '../modules/kaplaCarouselitems'
 import aiCarouselitems from '../modules/aiCarouselitems'
 
@@ -128,7 +126,6 @@ const ProjektPage = () => (
             'kapla',
             'awel-personal',
             'awel-indikatoren',
-            'brexit-chronology',
             'mediterranean-migration',
           ]}
           currentClassName="active"
@@ -153,9 +150,6 @@ const ProjektPage = () => (
             <A href="#awel-indikatoren">AWEL-Indikatoren</A>
           </Li>
           <Li>
-            <A href="#brexit-chronology">brexit-chronology.ch</A>
-          </Li>
-          <Li>
             <A href="#mediterranean-migration">
               mediterranean-
               <br />
@@ -165,7 +159,7 @@ const ProjektPage = () => (
         </StyledScrollspy>
       </Column>
       <MainColumn>
-        <Lead className="lead">Eine Auswahl von Projekten:</Lead>
+        <Lead className="lead">Eine Auswahl von aktuellen Projekten:</Lead>
         <Section id="apflora">
           <Img src={apfImg} alt="apflora" height={51} />
           <H4>apflora.ch</H4>
@@ -175,13 +169,13 @@ const ProjektPage = () => (
           <div>
             Grösste Stärken:
             <Ul>
-              <Li>Komplexe Projektstruktur im Strukturbaum darstellen</Li>
-              <Li>Aufwändige Jahresberichte auf Knopfdruck produzieren</Li>
+              <Li>komplexe Projektstruktur im Strukturbaum darstellen</Li>
+              <Li>aufwändige Jahresberichte auf Knopfdruck produzieren</Li>
               <Li>
                 Erfolgskontrollen werden in einem leistungsfähigen Formular
                 Excel-ähnlich geplant
               </Li>
-              <Li>Differenzierte Benutzerrechte</Li>
+              <Li>differenzierte Benutzerrechte</Li>
               <Li>
                 Profis und Freiwillige erfassen ihre Daten selber, mit Hilfe von
                 massgeschneiderten Zugängen
@@ -260,12 +254,20 @@ const ProjektPage = () => (
           <Ul>
             <Li>mobile first</Li>
             <Li>offline first</Li>
-            <Li>live updates</Li>
+            <Li>live aktualisierte Daten</Li>
             <Li>differenzierte Benutzerrechte</Li>
           </Ul>
           <P>
             Grösste Stärke ist die Fähigkeit, ohne Internet-Anschluss und mit
-            jedem beliebigen Gerät arbeiten zu können (ausser iOS).
+            jedem beliebigen Gerät arbeiten zu können (
+            <a
+              href="https://vermehrung.ch/Dokumentation/iOS/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              ausser iOS
+            </a>
+            ).
           </P>
           <UncontrolledCarousel
             items={vmCarouselItems}
@@ -304,9 +306,9 @@ const ProjektPage = () => (
           <div>
             Grösste Stärken:
             <Ul>
-              <Li>Massgeschneidert für die Aufgabe</Li>
-              <Li>Benutzerfreundlichkeit</Li>
-              <Li>Null Unterhaltsbedarf</Li>
+              <Li>massgeschneidert für die Aufgabe</Li>
+              <Li>benutzerfreundlich</Li>
+              <Li>beinahe null Unterhalt</Li>
             </Ul>
           </div>
           <UncontrolledCarousel
@@ -338,9 +340,9 @@ const ProjektPage = () => (
           <div>
             Grösste Stärken:
             <Ul>
-              <Li>Massgeschneidert für die Aufgabe</Li>
-              <Li>Benutzerfreundlichkeit</Li>
-              <Li>Null Unterhaltsbedarf</Li>
+              <Li>massgeschneidert für die Aufgabe</Li>
+              <Li>benutzerfreundlich</Li>
+              <Li>beinahe null Unterhalt</Li>
             </Ul>
           </div>
           <P>Sorry, keine Bilder: Personaldaten sind sensibel...</P>
@@ -368,8 +370,8 @@ const ProjektPage = () => (
           <div>
             Grösste Stärken:
             <Ul>
-              <Li>Massgeschneidert für die Aufgabe</Li>
-              <Li>Bisher null Unterhaltsbedarf</Li>
+              <Li>massgeschneidert für die Aufgabe</Li>
+              <Li>bisher null Unterhaltsbedarf</Li>
             </Ul>
           </div>
           <UncontrolledCarousel
@@ -378,45 +380,6 @@ const ProjektPage = () => (
             interval={false}
           />
           <P>Im produktiven Einsatz seit 2014.</P>
-        </Section>
-        <Section id="brexit-chronology">
-          <Img src={bcImg} alt="brexit-chronology" height={51} />
-          <H4>brexit-chronology.ch</H4>
-          <P>Chronologie des Brexit aus Sicht Grossbritanniens und der EU.</P>
-          <div>
-            Grösste Stärken:
-            <Ul>
-              <Li>Rasche Übersicht über relevante politische Ereignisse</Li>
-              <Li>
-                Der Autor kann Ereignisse und Artikel direkt bearbeiten - wie
-                bei einem{' '}
-                <a
-                  href="https://de.wikipedia.org/wiki/Content-Management-System"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  CMS
-                </a>
-              </Li>
-            </Ul>
-          </div>
-          <UncontrolledCarousel
-            items={bcCarouselItems}
-            autoPlay={false}
-            interval={false}
-          />
-          <P>Im produktiven Einsatz seit 2017.</P>
-          <P>
-            Schauen Sie selber:&nbsp;
-            <a
-              href="https://brexit-chronology.ch"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              brexit-chronology.ch
-            </a>
-            .
-          </P>
         </Section>
         <Section id="mediterranean-migration">
           <Img src={bbImg} alt="mediterranean-migration" height={51} />
@@ -429,11 +392,11 @@ const ProjektPage = () => (
             Grösste Stärken:
             <Ul>
               <Li>
-                Rasche Übersicht über Migrationsströme und dazugehörige
+                rasche Übersicht über Migrationsströme und dazugehörige
                 politische Ereignisse
               </Li>
               <Li>
-                Der Autor kann Ereignisse und Artikel direkt bearbeiten - wie
+                der Autor kann Ereignisse und Artikel direkt bearbeiten - wie
                 bei einem{' '}
                 <a
                   href="https://de.wikipedia.org/wiki/Content-Management-System"
@@ -462,6 +425,22 @@ const ProjektPage = () => (
             </a>
             .
           </P>
+          <P>&nbsp;</P>
+          <P>&nbsp;</P>
+          <P>&nbsp;</P>
+          <P>&nbsp;</P>
+          <P>&nbsp;</P>
+          <P>&nbsp;</P>
+          <P>&nbsp;</P>
+          <P>&nbsp;</P>
+          <P>&nbsp;</P>
+          <P>&nbsp;</P>
+          <P>&nbsp;</P>
+          <P>&nbsp;</P>
+          <P>&nbsp;</P>
+          <P>&nbsp;</P>
+          <P>&nbsp;</P>
+          <P>&nbsp;</P>
         </Section>
       </MainColumn>
     </Page>
