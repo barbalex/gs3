@@ -4,17 +4,6 @@ module.exports = {
     siteUrl: `https://gabriel-software.ch`,
   },
   plugins: [
-    {
-      resolve: 'gatsby-plugin-eslint',
-      options: {
-        test: /\.js$|\.jsx$/,
-        exclude: /(node_modules|cache|public|docs)/,
-        options: {
-          emitWarning: true,
-          failOnError: false,
-        },
-      },
-    },
     'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-plugin-manifest`,

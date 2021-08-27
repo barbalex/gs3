@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react'
-import { Map, ScaleControl, /*TileLayer, */ Marker } from 'react-leaflet'
+import React from 'react'
+import { MapContainer, ScaleControl, TileLayer, Marker } from 'react-leaflet'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import styled from 'styled-components'
 import { window, exists } from 'browser-monads'
@@ -36,14 +36,14 @@ const mapCenter = {
 const mapStyle = { height: 400, width: '100%' }
 
 const KontaktPage = () => {
-  const [ReactLeafletGoogleLayer, setReactLeafletGoogleLayer] = useState(null)
-  useEffect(() => {
-    if (exists(window)) {
-      import('react-leaflet-google-layer').then((module) => {
-        setReactLeafletGoogleLayer(module.default)
-      })
-    }
-  }, [])
+  // const [ReactLeafletGoogleLayer, setReactLeafletGoogleLayer] = useState(null)
+  // useEffect(() => {
+  //   if (exists(window)) {
+  //     import('react-leaflet-google-layer').then((module) => {
+  //       setReactLeafletGoogleLayer(module.default)
+  //     })
+  //   }
+  // }, [])
 
   return (
     <Layout>
@@ -72,22 +72,30 @@ const KontaktPage = () => {
             </address>
           </Col>
           <Col className="col-lg-9">
-            <Map center={mapCenter} zoom={10} style={mapStyle}>
+            <MapContainer center={mapCenter} zoom={10} style={mapStyle}>
               <ScaleControl imperial={false} />
               {/*<TileLayer
                   attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
                   url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                 />*/}
-              {!!ReactLeafletGoogleLayer && (
+              {/*!!ReactLeafletGoogleLayer && (
                 <ReactLeafletGoogleLayer
                   googleMapsLoaderConf={{
                     KEY: process.env.GATSBY_GM_KEY,
                   }}
                   type={'roadmap'}
                 />
-              )}
+              )*/}
+              <TileLayer
+                url="//wmts20.geo.admin.ch/1.0.0/ch.swisstopo.pixelkarte-farbe/default/current/3857/{z}/{x}/{y}.jpeg"
+                //url="//wmts20.geo.admin.ch/1.0.0/ch.swisstopo.pixelkarte-grau/default/current/3857/{z}/{x}/{y}.jpeg"
+                attribution='&copy; <a href="//swisstopo.ch">Swisstopo</a>'
+                maxNativeZoom={19}
+                minZoom={0}
+                maxZoom={22}
+              />
               <Marker position={mapCenter} icon={icon} />
-            </Map>
+            </MapContainer>
             <div>
               <small>
                 <a

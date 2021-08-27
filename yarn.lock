@@ -1109,6 +1109,13 @@
     querystring "^0.2.0"
     strip-ansi "^6.0.0"
 
+"@googlemaps/js-api-loader@^1.8.0":
+  version "1.12.2"
+  resolved "https://registry.yarnpkg.com/@googlemaps/js-api-loader/-/js-api-loader-1.12.2.tgz#1a198b5b9ba3f329fdaa0471c576424b10250ecc"
+  integrity sha512-SBamjN2x4UyYAJIoIh48aFQJC0DGBfTuvZrfT9iWrRp4H1Y4Ks5MqAzK7lncnso495gx+xDT2IJtiTVXYBxwlQ==
+  dependencies:
+    fast-deep-equal "^3.1.3"
+
 "@graphql-tools/batch-execute@^7.1.2":
   version "7.1.2"
   resolved "https://registry.yarnpkg.com/@graphql-tools/batch-execute/-/batch-execute-7.1.2.tgz#35ba09a1e0f80f34f1ce111d23c40f039d4403a0"
@@ -1410,6 +1417,11 @@
     prop-types "^15.6.1"
     react-lifecycles-compat "^3.0.4"
 
+"@react-leaflet/core@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@react-leaflet/core/-/core-1.1.0.tgz#389b2b373f1da4caeb3c4cf6f33d84561c58d504"
+  integrity sha512-zFxMHgfjCi7khRVB7o7H8NoJl36NaezvfcaeEurVXx22lAGHFlTHiSuLOGA4tOiHj+Ep+Lo3uwUGJ3YM9BGkHg==
+
 "@sideway/address@^4.1.0":
   version "4.1.2"
   resolved "https://registry.yarnpkg.com/@sideway/address/-/address-4.1.2.tgz#811b84333a335739d3969cfc434736268170cad1"
@@ -1564,18 +1576,6 @@
     "@types/minimatch" "*"
     "@types/node" "*"
 
-"@types/google-maps@^3.2.0":
-  version "3.2.3"
-  resolved "https://registry.yarnpkg.com/@types/google-maps/-/google-maps-3.2.3.tgz#ea99526e40d3b58a2c07f0b3d5f3b8e0750119c3"
-  integrity sha512-+GR/7sMvo2bENS26H4t2QqoCqE4FE5qhsG8aaDM9mJAlsorkLyaFdTQra8VkmS1RNE09fx9c1kac+GKG0RtA2A==
-  dependencies:
-    "@types/google.maps" "*"
-
-"@types/google.maps@*":
-  version "3.45.6"
-  resolved "https://registry.yarnpkg.com/@types/google.maps/-/google.maps-3.45.6.tgz#441a7bc76424243b307596fc8d282a435a979ebd"
-  integrity sha512-BzGzxs8UXFxeP8uN/0nRgGbsbpYQxSCKsv/7S8OitU7wwhfFcqQSm5aAcL1nbwueMiJ/VVmIZKPq69s0kX5W+Q==
-
 "@types/http-proxy@^1.17.4":
   version "1.17.7"
   resolved "https://registry.yarnpkg.com/@types/http-proxy/-/http-proxy-1.17.7.tgz#30ea85cc2c868368352a37f0d0d3581e24834c6f"
@@ -1618,14 +1618,14 @@
   resolved "https://registry.yarnpkg.com/@types/json5/-/json5-0.0.29.tgz#ee28707ae94e11d2b827bcbe5270bcea7f3e71ee"
   integrity sha1-7ihweulOEdK4J7y+UnC86n8+ce4=
 
-"@types/leaflet.gridlayer.googlemutant@^0.4.4":
+"@types/leaflet.gridlayer.googlemutant@^0.4.5":
   version "0.4.6"
   resolved "https://registry.yarnpkg.com/@types/leaflet.gridlayer.googlemutant/-/leaflet.gridlayer.googlemutant-0.4.6.tgz#86d3ba9d432dec29b4796e37d815c233680e7fcb"
   integrity sha512-L0J7NadcZp5bcKQrv4DVlsEbQ90xLsOKScckAMnxoghh/wogk0GVkauYOYHBKeKDkx9qkMRzTf8oO+fKeYD7oQ==
   dependencies:
     "@types/leaflet" "*"
 
-"@types/leaflet@*", "@types/leaflet@^1.4.1":
+"@types/leaflet@*", "@types/leaflet@^1.5.0":
   version "1.7.4"
   resolved "https://registry.yarnpkg.com/@types/leaflet/-/leaflet-1.7.4.tgz#bb9430f69d588ca5829c1ba82657e179454f93a1"
   integrity sha512-a3qYlMwJ62+WRoiDmYODUD4KywA14jP2XohAkAWtELGuMAD3MohZa/MmIvQDqF52xNI9OYaY8BMsL+9z7yf2HQ==
@@ -5247,13 +5247,6 @@ gatsby-page-utils@^1.12.0:
     lodash "^4.17.21"
     micromatch "^4.0.4"
 
-gatsby-plugin-eslint@4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-eslint/-/gatsby-plugin-eslint-4.0.0.tgz#c3f7b141fd1ae4eb87838829e5443a558881f238"
-  integrity sha512-f/SS2BqNtpt7BoLsaC6zug6UM0CwN1G+6uU2S/kb7/0HdBJgnf08OchNTE0HOyj7yxM0bj1CV5J1S3x/3Wk8ZQ==
-  dependencies:
-    webpack-merge "^5.8.0"
-
 gatsby-plugin-manifest@3.12.0:
   version "3.12.0"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-manifest/-/gatsby-plugin-manifest-3.12.0.tgz#6f9aa76489d84f3b71c88e29da209d8d497a9203"
@@ -5915,11 +5908,6 @@ globby@^6.1.0:
     pify "^2.0.0"
     pinkie-promise "^2.0.0"
 
-google-maps@^3.3.0:
-  version "3.3.0"
-  resolved "https://registry.yarnpkg.com/google-maps/-/google-maps-3.3.0.tgz#4432b4715406bc15268ad35b1dd1b04d974956a6"
-  integrity sha512-pj4En0cWKG+lcBvC7qrzu5ItiMsYNTgjG2capsPzAbAM/O8ftugGpUUftTTwdGL8KlNvB4CEZ6IBWwpWYzUEpw==
-
 got@8.3.2:
   version "8.3.2"
   resolved "https://registry.yarnpkg.com/got/-/got-8.3.2.tgz#1d23f64390e97f776cac52e5b936e5f514d2e937"
@@ -6195,7 +6183,7 @@ highlight.js@^8.1.0:
   resolved "https://registry.yarnpkg.com/highlight.js/-/highlight.js-8.9.1.tgz#b8a9c5493212a9392f0222b649c9611497ebfb88"
   integrity sha1-uKnFSTISqTkvAiK2SclhFJfr+4g=
 
-hoist-non-react-statics@^3.0.0, hoist-non-react-statics@^3.3.2:
+hoist-non-react-statics@^3.0.0:
   version "3.3.2"
   resolved "https://registry.yarnpkg.com/hoist-non-react-statics/-/hoist-non-react-statics-3.3.2.tgz#ece0acaf71d62c2969c2ec59feff42a4b1a85b45"
   integrity sha512-/gGivxi8JPKWNm/W0jSmzcMPpfpPLc3dY/6GxhX2hQ9iGj3aDfklV4ET7NjKpSinLpJ5vafa9iiGIEZg10SfBw==
@@ -7241,10 +7229,10 @@ latest-version@5.1.0, latest-version@^5.1.0:
   dependencies:
     package-json "^6.3.0"
 
-leaflet.gridlayer.googlemutant@^0.8.0:
-  version "0.8.0"
-  resolved "https://registry.yarnpkg.com/leaflet.gridlayer.googlemutant/-/leaflet.gridlayer.googlemutant-0.8.0.tgz#9636630cb669577f5bc55ff171dd0a3cc44ece1e"
-  integrity sha512-Ain+jgDKRhlM6qNDDj2QFJa9vXUqV096N0PmpHO3DoNLS4I7EynTQCJXN+9qY4C51ZpV4Q4CI+apNv5XiP5aUA==
+leaflet.gridlayer.googlemutant@^0.10.0:
+  version "0.10.2"
+  resolved "https://registry.yarnpkg.com/leaflet.gridlayer.googlemutant/-/leaflet.gridlayer.googlemutant-0.10.2.tgz#3c5351db4230beac1b1ea1f774d9288cfb0b6283"
+  integrity sha512-r3le0W8izKmF2aeCCYp6P+dLQvPadV/vpJkres0ltDHiWac6qt3fQPNWjQl+8WCsCmcGTb1y5bmHOx0Yj6HA7g==
 
 leaflet@1.7.1:
   version "1.7.1"
@@ -9375,26 +9363,22 @@ react-is@^16.12.0, react-is@^16.7.0, react-is@^16.8.1:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
 
-react-leaflet-google-layer@1.1.4:
-  version "1.1.4"
-  resolved "https://registry.yarnpkg.com/react-leaflet-google-layer/-/react-leaflet-google-layer-1.1.4.tgz#7c887f12e6b661f38e77039afdfa466b458ba2c9"
-  integrity sha512-6qqgKQ1MICWWhTvX7ZN+P3XouW2UODXstkL38djDaiYly6L31oNE/7FgBUNMKFm9kP0d/3r6O8jRGGORUjs5+A==
+react-leaflet-google-layer@2.0.4:
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/react-leaflet-google-layer/-/react-leaflet-google-layer-2.0.4.tgz#6b05de3e06160776d1c1f0140f2786d99be97771"
+  integrity sha512-H7tyccdylpA0cbeJqimoSN81r93aknh8VRIkYHlP8SrOMONRK2h+qkrnpRbE0kNSqY50pyrNodMY8EYvvK6nRQ==
   dependencies:
-    "@types/google-maps" "^3.2.0"
-    "@types/leaflet" "^1.4.1"
-    "@types/leaflet.gridlayer.googlemutant" "^0.4.4"
-    google-maps "^3.3.0"
-    leaflet.gridlayer.googlemutant "^0.8.0"
+    "@googlemaps/js-api-loader" "^1.8.0"
+    "@types/leaflet" "^1.5.0"
+    "@types/leaflet.gridlayer.googlemutant" "^0.4.5"
+    leaflet.gridlayer.googlemutant "^0.10.0"
 
-react-leaflet@2.7.0:
-  version "2.7.0"
-  resolved "https://registry.yarnpkg.com/react-leaflet/-/react-leaflet-2.7.0.tgz#0e0e452a4903029f0bb564771eab8cf9db8e4517"
-  integrity sha512-pMf5eRyWU8RH9HohM2i0NZymcWHraJA1m6iMFYu94/01PAaBJpOyxORZJmN6cV9dBzkVWaLjAAHTNmxbwIpcfw==
+react-leaflet@3.2.1:
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/react-leaflet/-/react-leaflet-3.2.1.tgz#5f04588b96f62b9476cbeb4ea39c698b5db78e1c"
+  integrity sha512-3iS1fpOO+uaRpbuq68Euw9kgaoM9oIGBiDfeFtVb/C9PWBQvXdrv1n946Z8GrbQEhrT+hM9ND6NLLF9fGxTGRw==
   dependencies:
-    "@babel/runtime" "^7.9.2"
-    fast-deep-equal "^3.1.1"
-    hoist-non-react-statics "^3.3.2"
-    warning "^4.0.3"
+    "@react-leaflet/core" "^1.1.0"
 
 react-lifecycles-compat@^3.0.4:
   version "3.0.4"
@@ -11598,7 +11582,7 @@ webpack-log@^2.0.0:
     ansi-colors "^3.0.0"
     uuid "^3.3.2"
 
-webpack-merge@^5.7.3, webpack-merge@^5.8.0:
+webpack-merge@^5.7.3:
   version "5.8.0"
   resolved "https://registry.yarnpkg.com/webpack-merge/-/webpack-merge-5.8.0.tgz#2b39dbf22af87776ad744c390223731d30a68f61"
   integrity sha512-/SaI7xY0831XwP6kzuwhKWVKDP9t1QY1h65lAFLbZqMPIuYcD9QAW4u9STIbU9kaJbPBB/geU/gLr1wDjOhQ+Q==
