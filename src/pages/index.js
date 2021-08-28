@@ -83,7 +83,6 @@ const IndexPage = () => (
               {`Progressive Web App, daher nicht von "normalen" Apps
               unterscheidbar`}
             </Li>
-            <Li>Ideal für Geräte- oder Firmen-übergreifende Zusammenarbeit</Li>
           </Ul>
         </div>
         <div className="col-md">
@@ -100,11 +99,12 @@ const IndexPage = () => (
           <H4>Mobile-App</H4>
           <Ul>
             <Li>Auf Android und iOS</Li>
-            <Li>Mit desktop kombinierbar (Windows, Mac und Linux)</Li>
+            <Li>Auch auf desktop lauffähig</Li>
             <Li>
               Offline-first mit leistungsfähiger Konflikt-Lösung, live
               aktualisiert
             </Li>
+            <Li>Ideal für Geräte-übergreifende Zusammenarbeit</Li>
           </Ul>
         </div>
       </Row>
