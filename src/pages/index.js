@@ -1,8 +1,7 @@
 import React from 'react'
 import { Jumbotron } from 'reactstrap'
-import { FaDesktop } from 'react-icons/fa'
 import { BsCloud } from 'react-icons/bs'
-import { MdSmartphone } from 'react-icons/md'
+import { AiOutlineMobile, AiOutlineDesktop } from 'react-icons/ai'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import styled from 'styled-components'
 
@@ -88,7 +87,7 @@ const IndexPage = () => (
           </Ul>
         </div>
         <div className="col-md">
-          <FaDesktop style={style} />
+          <AiOutlineDesktop style={style} />
           <H4>Desktop-App</H4>
           <Ul>
             <Li>Lokal installiert</Li>
@@ -97,7 +96,7 @@ const IndexPage = () => (
           </Ul>
         </div>
         <div className="col-md">
-          <MdSmartphone style={style} />
+          <AiOutlineMobile style={style} />
           <H4>Mobile-App</H4>
           <Ul>
             <Li>Auf Android und iOS</Li>
