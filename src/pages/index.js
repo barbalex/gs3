@@ -1,7 +1,8 @@
 import React from 'react'
 import { Jumbotron } from 'reactstrap'
-import { FaDesktop, FaMobileAlt } from 'react-icons/fa'
+import { FaDesktop } from 'react-icons/fa'
 import { BsCloud } from 'react-icons/bs'
+import { MdSmartphone } from 'react-icons/md'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import styled from 'styled-components'
 
@@ -96,7 +97,7 @@ const IndexPage = () => (
           </Ul>
         </div>
         <div className="col-md">
-          <FaMobileAlt style={style} />
+          <MdSmartphone style={style} />
           <H4>Mobile-App</H4>
           <Ul>
             <Li>Auf Android und iOS</Li>
