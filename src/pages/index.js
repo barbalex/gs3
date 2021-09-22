@@ -86,7 +86,7 @@ const IndexPage = () => (
             <Li>{`Im Browser, als Progressive Web App`}</Li>
             {/*<Li>Mit App-Server, Datenbank-Server und Daten-Schnittstelle</Li>*/}
             <Li>Im Intranet oder Internet</Li>
-            <Li>Installieren und Aktualisieren war nie einfacher</Li>
+            <Li>Installieren und Aktualisieren ist nie einfacher</Li>
           </Ul>
         </div>
         <div className="col-md">
