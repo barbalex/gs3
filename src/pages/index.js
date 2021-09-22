@@ -2,16 +2,11 @@ import React from 'react'
 import { Jumbotron } from 'reactstrap'
 import { BsCloud } from 'react-icons/bs'
 import { AiOutlineMobile, AiOutlineDesktop } from 'react-icons/ai'
+import { MdDone } from 'react-icons/md'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import styled from 'styled-components'
 
 import Layout from '../components/layout'
-const style = {
-  fontSize: 78,
-}
-const styleWebApp = {
-  fontSize: 94,
-}
 
 const Page = styled.div`
   padding: 15px;
@@ -34,13 +29,11 @@ const Ul = styled.ul`
   /*padding-left: 22px;*/
 `
 const H4 = styled.h4`
-  margin-top: 5px !important;
   margin-bottom: 8px !important;
   font-weight: bold;
   font-size: 24px;
 `
 const H4Cloud = styled.h4`
-  margin-top: -11px !important;
   margin-bottom: 8px !important;
   font-weight: bold;
   font-size: 24px;
@@ -68,43 +61,112 @@ const IndexPage = () => (
         </p>
       </StyledJumbotron>
 
+      <p
+        className="font-weight-bold"
+        style={{
+          fontSize: 24,
+          marginLeft: 15,
+        }}
+      >
+        Apps für:
+      </p>
+
       <Row className="row marketing">
-        <div className="col-md-5">
-          <BsCloud style={styleWebApp} />
-          <H4Cloud>Web-App</H4Cloud>
+        <div className="col-md">
+          <BsCloud
+            style={{
+              fontSize: 90,
+              maxHeight: 78,
+              marginLeft: '-5px',
+              marginTop: 4,
+            }}
+          />
+          <H4Cloud>Web</H4Cloud>
           <Ul>
-            <Li>Mit App-Server, Datenbank-Server und Daten-Schnittstelle</Li>
+            <Li>{`Im Browser, als Progressive Web App`}</Li>
+            {/*<Li>Mit App-Server, Datenbank-Server und Daten-Schnittstelle</Li>*/}
             <Li>Im Intranet oder Internet</Li>
-            <Li>
-              Mobile-first, offline-first mit leistungsfähiger Konflikt-Lösung,
-              live aktualisiert
-            </Li>
-            <Li>
-              {`Progressive Web App, daher nicht von "normalen" Apps
-              unterscheidbar`}
-            </Li>
+            <Li>Installieren und Aktualisieren war nie einfacher</Li>
           </Ul>
         </div>
         <div className="col-md">
-          <AiOutlineDesktop style={style} />
-          <H4>Desktop-App</H4>
+          <AiOutlineDesktop
+            style={{ fontSize: 78, minHeight: 78, maxHeight: 78, marginTop: 4 }}
+          />
+          <H4>Desktop</H4>
           <Ul>
             <Li>Lokal installiert</Li>
-            <Li>Auf Windows, Mac und Linux</Li>
+            <Li>Windows, Mac, Linux</Li>
             <Li>Lösungen mit beinahe null Unterhalt möglich</Li>
           </Ul>
         </div>
-        <div className="col-md">
-          <AiOutlineMobile style={style} />
-          <H4>Mobile-App</H4>
+        <div className="w-100 d-lg-none"></div>
+        <div className="col-md-2 col-lg-2">
+          <AiOutlineMobile
+            style={{
+              fontSize: 65,
+              minHeight: 78,
+              maxHeight: 78,
+              marginLeft: '-12px',
+              marginTop: 4,
+            }}
+          />
+          <H4>Mobile</H4>
           <Ul>
-            <Li>Auf Android und iOS</Li>
-            <Li>Auch auf desktop lauffähig</Li>
-            <Li>
-              Offline-first mit leistungsfähiger Konflikt-Lösung, live
-              aktualisiert
-            </Li>
-            <Li>Ideal für Geräte-übergreifende Zusammenarbeit</Li>
+            <Li>Im App-Store</Li>
+            <Li>Android und iOS</Li>
+          </Ul>
+        </div>
+        <div className="col-sm-12 col-md-4 col-lg-3">
+          <BsCloud
+            style={{
+              fontSize: 60,
+              minHeight: 78,
+              maxHeight: 78,
+              marginBottom: '-8px',
+              marginTop: 4,
+            }}
+          />
+          <span>{` `}</span>
+          <AiOutlineDesktop
+            style={{
+              fontSize: 55,
+              minHeight: 78,
+              maxHeight: 78,
+              marginLeft: '-7px',
+              marginTop: 5,
+            }}
+          />
+          <AiOutlineMobile
+            style={{
+              fontSize: 46,
+              minHeight: 78,
+              maxHeight: 78,
+              marginLeft: '-10px',
+              marginTop: 4,
+            }}
+          />
+          <H4>Alle Geräte-Klassen</H4>
+          <Ul>
+            <Li>Basierend auf einer einzigen Code-Basis</Li>
+            <Li>Am PC vorbereiten, mobil erfassen</Li>
+          </Ul>
+        </div>
+        <div className="col-md">
+          <MdDone
+            style={{
+              fontSize: 65,
+              minHeight: 78,
+              maxHeight: 78,
+              marginLeft: '-5px',
+              marginTop: 6,
+            }}
+          />
+          <H4>Hohe Ansprüche</H4>
+          <Ul>
+            <Li>Offline-first mit leistungsfähiger Konflikt-Lösung</Li>
+            <Li>Live synchronisiert</Li>
+            <Li>Adaptives Benutzer-Erlebnis</Li>
           </Ul>
         </div>
       </Row>
