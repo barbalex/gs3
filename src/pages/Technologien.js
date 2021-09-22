@@ -204,7 +204,7 @@ const TechnologienPage = () => (
               >
                 CSS
               </A>
-              <P>Layouten</P>
+              <P>Layouten für HTML</P>
             </Li>
             <Li>
               <A
@@ -214,6 +214,7 @@ const TechnologienPage = () => (
               >
                 HTML
               </A>
+              <P>Dokumente fürs Web</P>
             </Li>
             <Li>
               <A
@@ -359,14 +360,6 @@ const TechnologienPage = () => (
                 rel="noopener noreferrer"
               >
                 Leaflet
-              </A>
-              ,&nbsp;
-              <A
-                href="http://www.geo.admin.ch/internet/geoportal/de/home/services/geoservices/display_services/api_services.html"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                GeoAdmin API
               </A>
               &nbsp;und&nbsp;
               <A
