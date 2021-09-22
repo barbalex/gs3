@@ -164,8 +164,8 @@ const IndexPage = () => (
           />
           <H4>Hohe Ansprüche</H4>
           <Ul>
-            <Li>Offline-first mit leistungsfähiger Konflikt-Lösung</Li>
             <Li>Live synchronisiert</Li>
+            <Li>Offline-first mit leistungsfähiger Konflikt-Lösung</Li>
             <Li>Adaptives Benutzer-Erlebnis</Li>
           </Ul>
         </div>
