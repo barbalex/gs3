@@ -36,15 +36,6 @@ const mapCenter = {
 const mapStyle = { height: 400, width: '100%' }
 
 const KontaktPage = () => {
-  // const [ReactLeafletGoogleLayer, setReactLeafletGoogleLayer] = useState(null)
-  // useEffect(() => {
-  //   if (exists(window)) {
-  //     import('react-leaflet-google-layer').then((module) => {
-  //       setReactLeafletGoogleLayer(module.default)
-  //     })
-  //   }
-  // }, [])
-
   return (
     <Layout>
       <Page className="page kontakt">
@@ -74,18 +65,6 @@ const KontaktPage = () => {
           <Col className="col-lg-9">
             <MapContainer center={mapCenter} zoom={10} style={mapStyle}>
               <ScaleControl imperial={false} />
-              {/*<TileLayer
-                  attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-                  url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-                />*/}
-              {/*!!ReactLeafletGoogleLayer && (
-                <ReactLeafletGoogleLayer
-                  googleMapsLoaderConf={{
-                    KEY: process.env.GATSBY_GM_KEY,
-                  }}
-                  type={'roadmap'}
-                />
-              )*/}
               <TileLayer
                 url="//wmts20.geo.admin.ch/1.0.0/ch.swisstopo.pixelkarte-farbe/default/current/3857/{z}/{x}/{y}.jpeg"
                 //url="//wmts20.geo.admin.ch/1.0.0/ch.swisstopo.pixelkarte-grau/default/current/3857/{z}/{x}/{y}.jpeg"
