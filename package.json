@@ -12,7 +12,7 @@
   "dependencies": {
     "@reach/router": "1.3.4",
     "babel-plugin-styled-components": "1.13.3",
-    "bootstrap": "4.6.0",
+    "bootstrap": "4.x",
     "browser-monads": "1.0.0",
     "eslint-plugin-react": "7.26.1",
     "eslint-plugin-react-hooks": "4.2.0",
