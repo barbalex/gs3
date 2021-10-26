@@ -38,6 +38,7 @@
     "typography": "0.16.21"
   },
   "devDependencies": {
+    "@babel/eslint-parser": "7.15.8",
     "copyfiles": "2.4.1",
     "gatsby-cli": "4.0.0",
     "prettier": "2.4.1"
