@@ -24,11 +24,15 @@
     "gatsby-plugin-styled-components": "5.0.0",
     "gatsby-plugin-typography": "4.0.0",
     "gatsby-plugin-web-font-loader": "1.0.4",
+    "jquery": "3.6.0",
     "leaflet": "1.7.1",
+    "popper.js": "1.16.1",
+    "prop-types": "15.7.2",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-helmet": "6.1.0",
     "react-icons": "4.3.1",
+    "react-is": "17.0.2",
     "react-leaflet": "3.2.2",
     "react-scrollspy": "3.4.3",
     "react-typography": "0.16.20",
@@ -37,10 +41,20 @@
     "typography": "0.16.21"
   },
   "devDependencies": {
+    "@babel/core": "7.16.0",
     "@babel/eslint-parser": "7.16.0",
     "copyfiles": "2.4.1",
+    "eslint": "8.2.0",
     "gatsby-cli": "4.0.0",
     "prettier": "2.4.1"
+  },
+  "dependenciesComments": {
+    "prop-types": "is peer",
+    "jquery": "is peer",
+    "popper.js": "is peer",
+    "eslint": "is peer",
+    "react-is": "is peer",
+    "@babel/core": "is peer"
   },
   "keywords": [
     "Gabriel",
