@@ -17,7 +17,7 @@ import aeCarouselItems from '../modules/aeCarouselItems'
 import vmCarouselItems from '../modules/vmCarouselItems'
 import bbCarouselItems from '../modules/bbCarouselItems'
 import kaplaCarouselitems from '../modules/kaplaCarouselitems'
-import aiCarouselitems from '../modules/aiCarouselitems'
+import aiCarouselitems from '../modules/aiCarouselItems'
 
 const Page = styled.div`
   padding: 15px;
