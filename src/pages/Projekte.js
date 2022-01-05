@@ -16,8 +16,8 @@ import apfloraCarouselItems from '../modules/apfloraCarouselItems'
 import aeCarouselItems from '../modules/aeCarouselItems'
 import vmCarouselItems from '../modules/vmCarouselItems'
 import bbCarouselItems from '../modules/bbCarouselItems'
-import kaplaCarouselitems from '../modules/kaplaCarouselitems'
-import aiCarouselitems from '../modules/aiCarouselItems'
+import kaplaCarouselItems from '../modules/kaplaCarouselItems'
+import aiCarouselItems from '../modules/aiCarouselItems'
 
 const Page = styled.div`
   padding: 15px;
@@ -312,7 +312,7 @@ const ProjektPage = () => (
             </Ul>
           </div>
           <UncontrolledCarousel
-            items={kaplaCarouselitems}
+            items={kaplaCarouselItems}
             autoPlay={false}
             interval={false}
           />
@@ -375,7 +375,7 @@ const ProjektPage = () => (
             </Ul>
           </div>
           <UncontrolledCarousel
-            items={aiCarouselitems}
+            items={aiCarouselItems}
             autoPlay={false}
             interval={false}
           />
