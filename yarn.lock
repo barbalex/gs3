@@ -7969,7 +7969,7 @@ __metadata:
     react-helmet: 6.1.0
     react-icons: 4.3.1
     react-is: 17.0.2
-    react-leaflet: 3.2.2
+    react-leaflet: 3.2.4
     react-scrollspy: 3.4.3
     react-typography: 0.16.20
     reactstrap: 8.10.1
@@ -12119,16 +12119,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-leaflet@npm:3.2.2":
-  version: 3.2.2
-  resolution: "react-leaflet@npm:3.2.2"
+"react-leaflet@npm:3.2.4":
+  version: 3.2.4
+  resolution: "react-leaflet@npm:3.2.4"
   dependencies:
     "@react-leaflet/core": ^1.1.1
   peerDependencies:
     leaflet: ^1.7.1
     react: ^17.0.1
     react-dom: ^17.0.1
-  checksum: d5e5f34dea05e4d48d1d8c5c455b62ac1d2d417620b025f1098ca4014d83e81c97db3d5adef6abaa0c0c429aa6230564f50091aab4e7ebd9402d1fc541573967
+  checksum: d67a899f524fd4b39ad7b41877894d0bb0dffa86476db89609e428fa3820848ffc947eb99b520ce3456138b9be62f0ad57dc7b985b44ac70febb9621c5a28455
   languageName: node
   linkType: hard
 
