@@ -266,7 +266,7 @@ const ProjektPage = () => (
             autoPlay={false}
             interval={false}
           />
-          <P>Im produktiven Einsatz seit Sommer 2020.</P>
+          <P>Im produktiven Einsatz seit 2020.</P>
           <P>
             Mehr Informationen&nbsp;
             <a
