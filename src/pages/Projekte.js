@@ -259,15 +259,7 @@ const ProjektPage = () => (
           </Ul>
           <P>
             Grösste Stärke ist die Fähigkeit, ohne Internet-Anschluss und mit
-            jedem beliebigen Gerät arbeiten zu können (
-            <a
-              href="https://vermehrung.ch/Dokumentation/iOS/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              ausser iOS
-            </a>
-            ).
+            jedem beliebigen Gerät arbeiten zu können.
           </P>
           <UncontrolledCarousel
             items={vmCarouselItems}
