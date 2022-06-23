@@ -67,7 +67,6 @@ const KontaktPage = () => {
               <ScaleControl imperial={false} />
               <TileLayer
                 url="//wmts20.geo.admin.ch/1.0.0/ch.swisstopo.pixelkarte-farbe/default/current/3857/{z}/{x}/{y}.jpeg"
-                //url="//wmts20.geo.admin.ch/1.0.0/ch.swisstopo.pixelkarte-grau/default/current/3857/{z}/{x}/{y}.jpeg"
                 attribution='&copy; <a href="//swisstopo.ch">Swisstopo</a>'
                 maxNativeZoom={19}
                 minZoom={0}
@@ -91,6 +90,87 @@ const KontaktPage = () => {
               </small>
             </div>
           </Col>
+        </Row>
+        <Row>
+          <h3>Über mich</h3>
+          <h5>Naturwissenschaften</h5>
+          <ul>
+            <li>Studium der Umwelt-Naturwissenschaften an der ETH Zürich</li>
+            <li>
+              Aufbau und Co-Leitung der{' '}
+              <a
+                href="http://geos-gmbh.ch/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GeOs GmbH
+              </a>{' '}
+              (1995 - 2002)
+            </li>
+            <li>
+              Verantwortlich für die Entwicklung von Methoden zur Renaturierung
+              von Mooren, am Geobotanischen Institut der ETH Zürich, zusammen
+              mit Dr. Dieter Ramseier (1996 - 2001, 30%)
+            </li>
+            <li>
+              Mitarbeit im Amt für Natur und Umwelt Graubünden (1996 - 2005,
+              zuerst 20%, später 80%)
+            </li>
+            <li>
+              Mitarbeit in der Fachstelle Naturschutz des Kantons Zürich (2005 -
+              2013)
+            </li>
+          </ul>
+          <p>
+            Von Beginn weg war ich neben meiner Haupttätigkeit als
+            Naturschutz-Fachperson oft zuständig für Hard- und Software.
+            Mehrmals auch die Schnittstelle zwischen Naturschutz-Projekten und
+            externen Software-Entwicklern.
+          </p>
+          <p>
+            Die Spanne reichte inhaltlich von wissenschaftlichen Erhebungen,
+            naturschutz-relevanten Feld-Daten bis zur Berechnung und Optimierung
+            von (Direkt-)Zahlungen an der Schnittstelle zwischen Landwirtschaft
+            und Naturschutz.
+          </p>
+          <p>
+            Technisch: Von anspruchsvollen Excel-Formularen bis zu
+            Access-Datenanken, die teilweise extrem komplexe Abläufe abbildeten.
+            Zuletzt: Verwaltung von Bewirtschaftungs-Verträgen und Auszahlung
+            von Direktzahlungen für hunderte von Landwirtschafts-Betrieben auf
+            zehntausenden Flächen.
+          </p>
+          <h5>Software-Entwicklung</h5>
+          <p>
+            2012 hat ein Unfall mein Leben verändert. In mehreren Monaten im
+            Bett begann ich, Software zu entwickeln. Das war spannend und lenkte
+            davon ab, dass die bisherigen Herausforderungen in Sport und Beruf
+            nicht mehr möglich waren.
+          </p>
+          <p>
+            Nach > 10 Jahren professioneller Software-Entwicklung bin ich
+            persönlich der Meinung, dass ich Spitzenqualität bauen kann:
+            Anwendungen, die on- oder offline gleichzeitig von einem ganzen Team
+            benutzt werden können und auf jedem Gerät funktionieren.
+          </p>
+          <p>
+            Aber Sie können sich selber davon überzeugen: der Code aller
+            Anwendungen{' '}
+            <a
+              href="https://github.com/barbalex"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              ist öffentlich einsehbar
+            </a>
+            .
+          </p>
+          <p>
+            Sollten Sie Software mit einem Bezug zu Natur(-schutz) brauchen,
+            interessiert mich das besonders. Und Sie könnten dabei von meinem
+            Hintergrund profitieren: Je besser ich Ihre Arbeit verstehe, desto
+            besser wird die App!
+          </p>
         </Row>
       </Page>
     </Layout>
