@@ -108,19 +108,19 @@ const KontaktPage = () => {
               (1995 - 2002)
             </li>
             <li>
-              Verantwortlich für die Entwicklung von Methoden zur Renaturierung
-              von Mooren, am Geobotanischen Institut der ETH Zürich, zusammen
-              mit Dr. Dieter Ramseier (1996 - 2001, 30%)
+              Entwicklung von Methoden zur Renaturierung von Mooren, am
+              Geobotanischen Institut der ETH Zürich (1996 - 2001, 30%)
             </li>
             <li>
               Mitarbeit im Amt für Natur und Umwelt Graubünden (1996 - 2005,
-              zuerst 20%, später 80%)
+              zuerst 20%, später 80%) und
             </li>
             <li>
-              Mitarbeit in der Fachstelle Naturschutz des Kantons Zürich (2005 -
-              2013)
+              ...in der Fachstelle Naturschutz des Kantons Zürich (2005 - 2013)
             </li>
           </ul>
+
+          <h5>Software nebenbei</h5>
           <p>
             Von Beginn weg war ich neben meiner Haupttätigkeit als
             Naturschutz-Fachperson oft zuständig für Hard- und Software.
@@ -135,12 +135,13 @@ const KontaktPage = () => {
           </p>
           <p>
             Technisch: Von anspruchsvollen Excel-Formularen bis zu
-            Access-Datenanken, die teilweise extrem komplexe Abläufe abbildeten.
-            Zuletzt: Verwaltung von Bewirtschaftungs-Verträgen und Auszahlung
-            von Direktzahlungen für hunderte von Landwirtschafts-Betrieben auf
-            zehntausenden Flächen.
+            Access-Applikationen. Zuletzt: Verwaltung von Verträgen und
+            Auszahlung von Direktzahlungen für hunderte von
+            Landwirtschafts-Betrieben auf zehntausenden Flächen, mit einem
+            komplexen und dynamischen Beitragssystem.
           </p>
-          <h5>Software-Entwicklung</h5>
+
+          <h5>Software professionell</h5>
           <p>
             2012 hat ein Unfall mein Leben verändert. In mehreren Monaten im
             Bett begann ich, Software zu entwickeln. Das war spannend und lenkte
@@ -148,28 +149,16 @@ const KontaktPage = () => {
             nicht mehr möglich waren.
           </p>
           <p>
-            Nach > 10 Jahren professioneller Software-Entwicklung bin ich
-            persönlich der Meinung, dass ich Spitzenqualität bauen kann:
-            Anwendungen, die on- oder offline gleichzeitig von einem ganzen Team
-            benutzt werden können und auf jedem Gerät funktionieren.
+            Nach > 10 Jahren professioneller Software-Entwicklung bin ich stolz,
+            Anwendungen bauen zu können, die on- oder offline, gleichzeitig von
+            einem ganzen Team benutzt werden können und auf jedem Gerät
+            funktionieren.
           </p>
           <p>
-            Aber Sie können sich selber davon überzeugen: der Code aller
-            Anwendungen{' '}
-            <a
-              href="https://github.com/barbalex"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              ist öffentlich einsehbar
-            </a>
-            .
-          </p>
-          <p>
-            Sollten Sie Software mit einem Bezug zu Natur(-schutz) brauchen,
-            interessiert mich das besonders. Und Sie könnten dabei von meinem
+            Brauchen Sie Software mit einem Bezug zu Natur(-schutz)? Das
+            interessiert mich besonders. Und Sie könnten dabei von meinem
             Hintergrund profitieren: Je besser ich Ihre Arbeit verstehe, desto
-            besser wird die App!
+            besser das Ergebnis!
           </p>
         </Row>
       </Page>
