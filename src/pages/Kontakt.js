@@ -135,7 +135,7 @@ const KontaktPage = () => {
           </p>
           <p>
             Technisch: Von anspruchsvollen Excel-Formularen bis zu
-            Access-Applikationen. Zuletzt: Verwaltung von Verträgen und
+            Access-Applikationen. Höhepunkt: Verwaltung von Verträgen und
             Auszahlung von Direktzahlungen für hunderte von
             Landwirtschafts-Betrieben auf zehntausenden Flächen, mit einem
             komplexen und dynamischen Beitragssystem.
