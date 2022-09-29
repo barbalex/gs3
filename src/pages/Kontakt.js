@@ -145,7 +145,7 @@ const KontaktPage = () => {
           <p>
             2012 hat ein Unfall mein Leben verändert. In mehreren Monaten im
             Bett begann ich, Software zu entwickeln. Das ersetzte die bisherigen
-            Herausforderungen in Sport und Beruf, die nicht mehr möglich waren.
+            Herausforderungen in Sport und Beruf.
           </p>
           <p>
             Nach > 10 Jahren professioneller Software-Entwicklung bin ich stolz,
@@ -156,8 +156,8 @@ const KontaktPage = () => {
           <p>
             Brauchen Sie Software mit einem Bezug zu Natur(-schutz)? Das
             interessiert mich besonders. Und Sie könnten dabei von meinem
-            Hintergrund profitieren: Je besser ich Ihre Arbeit verstehe, desto
-            besser das Ergebnis!
+            naturwissenschaftlichen Hintergrund profitieren: Je besser ich Ihre
+            Arbeit verstehe, desto besser das Ergebnis!
           </p>
         </Row>
       </Page>
