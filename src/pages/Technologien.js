@@ -178,16 +178,6 @@ const TechnologienPage = () => (
             </Li>
             <Li>
               <A
-                href="https://dart.dev"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Dart
-              </A>
-              <P>Die Sprache hinter Flutter</P>
-            </Li>
-            <Li>
-              <A
                 href="https://de.wikipedia.org/wiki/JavaScript_Object_Notation"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -239,6 +229,16 @@ const TechnologienPage = () => (
               </A>
               <P>Der neue Standard, um Daten von der API abzufragen</P>
             </Li>
+            <Li>
+              <A
+                href="https://dart.dev"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Dart
+              </A>
+              <P>Die Sprache hinter Flutter</P>
+            </Li>
           </Ul>
         </div>
         <div className="col-lg-4">
@@ -247,16 +247,6 @@ const TechnologienPage = () => (
             Werkzeuge <small>(Auswahl)</small>
           </H4>
           <Ul>
-            <Li>
-              <A
-                href="https://flutter.dev/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Flutter
-              </A>
-              <P>Apps für mobile und desktop mit nativer Leistung</P>
-            </Li>
             <Li>
               <A
                 href="https://www.electronjs.org/"
@@ -370,6 +360,16 @@ const TechnologienPage = () => (
                 Google Maps API
               </A>
               <P>Karten einbinden</P>
+            </Li>
+            <Li>
+              <A
+                href="https://flutter.dev/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Flutter
+              </A>
+              <P>Apps für mobile und desktop mit nativer Leistung</P>
             </Li>
           </Ul>
         </div>
