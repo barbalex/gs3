@@ -64,6 +64,5 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/barbalex/gs3"
-  },
-  "packageManager": "yarn@3.1.0"
+  }
 }
