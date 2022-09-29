@@ -144,9 +144,8 @@ const KontaktPage = () => {
           <h5>Software professionell</h5>
           <p>
             2012 hat ein Unfall mein Leben verändert. In mehreren Monaten im
-            Bett begann ich, Software zu entwickeln. Das war spannend und lenkte
-            davon ab, dass die bisherigen Herausforderungen in Sport und Beruf
-            nicht mehr möglich waren.
+            Bett begann ich, Software zu entwickeln. Das ersetzte die bisherigen
+            Herausforderungen in Sport und Beruf, die nicht mehr möglich waren.
           </p>
           <p>
             Nach > 10 Jahren professioneller Software-Entwicklung bin ich stolz,
