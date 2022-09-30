@@ -5,7 +5,9 @@ import {
   FaLinux,
   FaApple,
   FaWindows,
+  FaIndustry,
 } from 'react-icons/fa'
+import { MdArchitecture, MdRealEstateAgent } from 'react-icons/md'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import styled from 'styled-components'
 
@@ -25,7 +27,7 @@ const Row = styled.div`
   padding-right: 15px;
 `
 const Ul = styled.ul`
-  /*padding-left: 22px;*/
+  padding-bottom: 15px;
 `
 const H4 = styled.h4`
   margin-top: 5px !important;
@@ -51,6 +53,9 @@ const Li = styled.li`
 const Lead = styled.p`
   margin-bottom: 16px;
 `
+const Spacer = styled.div`
+  height: 10px;
+`
 
 const TechnologienPage = () => (
   <Layout>
@@ -58,40 +63,51 @@ const TechnologienPage = () => (
       <Lead className="lead">Mit diesen Technologien kenne ich mich aus:</Lead>
       <Row className="row marketing">
         <div className="col-lg-4">
-          <FaLinux style={{ fontSize: 30 }} alt="Linux" />
-          <FaApple style={{ fontSize: 30 }} alt="MaxOs" />
-          <FaWindows style={{ fontSize: 30 }} alt="Windows" />
-          <H4>Betriebssysteme</H4>
+          <MdArchitecture style={{ fontSize: 33 }} />
+          <H4>App-Architekturen</H4>
           <Ul>
             <Li>
               <A
-                href="http://de.wikipedia.org/wiki/Microsoft_Windows"
+                href="https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Windows
+                Progressive Web Apps
               </A>
-              <P>Der Benutzerfreundliche</P>
+              <P>
+                Web-Apps auf Augenhöhe mit nativen Apps, mit allen Vorteilen des
+                Webs
+              </P>
             </Li>
             <Li>
               <A
-                href="http://de.wikipedia.org/wiki/Ubuntu"
+                href="https://www.electronjs.org/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Ubuntu Linux
+                Electron
               </A>
-              <P>Der Server-Meister</P>
+              <P>JavaScript-Apps auf PC/Mac/Linux installieren</P>
             </Li>
             <Li>
               <A
-                href="http://de.wikipedia.org/wiki/Mac_OS_X"
+                href="https://www.electronjs.org/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                MacOS
+                Tauri
               </A>
-              <P>Entwickler fliegen drauf</P>
+              <P>Wie electron. Aber leistungsfähiger. Und bald mobilfähig</P>
+            </Li>
+            <Li>
+              <A
+                href="https://flutter.dev/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Flutter
+              </A>
+              <P>Apps für mobile und desktop mit nativer Leistung</P>
             </Li>
           </Ul>
           <FaDatabase style={{ fontSize: 30 }} />
@@ -227,7 +243,7 @@ const TechnologienPage = () => (
               >
                 GraphQL
               </A>
-              <P>Der neue Standard, um Daten von der API abzufragen</P>
+              <P>Daten flexibel von der API abfragen</P>
             </Li>
             <Li>
               <A
@@ -249,13 +265,13 @@ const TechnologienPage = () => (
           <Ul>
             <Li>
               <A
-                href="https://www.electronjs.org/"
+                href="https://en.wikipedia.org/wiki/Docker_(software)"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                electron
+                Docker
               </A>
-              <P>JavaScript-Apps lokal installieren</P>
+              <P>Container für Apps und Server</P>
             </Li>
             <Li>
               <A
@@ -263,7 +279,7 @@ const TechnologienPage = () => (
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                hapi
+                Hapi
               </A>
               <P>Meister Server</P>
             </Li>
@@ -283,9 +299,8 @@ const TechnologienPage = () => (
               >
                 Hasura
               </A>
-              <P>{`GraphQL-Schnittstellen für Apps`}</P>
+              <P>{`GraphQL-Schnittstellen`}</P>
             </Li>
-
             <Li>
               <A
                 href="https://www.gatsbyjs.org/"
@@ -294,7 +309,15 @@ const TechnologienPage = () => (
               >
                 Gatsby
               </A>
-              <P>Web-App-Entwicklungswerkzeug</P>
+              {`, `}
+              <A
+                href="https://vitejs.dev/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Vite
+              </A>
+              <P>Entwicklungswerkzeuge für Web-Apps</P>
             </Li>
             <Li>
               <A
@@ -361,15 +384,41 @@ const TechnologienPage = () => (
               </A>
               <P>Karten einbinden</P>
             </Li>
+          </Ul>
+          <FaLinux style={{ fontSize: 30 }} alt="Linux" />
+          <FaApple style={{ fontSize: 30 }} alt="MaxOs" />
+          <FaWindows style={{ fontSize: 30 }} alt="Windows" />
+          <H4>Betriebssysteme</H4>
+          <Ul>
             <Li>
               <A
-                href="https://flutter.dev/"
+                href="http://de.wikipedia.org/wiki/Microsoft_Windows"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Flutter
+                Windows
               </A>
-              <P>Apps für mobile und desktop mit nativer Leistung</P>
+              <P>Der Benutzerfreundliche</P>
+            </Li>
+            <Li>
+              <A
+                href="http://de.wikipedia.org/wiki/Ubuntu"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Ubuntu Linux
+              </A>
+              <P>Der Server-Meister</P>
+            </Li>
+            <Li>
+              <A
+                href="http://de.wikipedia.org/wiki/Mac_OS_X"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                MacOS
+              </A>
+              <P>Entwickler fliegen drauf</P>
             </Li>
           </Ul>
         </div>
