@@ -2,6 +2,8 @@ import React from 'react'
 import Layout from '../components/layout'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
+import Header from '../components/Head'
+
 const NotFoundPage = () => (
   <Layout>
     <h1>NICHT GEFUNDEN</h1>
@@ -10,3 +12,5 @@ const NotFoundPage = () => (
 )
 
 export default NotFoundPage
+
+export const Head = () => <Header />

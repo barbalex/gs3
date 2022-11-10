@@ -18,6 +18,7 @@ import vmCarouselItems from '../modules/vmCarouselItems'
 import bbCarouselItems from '../modules/bbCarouselItems'
 import kaplaCarouselItems from '../modules/kaplaCarouselItems'
 import aiCarouselItems from '../modules/aiCarouselItems'
+import Header from '../components/Head'
 
 const Page = styled.div`
   padding: 15px;
@@ -442,3 +443,5 @@ const ProjektPage = () => (
 ProjektPage.displayName = 'ProjektPage'
 
 export default ProjektPage
+
+export const Head = () => <Header />

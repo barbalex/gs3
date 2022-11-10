@@ -11,6 +11,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import styled from 'styled-components'
 
 import Layout from '../components/layout'
+import Header from '../components/Head'
 
 const Page = styled.div`
   padding: 15px;
@@ -185,3 +186,5 @@ const LeitbildPage = () => (
 LeitbildPage.displayName = 'LeitbildPage'
 
 export default LeitbildPage
+
+export const Head = () => <Header />

@@ -7,6 +7,7 @@ import { window, exists } from 'browser-monads'
 import alexImg from '../images/alex.jpg'
 import Layout from '../components/layout'
 import iconsvg from '../utils/icon.svg'
+import Header from '../components/Head'
 
 const Page = styled.div`
   padding: 15px;
@@ -168,3 +169,5 @@ const KontaktPage = () => {
 KontaktPage.displayName = 'KontaktPage'
 
 export default KontaktPage
+
+export const Head = () => <Header />
