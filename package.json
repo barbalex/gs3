@@ -4,11 +4,8 @@
   "version": "1.3.6",
   "author": "Alexander Gabriel",
   "scripts": {
-    "build_old": "gatsby clean && gatsby build && copyfiles public/* .vercel/output && copyfiles .vercel/* .vercel/output -f",
-    "build": "vercel build && vercel deploy --prebuilt",
-    "dev": "gatsby develop",
-    "format": "prettier --write '**/*.js'",
-    "deploy_2": "vercel deploy --prebuilt"
+    "deploy": "vercel build && vercel deploy --prebuilt",
+    "dev": "gatsby develop"
   },
   "dependencies": {
     "@reach/router": "1.3.4",
