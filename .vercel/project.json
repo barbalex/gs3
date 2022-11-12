@@ -10,6 +10,6 @@
     "outputDirectory": null,
     "rootDirectory": null,
     "directoryListing": false,
-    "nodeVersion": "18.x"
+    "nodeVersion": "16.x"
   }
 }

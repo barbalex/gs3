@@ -5,6 +5,7 @@
   "author": "Alexander Gabriel",
   "scripts": {
     "deploy": "vercel build && vercel deploy --prebuilt",
+    "deploy_productive": "vercel build --prod && vercel deploy --prebuilt --prod",
     "dev": "gatsby develop"
   },
   "dependencies": {
