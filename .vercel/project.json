@@ -1,1 +1,15 @@
-{"projectId":"QmbdpJBV2W6zkaWSG6RFnCQ1EPncuVLQuBUQpwzQm9urnC","orgId":"gFID8aFwCx9fAwytTIu5oQXh"}
+{
+  "projectId": "QmbdpJBV2W6zkaWSG6RFnCQ1EPncuVLQuBUQpwzQm9urnC",
+  "orgId": "team_gcgJA9RlIJuODHgp4lXEhyZW",
+  "settings": {
+    "createdAt": 1553161493452,
+    "framework": "gatsby",
+    "devCommand": null,
+    "installCommand": "npm install --legacy-peer-deps",
+    "buildCommand": "gatsby clean && gatsby build && copyfiles public/* .vercel/output",
+    "outputDirectory": null,
+    "rootDirectory": null,
+    "directoryListing": false,
+    "nodeVersion": "18.x"
+  }
+}
