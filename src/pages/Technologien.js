@@ -87,10 +87,8 @@ const TechnologienPage = () => (
                 rel="noopener noreferrer"
               >
                 Electron
-              </A>
-              <P>JavaScript-Apps auf PC/Mac/Linux installieren</P>
-            </Li>
-            <Li>
+              </A>{' '}
+              und{' '}
               <A
                 href="https://tauri.app/"
                 target="_blank"
@@ -98,7 +96,10 @@ const TechnologienPage = () => (
               >
                 Tauri
               </A>
-              <P>Wie electron. Aber leistungsfähiger. Und bald mobilfähig</P>
+              <P>
+                JavaScript-Apps auf PC/Mac/Linux installieren. Mit Tauri bald
+                auch auf Android/iOS
+              </P>
             </Li>
             <Li>
               <A
@@ -205,16 +206,6 @@ const TechnologienPage = () => (
             </Li>
             <Li>
               <A
-                href="https://de.wikipedia.org/wiki/Cascading_Style_Sheets"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                CSS
-              </A>
-              <P>Layouten für HTML</P>
-            </Li>
-            <Li>
-              <A
                 href="https://de.wikipedia.org/wiki/Hypertext_Markup_Language"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -222,6 +213,16 @@ const TechnologienPage = () => (
                 HTML
               </A>
               <P>Dokumente fürs Web</P>
+            </Li>
+            <Li>
+              <A
+                href="https://de.wikipedia.org/wiki/Cascading_Style_Sheets"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                CSS
+              </A>
+              <P>Layouten für HTML</P>
             </Li>
             <Li>
               <A
