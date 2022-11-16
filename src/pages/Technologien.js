@@ -92,7 +92,7 @@ const TechnologienPage = () => (
             </Li>
             <Li>
               <A
-                href="https://www.electronjs.org/"
+                href="https://tauri.app/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -431,6 +431,5 @@ const TechnologienPage = () => (
 TechnologienPage.displayName = 'TechnologienPage'
 
 export default TechnologienPage
-
 
 export const Head = () => <Header />
