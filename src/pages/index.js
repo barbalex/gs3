@@ -84,10 +84,9 @@ const IndexPage = () => (
           />
           <H4Cloud>Web</H4Cloud>
           <Ul>
-            <Li>{`Im Browser, als Progressive Web App`}</Li>
-            {/*<Li>Mit App-Server, Datenbank-Server und Daten-Schnittstelle</Li>*/}
-            <Li>Im Intranet oder Internet</Li>
-            <Li>Installieren und Aktualisieren ist nie einfacher</Li>
+            <Li>{`Im Browser / als Progressive Web App`}</Li>
+            <Li>Im Inter- oder Intranet</Li>
+            <Li>Installieren und Aktualisieren sind simpel</Li>
           </Ul>
         </div>
         <div className="col-md">
