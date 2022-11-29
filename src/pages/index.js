@@ -4,7 +4,7 @@ import { BsCloud } from 'react-icons/bs'
 import { AiOutlineMobile, AiOutlineDesktop } from 'react-icons/ai'
 import { MdDone } from 'react-icons/md'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import styled from 'styled-components'
+import styled from '@emotion/styled'
 
 import Layout from '../components/layout'
 import Header from '../components/Head'

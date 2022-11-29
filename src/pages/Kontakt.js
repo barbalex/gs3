@@ -1,7 +1,7 @@
 import React from 'react'
 import { MapContainer, ScaleControl, TileLayer, Marker } from 'react-leaflet'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import styled from 'styled-components'
+import styled from '@emotion/styled'
 import { window, exists } from 'browser-monads'
 
 import alexImg from '../images/alex.jpg'

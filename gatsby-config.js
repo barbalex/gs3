@@ -32,7 +32,6 @@ module.exports = {
         omitGoogleFont: true,
       },
     },
-    'gatsby-plugin-styled-components',
     'gatsby-plugin-offline',
     'gatsby-plugin-react-leaflet',
     'gatsby-plugin-sitemap',

@@ -10,7 +10,7 @@ import {
 } from 'reactstrap'
 import { FaShare } from 'react-icons/fa'
 import { Link } from 'gatsby'
-import styled from 'styled-components'
+import styled from '@emotion/styled'
 import { Location } from '@reach/router'
 import { window, exists } from 'browser-monads'
 
@@ -26,10 +26,10 @@ const StyledNavItem = styled(NavItem)`
   margin-bottom: 0 !important;
 `
 const StyledNavLink = styled(NavLink)`
-  border: ${props => (props.active ? '1px white' : 'unset')};
+  border: ${(props) => (props.active ? '1px white' : 'unset')};
   border-color: rgba(255, 255, 255, 0.5) !important;
-  font-weight: ${props => (props.active ? '700' : '600')};
-  color: ${props =>
+  font-weight: ${(props) => (props.active ? '700' : '600')};
+  color: ${(props) =>
     props.active ? 'white' : 'rgba(255, 255, 255, 0.7)'} !important;
 `
 

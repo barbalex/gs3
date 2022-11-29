@@ -2,7 +2,7 @@ import React from 'react'
 import { UncontrolledCarousel } from 'reactstrap'
 import Scrollspy from 'react-scrollspy'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import styled from 'styled-components'
+import styled from '@emotion/styled'
 
 import Layout from '../components/layout'
 import apfImg from '../images/apflora.png'

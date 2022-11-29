@@ -10,8 +10,9 @@
     "dev": "gatsby develop"
   },
   "dependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
     "@reach/router": "1.3.4",
-    "babel-plugin-styled-components": "2.0.7",
     "bootstrap": "4.x",
     "browser-monads": "1.0.0",
     "eslint-plugin-react": "7.31.11",
@@ -21,23 +22,17 @@
     "gatsby-plugin-offline": "6.2.0",
     "gatsby-plugin-react-leaflet": "4.0.3",
     "gatsby-plugin-sitemap": "6.2.0",
-    "gatsby-plugin-styled-components": "6.2.0",
     "gatsby-plugin-typography": "5.2.0",
     "gatsby-plugin-web-font-loader": "1.0.4",
-    "jquery": "3.6.1",
     "leaflet": "1.9.3",
-    "popper.js": "1.16.1",
-    "prop-types": "15.8.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-helmet": "6.1.0",
     "react-icons": "4.7.1",
-    "react-is": "18.2.0",
     "react-leaflet": "4.2.0",
     "react-scrollspy": "3.4.3",
     "react-typography": "0.16.20",
     "reactstrap": "8.10.1",
-    "styled-components": "5.3.6",
     "typography": "0.16.21",
     "vercel": "28.5.6"
   },
@@ -50,11 +45,7 @@
     "prettier": "2.8.0"
   },
   "dependenciesComments": {
-    "prop-types": "is peer",
-    "jquery": "is peer",
-    "popper.js": "is peer",
     "eslint": "is peer",
-    "react-is": "is peer",
     "@babel/core": "is peer"
   },
   "keywords": [
