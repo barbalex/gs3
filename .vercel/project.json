@@ -5,7 +5,7 @@
     "createdAt": 1553161493452,
     "framework": "gatsby",
     "devCommand": null,
-    "installCommand": "npm install --legacy-peer-deps",
+    "installCommand": "npm install --force",
     "buildCommand": "gatsby clean && gatsby build && copyfiles public/* .vercel/output",
     "outputDirectory": null,
     "rootDirectory": null,
