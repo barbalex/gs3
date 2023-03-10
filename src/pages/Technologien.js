@@ -137,16 +137,6 @@ const TechnologienPage = () => (
             </Li>
             <Li>
               <A
-                href="http://couchdb.apache.org"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                CouchDB
-              </A>
-              <P>Der Synchronisations-Meister</P>
-            </Li>
-            <Li>
-              <A
                 href="http://www.sqlite.org"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -154,6 +144,16 @@ const TechnologienPage = () => (
                 SQLite
               </A>
               <P>{`Simpler geht's nimmer`}</P>
+            </Li>
+            <Li>
+              <A
+                href="http://couchdb.apache.org"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                CouchDB
+              </A>
+              <P>Der Synchronisations-Meister</P>
             </Li>
           </Ul>
         </div>
@@ -171,6 +171,26 @@ const TechnologienPage = () => (
           </div>
           <H4 style={{ marginTop: 3 }}>Programmiersprachen</H4>
           <Ul>
+            <Li>
+              <A
+                href="https://de.wikipedia.org/wiki/Hypertext_Markup_Language"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                HTML
+              </A>
+              <P>Dokumente fürs Web</P>
+            </Li>
+            <Li>
+              <A
+                href="https://de.wikipedia.org/wiki/Cascading_Style_Sheets"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                CSS
+              </A>
+              <P>Layouten für HTML</P>
+            </Li>
             <Li>
               <A
                 href="http://en.wikipedia.org/wiki/JavaScript"
@@ -206,36 +226,13 @@ const TechnologienPage = () => (
             </Li>
             <Li>
               <A
-                href="https://de.wikipedia.org/wiki/Hypertext_Markup_Language"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                HTML
-              </A>
-              <P>Dokumente fürs Web</P>
-            </Li>
-            <Li>
-              <A
-                href="https://de.wikipedia.org/wiki/Cascading_Style_Sheets"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                CSS
-              </A>
-              <P>Layouten für HTML</P>
-            </Li>
-            <Li>
-              <A
                 href="https://de.wikipedia.org/wiki/SQL"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 SQL
               </A>
-              <P>
-                Nach wie vor der Standard, um Daten in der Datenbank abzufragen
-                und zu manipulieren
-              </P>
+              <P>Daten in der Datenbank abfragen und manipulieren</P>
             </Li>
             <Li>
               <A
@@ -305,21 +302,13 @@ const TechnologienPage = () => (
             </Li>
             <Li>
               <A
-                href="https://www.gatsbyjs.org/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Gatsby
-              </A>
-              {`, `}
-              <A
                 href="https://vitejs.dev/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 Vite
               </A>
-              <P>Entwicklungswerkzeuge für Web-Apps</P>
+              <P>Entwicklungswerkzeug für Web-Apps</P>
             </Li>
             <Li>
               <A
@@ -362,14 +351,6 @@ const TechnologienPage = () => (
             </Li>
             <Li>
               <A
-                href="http://openlayers.org/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                OpenLayers
-              </A>
-              ,&nbsp;
-              <A
                 href="http://leafletjs.com"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -387,9 +368,9 @@ const TechnologienPage = () => (
               <P>Karten einbinden</P>
             </Li>
           </Ul>
+          <FaWindows style={{ fontSize: 30 }} alt="Windows" />
           <FaLinux style={{ fontSize: 30 }} alt="Linux" />
           <FaApple style={{ fontSize: 30 }} alt="MaxOs" />
-          <FaWindows style={{ fontSize: 30 }} alt="Windows" />
           <H4>Betriebssysteme</H4>
           <Ul>
             <Li>
