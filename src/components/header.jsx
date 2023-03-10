@@ -26,7 +26,7 @@ const StyledNavItem = styled(NavItem)`
   margin-bottom: 0 !important;
 `
 const StyledNavLink = styled(NavLink)`
-  font-weight: ${(props) => (props.active ? '700' : '600')} !important;
+  font-weight: ${(props) => (props.active ? '800' : '600')} !important;
   color: ${(props) =>
     props.active ? 'white' : 'rgba(255, 255, 255, 0.7)'} !important;
 `
