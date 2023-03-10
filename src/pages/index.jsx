@@ -63,10 +63,10 @@ const IndexPage = () => (
       </StyledJumbotron>
 
       <p
-        className="font-weight-bold"
         style={{
           fontSize: 24,
           marginLeft: 15,
+          fontWeight: 700,
         }}
       >
         Apps für:
