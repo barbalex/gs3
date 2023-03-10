@@ -1,7 +1,7 @@
 {
   "name": "gs3",
   "description": "Gabriel Software's website",
-  "version": "1.4.1",
+  "version": "1.4.2",
   "author": "Alexander Gabriel",
   "scripts": {
     "build": "vercel build",
