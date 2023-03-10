@@ -28,7 +28,7 @@ const Row = styled.div`
 const Ul = styled.ul`
   /*padding-left: 22px;*/
 `
-const H4 = styled.h4`
+const H1 = styled.h1`
   margin-top: 5px !important;
   margin-bottom: 8px !important;
   font-weight: bold;
@@ -59,7 +59,7 @@ const LeitbildPage = () => (
       <Row className="row marketing">
         <div className="col-lg-4">
           <FaRegQuestionCircle style={{ fontSize: 40 }} />
-          <H4>Verstehen, wie Sie arbeiten</H4>
+          <H1>Verstehen, wie Sie arbeiten</H1>
           <P>
             Je mehr ich Ihre Arbeit verstehe,
             <br />
@@ -75,7 +75,7 @@ const LeitbildPage = () => (
         </div>
         <div className="col-lg-4">
           <MdGpsFixed style={{ fontSize: 40 }} />
-          <H4>Sinn suchen</H4>
+          <H1>Sinn suchen</H1>
           <P>
             Menschen gewöhnen sich erstaunlich gut an Inkonsistenzen. Oft leidet
             darunter die Produktivität.
@@ -84,11 +84,11 @@ const LeitbildPage = () => (
         </div>
         <div className="col-lg-4">
           <FaRegCheckCircle style={{ fontSize: 40 }} />
-          <H4>
+          <H1>
             So einfach wie möglich,
             <br />
             so vollständig wie nötig
-          </H4>
+          </H1>
           <P>
             Ist die Anwendung klar und übersichtlich, arbeiten Sie effizient.
           </P>
@@ -100,7 +100,7 @@ const LeitbildPage = () => (
         </div>
         <div className="col-lg-4">
           <FaWrench style={{ fontSize: 40 }} />
-          <H4>Geeignete Technologie wählen</H4>
+          <H1>Geeignete Technologie wählen</H1>
           <P>
             Wer einen Hammer hat, ist verleitet, in allem einen Nagel zu
             erkennen.
@@ -114,7 +114,7 @@ const LeitbildPage = () => (
         </div>
         <div className="col-lg-4">
           <FaCrown style={{ fontSize: 40 }} />
-          <H4>Der Kunde ist König</H4>
+          <H1>Der Kunde ist König</H1>
           <P>
             Damit Sie zufrieden sind, braucht es mehr als eine gute Anwendung.
             Ich bin bestrebt:
@@ -129,7 +129,7 @@ const LeitbildPage = () => (
         </div>
         <div className="col-lg-4">
           <FaRetweet style={{ fontSize: 40 }} />
-          <H4>Ich bin austauschbar</H4>
+          <H1>Ich bin austauschbar</H1>
           <P>
             {`Ich arbeite 100% `}
             <A

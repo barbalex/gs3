@@ -51,13 +51,13 @@ const Ul = styled.ul`
 const Li = styled.li`
   margin-bottom: 0;
 `
-const H4 = styled.h4`
+const H2 = styled.h2`
   margin-top: 5px !important;
   margin-bottom: 8px !important;
   font-weight: bold;
   font-size: 24px;
 `
-const H5 = styled.h5`
+const H3 = styled.h3`
   margin-bottom: 8px !important;
   font-size: 1.2rem !important;
   font-weight: 500 !important;
@@ -162,10 +162,10 @@ const ProjektPage = () => (
         <Lead className="lead">Eine Auswahl von aktuellen Projekten:</Lead>
         <Section id="apflora">
           <Img src={apfImg} alt="apflora" height={51} />
-          <H4>apflora.ch</H4>
-          <H5>
+          <H2>apflora.ch</H2>
+          <H3>
             Aktionsplan Flora der Fachstelle Naturschutz des Kantons Zürich
-          </H5>
+          </H3>
           <div>
             Grösste Stärken:
             <Ul>
@@ -210,11 +210,11 @@ const ProjektPage = () => (
         </Section>
         <Section id="arteigenschaften">
           <Img src={aeImg} alt="arteigenschaften.ch" height={51} />
-          <H4>arteigenschaften.ch</H4>
-          <H5>
+          <H2>arteigenschaften.ch</H2>
+          <H3>
             Naturschutzrelevante Informationen über Arten aus den Gruppen Fauna,
             Flora, Moose, Pilze und von Lebensräumen:
-          </H5>
+          </H3>
           <Ul>
             <Li>anzeigen</Li>
             <Li>importieren</Li>
@@ -249,8 +249,8 @@ const ProjektPage = () => (
         </Section>
         <Section id="vermehrung">
           <Img src={vmImg} alt="vermehrung.ch" height={51} />
-          <H4>vermehrung.ch</H4>
-          <H5>Bedrohte Pflanzen vermehren</H5>
+          <H2>vermehrung.ch</H2>
+          <H3>Bedrohte Pflanzen vermehren</H3>
           <Ul>
             <Li>mobile first</Li>
             <Li>offline first</Li>
@@ -289,7 +289,7 @@ const ProjektPage = () => (
         </Section>
         <Section id="kapla">
           <Img src={kaplaImg} alt="Kapla" height={51} />
-          <H4>Kapla</H4>
+          <H2>Kapla</H2>
           <P>
             Mit Kapla verwaltet die Abteilung Recht des AWEL (Amt für Abfall,
             Wasser, Energie und Luft) des Kantons Zürich ihre Geschäfte.
@@ -323,7 +323,7 @@ const ProjektPage = () => (
         </Section>
         <Section id="awel-personal">
           <Img src={apImg} alt="AWEL-Personal" height={51} />
-          <H4>AWEL-Personal</H4>
+          <H2>AWEL-Personal</H2>
           <P>
             Damit verwaltet das AWEL (Amt für Abfall, Wasser, Energie und Luft)
             des Kantons Zürich Personal-Daten.
@@ -354,7 +354,7 @@ const ProjektPage = () => (
         </Section>
         <Section id="awel-indikatoren">
           <Img src={zhLoeweImg} alt="AWEL-Indikatoren" height={51} />
-          <H4>AWEL-Indikatoren</H4>
+          <H2>AWEL-Indikatoren</H2>
           <P>
             Das AWEL (Amt für Abfall, Wasser, Energie und Luft) des Kantons
             Zürich verwaltet mit dieser Access-Anwendung Indikatoren.
@@ -375,7 +375,7 @@ const ProjektPage = () => (
         </Section>
         <Section id="mediterranean-migration">
           <Img src={bbImg} alt="mediterranean-migration" height={51} />
-          <H4>mediterranean-migration.com</H4>
+          <H2>mediterranean-migration.com</H2>
           <P>
             Übersicht über die Migration durch das zentrale und östliche
             Mittelmeer.

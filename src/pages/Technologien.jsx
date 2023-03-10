@@ -29,7 +29,7 @@ const Row = styled.div`
 const Ul = styled.ul`
   padding-bottom: 15px;
 `
-const H4 = styled.h4`
+const H2 = styled.h2`
   margin-top: 5px !important;
   margin-bottom: 8px !important;
   font-weight: bold;
@@ -64,7 +64,7 @@ const TechnologienPage = () => (
       <Row className="row marketing">
         <div className="col-lg-4">
           <MdArchitecture style={{ fontSize: 33 }} />
-          <H4>App-Architekturen</H4>
+          <H2>App-Architekturen</H2>
           <Ul>
             <Li>
               <A
@@ -112,7 +112,7 @@ const TechnologienPage = () => (
             </Li>
           </Ul>
           <FaDatabase style={{ fontSize: 30 }} />
-          <H4 style={{ marginTop: 5 }}>Datenbanken</H4>
+          <H2 style={{ marginTop: 5 }}>Datenbanken</H2>
           <Ul>
             <Li>
               <A
@@ -168,7 +168,7 @@ const TechnologienPage = () => (
           >
             {'if ( ... ) then \u007B ... \u007D'}
           </div>
-          <H4 style={{ marginTop: 3 }}>Programmiersprachen</H4>
+          <H2 style={{ marginTop: 3 }}>Programmiersprachen</H2>
           <Ul>
             <Li>
               <A
@@ -257,9 +257,9 @@ const TechnologienPage = () => (
         </div>
         <div className="col-lg-4">
           <FaWrench style={{ fontSize: 30 }} />
-          <H4 style={{ marginTop: 0 }}>
+          <H2 style={{ marginTop: 0 }}>
             Werkzeuge <small>(Auswahl)</small>
-          </H4>
+          </H2>
           <Ul>
             <Li>
               <A
@@ -370,7 +370,7 @@ const TechnologienPage = () => (
           <FaWindows style={{ fontSize: 30 }} alt="Windows" />
           <FaLinux style={{ fontSize: 30 }} alt="Linux" />
           <FaApple style={{ fontSize: 30 }} alt="MaxOs" />
-          <H4>Betriebssysteme</H4>
+          <H2>Betriebssysteme</H2>
           <Ul>
             <Li>
               <A
