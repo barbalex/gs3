@@ -12,7 +12,6 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import styled from '@emotion/styled'
 
 import Layout from '../components/layout'
-import Header from '../components/Head'
 
 const Page = styled.div`
   padding: 15px;
@@ -414,4 +413,4 @@ TechnologienPage.displayName = 'TechnologienPage'
 
 export default TechnologienPage
 
-export const Head = () => <Header />
+export { Head } from '../components/Head'

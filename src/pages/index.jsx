@@ -7,7 +7,6 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import styled from '@emotion/styled'
 
 import Layout from '../components/layout'
-import Header from '../components/Head'
 
 const Page = styled.div`
   padding: 15px;
@@ -29,12 +28,12 @@ const Row = styled.div`
 const Ul = styled.ul`
   /*padding-left: 22px;*/
 `
-const H4 = styled.h4`
+const H4 = styled.h2`
   margin-bottom: 8px !important;
   font-weight: bold;
   font-size: 24px;
 `
-const H4Cloud = styled.h4`
+const H4Cloud = styled.h2`
   margin-bottom: 8px !important;
   font-weight: bold;
   font-size: 24px;
@@ -176,4 +175,4 @@ const IndexPage = () => (
 
 export default IndexPage
 
-export const Head = () => <Header />
+export { Head } from '../components/Head'
