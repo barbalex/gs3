@@ -46,7 +46,7 @@ const MainColumn = styled.div`
   scroll-padding: 56px;
 `
 const Ul = styled.ul`
-  /*padding-left: 22px;*/
+  padding-left: 0;
 `
 const Li = styled.li`
   margin-bottom: 0;
@@ -90,7 +90,7 @@ const StyledScrollspy = styled(Scrollspy)`
 const A = styled.a`
   padding: 10px 15px !important;
   &:hover {
-    background-color: #f5f5f5;
+    background-color: #145f00;
   }
 `
 const Section = styled.section`
@@ -106,6 +106,15 @@ const Section = styled.section`
 `
 const P = styled.p`
   margin-bottom: 0;
+  a {
+    color: #145f00;
+    border-bottom: 1px dashed #333;
+    text-decoration: none;
+    &:hover {
+      border-bottom: 1px solid #145f00;
+      text-decoration: none;
+    }
+  }
 `
 const Lead = styled.p`
   margin-bottom: 16px;

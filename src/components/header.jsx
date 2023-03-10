@@ -26,9 +26,7 @@ const StyledNavItem = styled(NavItem)`
   margin-bottom: 0 !important;
 `
 const StyledNavLink = styled(NavLink)`
-  border: ${(props) => (props.active ? '1px white' : 'unset')};
-  border-color: rgba(255, 255, 255, 0.5) !important;
-  font-weight: ${(props) => (props.active ? '700' : '600')};
+  font-weight: ${(props) => (props.active ? '700' : '600')} !important;
   color: ${(props) =>
     props.active ? 'white' : 'rgba(255, 255, 255, 0.7)'} !important;
 `
@@ -52,7 +50,7 @@ const Header = ({ siteTitle }) => {
             aria-label="toggle Navbar"
             onClick={() => setOpen(!open)}
           />
-          <Collapse isOpen={open} navbar>
+          <Collapse isOpen={open} navbar style={{ justifyContent: 'flex-end' }}>
             <Nav className="ml-auto" navbar>
               <StyledNavItem>
                 <StyledNavLink

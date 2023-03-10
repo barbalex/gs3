@@ -11,22 +11,25 @@ import Layout from '../components/layout'
 const Page = styled.div`
   padding: 15px;
 `
-const StyledJumbotron = styled(Jumbotron)`
-  margin-top: 15px !important;
-  padding-left: 60px !important;
-  padding-right: 60px !important;
-  background-color: #e0f6da !important;
-  li {
-    font-size: 21px;
+const StyledJumbotron = styled.div`
+  margin-top: 15px;
+  margin-bottom: 32px;
+  padding: 60px;
+  border-radius: 5px;
+  background-color: #e0f6da;
+  font-size: 21px;
+  font-weight: 500;
+  ul {
+    padding-left: 05px;
   }
 `
 const Row = styled.div`
   /* side spacing for mobile first views */
   padding-left: 15px;
   padding-right: 15px;
-`
-const Ul = styled.ul`
-  /*padding-left: 22px;*/
+  ul {
+    padding-left: 0;
+  }
 `
 const H4 = styled.h2`
   margin-bottom: 8px !important;
@@ -56,9 +59,7 @@ const IndexPage = () => (
           <Li>individuell</Li>
           <Li>zuverlässig</Li>
         </ul>
-        <p className="lead" style={{ fontWeight: 400 }}>
-          ...damit Sie sich auf Ihre Arbeit konzen­trieren können
-        </p>
+        <p>...damit Sie sich auf Ihre Arbeit konzen­trieren können</p>
       </StyledJumbotron>
 
       <p
@@ -82,22 +83,22 @@ const IndexPage = () => (
             }}
           />
           <H4Cloud>Web</H4Cloud>
-          <Ul>
+          <ul>
             <Li>{`Im Browser / als Progressive Web App`}</Li>
             <Li>Im Inter- oder Intranet</Li>
             <Li>Installieren und Aktualisieren sind simpel</Li>
-          </Ul>
+          </ul>
         </div>
         <div className="col-md">
           <AiOutlineDesktop
             style={{ fontSize: 78, minHeight: 78, maxHeight: 78, marginTop: 4 }}
           />
           <H4>Desktop</H4>
-          <Ul>
+          <ul>
             <Li>Lokal installiert</Li>
             <Li>Windows, Mac, Linux</Li>
             <Li>Lösungen mit beinahe null Unterhalt möglich</Li>
-          </Ul>
+          </ul>
         </div>
         <div className="w-100 d-lg-none"></div>
         <div className="col-md-2 col-lg-2">
@@ -111,10 +112,10 @@ const IndexPage = () => (
             }}
           />
           <H4>Mobile</H4>
-          <Ul>
+          <ul>
             <Li>Im App-Store</Li>
             <Li>Android und iOS</Li>
-          </Ul>
+          </ul>
         </div>
         <div className="col-sm-12 col-md-4 col-lg-3">
           <BsCloud
@@ -146,10 +147,10 @@ const IndexPage = () => (
             }}
           />
           <H4>Alle Geräte-Klassen</H4>
-          <Ul>
+          <ul>
             <Li>Basierend auf einer einzigen Code-Basis</Li>
             <Li>Am PC vorbereiten, mobil erfassen</Li>
-          </Ul>
+          </ul>
         </div>
         <div className="col-md">
           <MdDone
@@ -162,11 +163,11 @@ const IndexPage = () => (
             }}
           />
           <H4>Hohe Ansprüche</H4>
-          <Ul>
+          <ul>
             <Li>Live synchronisiert</Li>
             <Li>Offline-first mit leistungsfähiger Konflikt-Lösung</Li>
             <Li>Adaptives Benutzer-Erlebnis</Li>
-          </Ul>
+          </ul>
         </div>
       </Row>
     </Page>

@@ -11,7 +11,20 @@ import iconsvg from '../utils/icon.svg'
 const Page = styled.div`
   padding: 15px;
 `
-const Row = styled.div``
+const Row = styled.div`
+  a {
+    color: #145f00;
+    border-bottom: 1px dashed #333;
+    text-decoration: none;
+    &:hover {
+      border-bottom: 1px solid #145f00;
+      text-decoration: none;
+    }
+  }
+  ul {
+    padding-left: 0;
+  }
+`
 const Col = styled.div`
   /* side spacing for mobile first views */
   padding: 10px !important;
@@ -79,7 +92,7 @@ const KontaktPage = () => {
                 <a
                   href="https://www.google.ch/maps/place/47.289563,8.56644"
                   style={{
-                    color: '#0000FF',
+                    color: '#145f00',
                     textAlign: 'left',
                   }}
                   target="_blank"

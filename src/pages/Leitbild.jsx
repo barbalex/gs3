@@ -26,7 +26,7 @@ const Row = styled.div`
   padding-right: 15px;
 `
 const Ul = styled.ul`
-  /*padding-left: 22px;*/
+  padding-left: 0;
 `
 const H1 = styled.h1`
   margin-top: 5px !important;
@@ -44,10 +44,11 @@ const Lead = styled.p`
   margin-bottom: 16px;
 `
 const A = styled.a`
-  color: #333;
+  color: #145f00;
   border-bottom: 1px dashed #333;
+  text-decoration: none;
   &:hover {
-    border-bottom: 1px solid #428bca;
+    border-bottom: 1px solid #145f00;
     text-decoration: none;
   }
 `

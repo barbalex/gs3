@@ -28,6 +28,7 @@ const Row = styled.div`
 `
 const Ul = styled.ul`
   padding-bottom: 15px;
+  padding-left: 0;
 `
 const H2 = styled.h2`
   margin-top: 5px !important;
@@ -37,10 +38,11 @@ const H2 = styled.h2`
   font-weight: 700;
 `
 const A = styled.a`
-  color: #333;
+  color: #145f00;
   border-bottom: 1px dashed #333;
+  text-decoration: none;
   &:hover {
-    border-bottom: 1px solid #428bca;
+    border-bottom: 1px solid #145f00;
     text-decoration: none;
   }
 `
