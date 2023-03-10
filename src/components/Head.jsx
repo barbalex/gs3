@@ -3,7 +3,7 @@ import React from 'react'
 
 export const Head = () => (
   <>
-    <meta charSet="UTF-8" />
+    <meta charSet="utf-8" />
     <title>Gabriel Software</title>
     <meta name="description" content="Software entwickeln" />
     <meta name="keywords" content="Software, Entwicklung, Naturschutz" />
